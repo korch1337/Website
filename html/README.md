@@ -1,1 +1,1 @@
-Best ot EUW
+Best OT EUW
