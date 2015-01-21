@@ -12,7 +12,7 @@
 	$config['site_title_context'] = 'Patrik luktar rutten neger alla dagar i veckan!';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
-	$config['server_path'] = ''; 
+	$config['server_path'] = '/root/forgottenserver'; 
 
 
 	// ------------------------ \\
