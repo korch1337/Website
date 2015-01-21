@@ -555,7 +555,7 @@
 
 	// What kind of computer are you hosting this website on?
 	// Available options: LINUX or WINDOWS
-	$config['os'] = 'WINDOWS';
+	$config['os'] = 'LINUX';
 
 	// Measure how much players are lagging in-game. (Not completed). 
 	$config['ping'] = false;
