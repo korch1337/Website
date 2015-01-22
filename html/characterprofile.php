@@ -289,86 +289,6 @@ if ($config['EnableQuests'] == true) {
 		}
 	}
 }
-if ($firstrun == 0) {
-	echo '</table></li>';
-}
-?>
-<!-- END QUEST PROGRESSION -->
-				<!-- CHARACTER LIST -->
-				<?php
-				if (user_character_hide($profile_data['name']) != 1 && user_character_list_count(user_character_account_id($name)) > 1) {
-				?>
-					<li>
-						<b>Other visible characters on this account:</b><br>
-						<?php
-						$characters = user_character_list(user_character_account_id($profile_data['name']));
-						// characters: [0] = name, [1] = level, [2] = vocation, [3] = town_id, [4] = lastlogin, [5] = online
-						if ($characters && count($characters) > 1) {
-							?>
-							<table id="characterprofileTable" class="table table-striped table-hover">
-								<tr class="yellow">
-									<th>
-										Name:
-									</th>
-									<th>
-										Level:
-									</th>
-									<th>
-										Vocation:
-									</th>
-									<th>
-										Last login:
-									</th>
-									<th>
-										Status:
-									</th>
-								</tr>
-								<?php
-								// Design and present the list
-								foreach ($characters as $char) {
-									if ($char['name'] != $profile_data['name']) {
-										if (hide_char_to_name(user_character_hide($char['name'])) != 'hidden') {
-											echo '<tr>';
-											echo '<td><a href="characterprofile.php?name='. $char['name'] .'">'. $char['name'] .'</a></td>';
-											echo '<td>'. $char['level'] .'</td>';
-											echo '<td>'. $char['vocation'] .'</td>';
-											echo '<td>'. $char['lastlogin'] .'</td>';
-											echo '<td>'. $char['online'] .'</td>';
-											echo '</tr>';
-										}
-									}
-								}
-							?>
-							</table>
-							<?php
-							} else {
-								echo '<b><font color="green">This player has never died.</font></b>';
-							}
-								//Done.
-							?>
-					</li>
-				<?php
-				}
-				?>
-				<!-- END CHARACTER LIST -->
-				<li><font class="profile_font" name="profile_font_share_url">Address: <a href="<?php 
-					if ($config['htwrite']) echo "http://".$_SERVER['HTTP_HOST']."/". $profile_data['name'];
-					else echo "http://".$_SERVER['HTTP_HOST']."/characterprofile.php?name=". $profile_data['name'];
-					
-				?>"><?php
-					if ($config['htwrite']) echo "http://".$_SERVER['HTTP_HOST']."/". $profile_data['name'];
-					else echo "http://".$_SERVER['HTTP_HOST']."/characterprofile.php?name=". $profile_data['name'];
-				?></a></font></li>
-			</ul>
-		<!-- END PROFILE MARKUP HERE-->
-		
-		<?php
-	} else {
-		echo htmlentities(strip_tags($name, ENT_QUOTES)).' does not exist.';
-	}
-} else {
-	header('Location: index.php');
-}
 <?php
 /*/
 /   Znote AAC 1.4+ detailed character info (HP, MP, lvL, Exp, skills)
@@ -522,4 +442,85 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
     </tr>
 </table>
 <!-- END detailed character info -->
+if ($firstrun == 0) {
+	echo '</table></li>';
+}
+?>
+<!-- END QUEST PROGRESSION -->
+				<!-- CHARACTER LIST -->
+				<?php
+				if (user_character_hide($profile_data['name']) != 1 && user_character_list_count(user_character_account_id($name)) > 1) {
+				?>
+					<li>
+						<b>Other visible characters on this account:</b><br>
+						<?php
+						$characters = user_character_list(user_character_account_id($profile_data['name']));
+						// characters: [0] = name, [1] = level, [2] = vocation, [3] = town_id, [4] = lastlogin, [5] = online
+						if ($characters && count($characters) > 1) {
+							?>
+							<table id="characterprofileTable" class="table table-striped table-hover">
+								<tr class="yellow">
+									<th>
+										Name:
+									</th>
+									<th>
+										Level:
+									</th>
+									<th>
+										Vocation:
+									</th>
+									<th>
+										Last login:
+									</th>
+									<th>
+										Status:
+									</th>
+								</tr>
+								<?php
+								// Design and present the list
+								foreach ($characters as $char) {
+									if ($char['name'] != $profile_data['name']) {
+										if (hide_char_to_name(user_character_hide($char['name'])) != 'hidden') {
+											echo '<tr>';
+											echo '<td><a href="characterprofile.php?name='. $char['name'] .'">'. $char['name'] .'</a></td>';
+											echo '<td>'. $char['level'] .'</td>';
+											echo '<td>'. $char['vocation'] .'</td>';
+											echo '<td>'. $char['lastlogin'] .'</td>';
+											echo '<td>'. $char['online'] .'</td>';
+											echo '</tr>';
+										}
+									}
+								}
+							?>
+							</table>
+							<?php
+							} else {
+								echo '<b><font color="green">This player has never died.</font></b>';
+							}
+								//Done.
+							?>
+					</li>
+				<?php
+				}
+				?>
+				<!-- END CHARACTER LIST -->
+				<li><font class="profile_font" name="profile_font_share_url">Address: <a href="<?php 
+					if ($config['htwrite']) echo "http://".$_SERVER['HTTP_HOST']."/". $profile_data['name'];
+					else echo "http://".$_SERVER['HTTP_HOST']."/characterprofile.php?name=". $profile_data['name'];
+					
+				?>"><?php
+					if ($config['htwrite']) echo "http://".$_SERVER['HTTP_HOST']."/". $profile_data['name'];
+					else echo "http://".$_SERVER['HTTP_HOST']."/characterprofile.php?name=". $profile_data['name'];
+				?></a></font></li>
+			</ul>
+		<!-- END PROFILE MARKUP HERE-->
+		
+		<?php
+	} else {
+		echo htmlentities(strip_tags($name, ENT_QUOTES)).' does not exist.';
+	}
+} else {
+	header('Location: index.php');
+}
+
 include 'layout/overall/footer.php'; ?>
