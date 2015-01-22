@@ -109,186 +109,6 @@ if (isset($_GET['name']) === true && empty($_GET['name']) === false) {
 				</li>
 				<li><font class="profile_font" name="profile_font_created">Created: <?php echo getClock($profile_znote_data['created'], true); ?></font></li>
 				<li><font class="profile_font" name="profile_font_comment">Comment:</font> <br><textarea name="profile_comment_textarea" cols="70" rows="10" readonly="readonly" class="span12"><?php echo $profile_znote_data['comment']; ?></textarea></li>
-<!-- Achievements start -->
-<?php if ($config['Ach']) { ?>			
-	<h3 class="header-ok">Achievements</h3>
-	<div id="accordion">
-		<h3>Show/hide player achievements</h3>
-			<div>
-				<table class="table table-striped table-bordered">
-					<tbody>
-						<style>
-							#secondD {
-								margin-left:0px;
-							}
-						</style>
-						<?php
-						foreach ($config['achievements'] as $key => $achiv) {
-							$uery = mysql_select_single("SELECT `player_id`, `value`, `key` FROM `player_storage` WHERE `player_id`='$user_id' AND `key`='$key' LIMIT 1;");
-							if (!empty($uery) || $uery !== false) {
-								foreach ($uery as $luery) {
-									if ($luery == $key) {
-										if (!array_key_exists($key, $achiv)) {
-											echo '<tr><td width="17%">' .$achiv[0]. '</td><td>' .$achiv[1]. '</td>';
-											if (!isset($achiv['secret'])) {
-												echo '<td><img id="secondD" src="http://img04.imgland.net/PuMz0mVqSG.gif"></td>';
-											}
-											echo '<td>'. $achiv['points'] .'</td>';
-											echo '<tr>';
-										}
-									}
-								}
-							}
-						}
-						?>
-				</tbody>
-			</table>
-		</div>
-	</div>
-<br>
-<?php } ?>
-	<!-- Achievements end -->
-			<!-- DEATH LIST -->
-				<li>
-					<b>Death List:</b><br>
-					<?php
-					if ($config['TFSVersion'] == 'TFS_02') {
-						$array = user_fetch_deathlist($user_id);
-						if ($array) {
-							//data_dump($array, false, "Data:");
-							?>
-							<ul>
-								<?php
-								// Design and present the list
-								foreach ($array as $value) {
-									echo '<li>';
-									// $value[0]
-									$value['time'] = getClock($value['time'], true);								
-									if ($value['is_player'] == 1) {
-										$value['killed_by'] = 'player: <a href="characterprofile.php?name='. $value['killed_by'] .'">'. $value['killed_by'] .'</a>';
-									} else {
-										$value['killed_by'] = 'monster: '. $value['killed_by'] .'.';
-									}
-									
-									echo '['. $value['time'] .'] Killed at level '. $value['level'] .' by '. $value['killed_by'];
-									echo '</li>';
-								}
-							?>
-							</ul>
-							<?php
-							} else {
-								echo '<b><font color="green">This player has never died.</font></b>';
-							}
-							//Done.
-						} else if ($config['TFSVersion'] == 'TFS_10') {
-							$deaths = mysql_select_multi("SELECT 
-								`player_id`, `time`, `level`, `killed_by`, `is_player`, 
-								`mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified` 
-								FROM `player_deaths` 
-								WHERE `player_id`=$user_id ORDER BY `time` DESC LIMIT 10;");
-
-							if (!$deaths) echo '<b><font color="green">This player has never died.</font></b>';
-							else {
-								foreach ($deaths as $d) {
-									?>
-									<li>
-										<?php echo "<b>".getClock($d['time'], true, true)."</b>";
-										$lasthit = ($d['is_player']) ? "<a href='characterprofile.php?name=".$d['killed_by']."'>".$d['killed_by']."</a>" : $d['killed_by'];
-										echo ": Killed at level ".$d['level']." by $lasthit";
-										if ($d['unjustified']) echo " <font color='red' style='font-style: italic;'>(unjustified)</font>";
-										$mostdmg = ($d['mostdamage_by'] !== $d['killed_by']) ? true : false;
-										if ($mostdmg) {
-											$mostdmg = ($d['mostdamage_is_player']) ? "<a href='characterprofile.php?name=".$d['mostdamage_by']."'>".$d['mostdamage_by']."</a>" : $d['mostdamage_by'];
-											echo "<br>and by $mostdmg.";
-											if ($d['mostdamage_unjustified']) echo " <font color='red' style='font-style: italic;'>(unjustified)</font>";
-										} else echo " <b>(soloed)</b>";
-										?>
-									</li>
-									<?php
-								}
-								//data_dump($deaths, false, "Deaths:");
-							}
-						} else if ($config['TFSVersion'] == 'TFS_03') {
-							//mysql_select_single("SELECT * FROM players WHERE name='TEST DEBUG';");
-							$array = user_fetch_deathlist03($user_id);
-							if ($array) {
-							?>
-							<ul>
-								<?php
-								// Design and present the list
-								foreach ($array as $value) {
-									echo '<li>';
-									$value[3] = user_get_killer_id(user_get_kid($value['id']));
-									if ($value[3] !== false && $value[3] >= 1) {
-										$namedata = user_character_data((int)$value[3], 'name');
-										if ($namedata !== false) {
-											$value[3] = $namedata['name'];
-											$value[3] = 'player: <a href="characterprofile.php?name='. $value[3] .'">'. $value[3] .'</a>';
-										} else {
-											$value[3] = 'deleted player.';
-										}
-									} else {
-										$value[3] = user_get_killer_m_name(user_get_kid($value['id']));
-										if ($value[3] === false) $value[3] = 'deleted player.';
-									}
-									echo '['. getClock($value['date'], true) .'] Killed at level '. $value['level'] .' by '. $value[3];
-									echo '</li>';
-								}
-							?>
-							</ul>
-							<?php
-							} else {
-								echo '<b><font color="green">This player has never died.</font></b>';
-							}
-						}
-						?>
-				</li>
-				
-				<!-- END DEATH LIST -->
-<!-- QUEST PROGRESSION -->
-<?php
-$totalquests = 0;
-$completedquests = 0;
-$firstrun = 1;
-if ($config['EnableQuests'] == true) {
-	$sqlquests =  mysql_select_multi("SELECT `player_id`, `key`, `value` FROM player_storage WHERE `player_id` = $user_id");
-	foreach ($config['quests'] as $cquest) {
-		$totalquests = $totalquests + 1;
-		foreach ($sqlquests as $dbquest) {
-			if ($cquest[0] == $dbquest['key'] && $cquest[1] == $dbquest['value']) {
-				$completedquests = $completedquests + 1;
-			}
-		}
-		if ($cquest[3] == 1) {
-			if ($completedquests != 0) {
-				if ($firstrun == 1) {
-					?>
-					<li>
-						<b> Quest progression </b>
-						<table id="characterprofileQuest" class="table table-striped table-hover">
-							<tr class="yellow">
-								<th>Quest:</th>
-								<th>progression:</th>
-							</tr>
-					<?php
-					$firstrun = 0;
-				}
-				$completed = $completedquests / $totalquests * 100;
-				?>
-				<tr>
-					<td><?php echo $cquest[2]; ?></td>
-					<td id="progress">
-						<span id="percent"><?php echo round($completed); ?>%</span>
-						<div id="bar" style="width: '.$completed.'%"></div>
-					</td>
-				</tr>
-				<?php
-			}
-			$completedquests = 0;
-			$totalquests = 0;
-		}
-	}
-}
 <?php
 /*/
 /   Znote AAC 1.4+ detailed character info (HP, MP, lvL, Exp, skills)
@@ -442,6 +262,188 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
     </tr>
 </table>
 <!-- END detailed character info -->
+				<!-- Achievements start -->
+<?php if ($config['Ach']) { ?>			
+	<h3 class="header-ok">Achievements</h3>
+	<div id="accordion">
+		<h3>Show/hide player achievements</h3>
+			<div>
+				<table class="table table-striped table-bordered">
+					<tbody>
+						<style>
+							#secondD {
+								margin-left:0px;
+							}
+						</style>
+						<?php
+						foreach ($config['achievements'] as $key => $achiv) {
+							$uery = mysql_select_single("SELECT `player_id`, `value`, `key` FROM `player_storage` WHERE `player_id`='$user_id' AND `key`='$key' LIMIT 1;");
+							if (!empty($uery) || $uery !== false) {
+								foreach ($uery as $luery) {
+									if ($luery == $key) {
+										if (!array_key_exists($key, $achiv)) {
+											echo '<tr><td width="17%">' .$achiv[0]. '</td><td>' .$achiv[1]. '</td>';
+											if (!isset($achiv['secret'])) {
+												echo '<td><img id="secondD" src="http://img04.imgland.net/PuMz0mVqSG.gif"></td>';
+											}
+											echo '<td>'. $achiv['points'] .'</td>';
+											echo '<tr>';
+										}
+									}
+								}
+							}
+						}
+						?>
+				</tbody>
+			</table>
+		</div>
+	</div>
+<br>
+<?php } ?>
+
+	<!-- Achievements end -->
+			<!-- DEATH LIST -->
+				<li>
+					<b>Death List:</b><br>
+					<?php
+					if ($config['TFSVersion'] == 'TFS_02') {
+						$array = user_fetch_deathlist($user_id);
+						if ($array) {
+							//data_dump($array, false, "Data:");
+							?>
+							<ul>
+								<?php
+								// Design and present the list
+								foreach ($array as $value) {
+									echo '<li>';
+									// $value[0]
+									$value['time'] = getClock($value['time'], true);								
+									if ($value['is_player'] == 1) {
+										$value['killed_by'] = 'player: <a href="characterprofile.php?name='. $value['killed_by'] .'">'. $value['killed_by'] .'</a>';
+									} else {
+										$value['killed_by'] = 'monster: '. $value['killed_by'] .'.';
+									}
+									
+									echo '['. $value['time'] .'] Killed at level '. $value['level'] .' by '. $value['killed_by'];
+									echo '</li>';
+								}
+							?>
+							</ul>
+							<?php
+							} else {
+								echo '<b><font color="green">This player has never died.</font></b>';
+							}
+							//Done.
+						} else if ($config['TFSVersion'] == 'TFS_10') {
+							$deaths = mysql_select_multi("SELECT 
+								`player_id`, `time`, `level`, `killed_by`, `is_player`, 
+								`mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified` 
+								FROM `player_deaths` 
+								WHERE `player_id`=$user_id ORDER BY `time` DESC LIMIT 10;");
+
+							if (!$deaths) echo '<b><font color="green">This player has never died.</font></b>';
+							else {
+								foreach ($deaths as $d) {
+									?>
+									<li>
+										<?php echo "<b>".getClock($d['time'], true, true)."</b>";
+										$lasthit = ($d['is_player']) ? "<a href='characterprofile.php?name=".$d['killed_by']."'>".$d['killed_by']."</a>" : $d['killed_by'];
+										echo ": Killed at level ".$d['level']." by $lasthit";
+										if ($d['unjustified']) echo " <font color='red' style='font-style: italic;'>(unjustified)</font>";
+										$mostdmg = ($d['mostdamage_by'] !== $d['killed_by']) ? true : false;
+										if ($mostdmg) {
+											$mostdmg = ($d['mostdamage_is_player']) ? "<a href='characterprofile.php?name=".$d['mostdamage_by']."'>".$d['mostdamage_by']."</a>" : $d['mostdamage_by'];
+											echo "<br>and by $mostdmg.";
+											if ($d['mostdamage_unjustified']) echo " <font color='red' style='font-style: italic;'>(unjustified)</font>";
+										} else echo " <b>(soloed)</b>";
+										?>
+									</li>
+									<?php
+								}
+								//data_dump($deaths, false, "Deaths:");
+							}
+						} else if ($config['TFSVersion'] == 'TFS_03') {
+							//mysql_select_single("SELECT * FROM players WHERE name='TEST DEBUG';");
+							$array = user_fetch_deathlist03($user_id);
+							if ($array) {
+							?>
+							<ul>
+								<?php
+								// Design and present the list
+								foreach ($array as $value) {
+									echo '<li>';
+									$value[3] = user_get_killer_id(user_get_kid($value['id']));
+									if ($value[3] !== false && $value[3] >= 1) {
+										$namedata = user_character_data((int)$value[3], 'name');
+										if ($namedata !== false) {
+											$value[3] = $namedata['name'];
+											$value[3] = 'player: <a href="characterprofile.php?name='. $value[3] .'">'. $value[3] .'</a>';
+										} else {
+											$value[3] = 'deleted player.';
+										}
+									} else {
+										$value[3] = user_get_killer_m_name(user_get_kid($value['id']));
+										if ($value[3] === false) $value[3] = 'deleted player.';
+									}
+									echo '['. getClock($value['date'], true) .'] Killed at level '. $value['level'] .' by '. $value[3];
+									echo '</li>';
+								}
+							?>
+							</ul>
+							<?php
+							} else {
+								echo '<b><font color="green">This player has never died.</font></b>';
+							}
+						}
+						?>
+				</li>
+				
+				<!-- END DEATH LIST -->
+<!-- QUEST PROGRESSION -->
+<?php
+$totalquests = 0;
+$completedquests = 0;
+$firstrun = 1;
+if ($config['EnableQuests'] == true) {
+	$sqlquests =  mysql_select_multi("SELECT `player_id`, `key`, `value` FROM player_storage WHERE `player_id` = $user_id");
+	foreach ($config['quests'] as $cquest) {
+		$totalquests = $totalquests + 1;
+		foreach ($sqlquests as $dbquest) {
+			if ($cquest[0] == $dbquest['key'] && $cquest[1] == $dbquest['value']) {
+				$completedquests = $completedquests + 1;
+			}
+		}
+		if ($cquest[3] == 1) {
+			if ($completedquests != 0) {
+				if ($firstrun == 1) {
+					?>
+					<li>
+						<b> Quest progression </b>
+						<table id="characterprofileQuest" class="table table-striped table-hover">
+							<tr class="yellow">
+								<th>Quest:</th>
+								<th>progression:</th>
+							</tr>
+					<?php
+					$firstrun = 0;
+				}
+				$completed = $completedquests / $totalquests * 100;
+				?>
+				<tr>
+					<td><?php echo $cquest[2]; ?></td>
+					<td id="progress">
+						<span id="percent"><?php echo round($completed); ?>%</span>
+						<div id="bar" style="width: '.$completed.'%"></div>
+					</td>
+				</tr>
+				<?php
+			}
+			$completedquests = 0;
+			$totalquests = 0;
+		}
+	}
+}
+
 if ($firstrun == 0) {
 	echo '</table></li>';
 }
