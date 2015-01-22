@@ -12,7 +12,7 @@
 	$config['site_title_context'] = 'David luktar som ett par kalsonger när man har gymmat i 3 timmar!';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
-	$config['server_path'] = 'root\forgottenserver'; 
+	$config['server_path'] = '/root/forgottenserver'; 
 
 
 	// ------------------------ \\
@@ -449,7 +449,7 @@
 	// Do you need to have premium account to create a guild?
 	$config['guild_require_premium'] = false;
 
-	$config['guildwar_enabled'] = false;
+	$config['guildwar_enabled'] = true;
 
 	// Use htaccess rewrite? (basically this makes website.com/username work instead of website.com/characterprofile.php?name=username
 	// Linux users needs to enable mod_rewrite php extention to make it work properly, so set it to false if your lost and using Linux.
@@ -522,11 +522,11 @@
 	$config['mailserver'] = array(
 		'register' => false, // Send activation mail
 		'accountRecovery' => false, // Recover username or password through mail
-		'host' => "mailserver.znote.eu", // Outgoing mail server host.
+		'host' => "felixkorch2@gmail.com", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
 		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
-		'username' => 'noreply@znote.eu', // Likely the email address
-		'password' => 'emailpassword', // The password.
+		'username' => '', // Likely the email address
+		'password' => '', // The password.
 		'debug' => false, // Enable debugging if you have problems and are looking for errors.
 		'fromName' => $config['site_title'],
 	);
