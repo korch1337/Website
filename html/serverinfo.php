@@ -68,7 +68,7 @@ if (file_exists($config['server_path'].'/data/XML/stages.xml') && file_exists($c
 
 } else {
 
-	echo '<h1>Invliad PATH, please check your config file</h1>';
+	echo '<h1>TRY AGAIN DAVID</h1>';
 }
 
 ?>
