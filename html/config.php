@@ -9,10 +9,10 @@
 	$config['CustomVersion'] = false;
 
 	$config['site_title'] = 'HUEHUE OT';
-	$config['site_title_context'] = 'UNDERRUBRIK';
+	$config['site_title_context'] = 'David luktar som ett par kalsonger när man har gymmat i 3 timmar!';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
-	$config['server_path'] = '/forgottenserver'; 
+	$config['server_path'] = '/root/forgottenserver'; 
 
 
 	// ------------------------ \\
@@ -555,7 +555,7 @@
 
 	// What kind of computer are you hosting this website on?
 	// Available options: LINUX or WINDOWS
-	$config['os'] = 'LINUX';
+	$config['os'] = 'Linux';
 
 	// Measure how much players are lagging in-game. (Not completed). 
 	$config['ping'] = false;
