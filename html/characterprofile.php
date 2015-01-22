@@ -111,159 +111,6 @@ if (isset($_GET['name']) === true && empty($_GET['name']) === false) {
 				<li><font class="profile_font" name="profile_font_comment">Comment:</font> <br><textarea name="profile_comment_textarea" cols="70" rows="10" readonly="readonly" class="span12"><?php echo $profile_znote_data['comment']; ?></textarea></li>
 <?php
 /*/
-/   Znote AAC 1.4+ detailed character info (HP, MP, lvL, Exp, skills)
-/   HTML code based on code from Gesior
-/*/
-$tableWidth = 540;
-if ($config['TFSVersion'] != 'TFS_10') {
-    $playerData = mysql_select_multi("SELECT `value` FROM `player_skills` WHERE `player_id`='$user_id' LIMIT 7;");
-    $playerData['fist'] = $playerData[0]['value']; unset($playerData[0]);
-    $playerData['club'] = $playerData[1]['value']; unset($playerData[1]);
-    $playerData['sword'] = $playerData[2]['value']; unset($playerData[2]);
-    $playerData['axe'] = $playerData[3]['value']; unset($playerData[3]);
-    $playerData['dist'] = $playerData[4]['value']; unset($playerData[4]);
-    $playerData['shield'] = $playerData[5]['value']; unset($playerData[5]);
-    $playerData['fish'] = $playerData[6]['value']; unset($playerData[6]);
-
-    $player = mysql_select_single("SELECT `health`, `healthmax`, `mana`, `manamax`, `experience`, `maglevel`, `level` FROM `players` WHERE `id`='$user_id' LIMIT 1;");
-    $playerData['magic'] = $player['maglevel'];
-    $playerData['exp'] = array(
-        'now' => $player['experience'],
-        'next' => (int)(level_to_experience($player['level']+1) - $player['experience']),
-        'percent' => (int)(($player['experience'] - level_to_experience($player['level'])) / (level_to_experience($player['level']+1) - $player['experience']) * 100)
-    );
-    $playerData['health'] = array(
-        'now' => $player['health'],
-        'max' => $player['healthmax'],
-        'percent' => (int)($player['health'] / $player['healthmax'] * 100),
-    );
-    $playerData['mana'] = array(
-        'now' => $player['mana'],
-        'max' => $player['manamax'],
-        'percent' => (int)($player['mana'] / $player['manamax'] * 100),
-    );
-} else {
-    $player = mysql_select_single("SELECT `health`, `healthmax`, `mana`, `manamax`, `experience`, `skill_fist`, `skill_club`, `skill_sword`, `skill_axe`, `skill_dist`, `skill_shielding`, `skill_fishing`, `maglevel`, `level` FROM `players` WHERE `id`='$user_id' LIMIT 1;");
-    $playerData = array(
-        'fist' => $player['skill_fist'],
-        'club' => $player['skill_club'],
-        'sword' => $player['skill_sword'],
-        'axe' => $player['skill_axe'],
-        'dist' => $player['skill_dist'],
-        'shield' => $player['skill_shielding'],
-        'fish' => $player['skill_fishing'],
-        'magic' => $player['maglevel'],
-        'exp' => array(
-            'now' => $player['experience'],
-            'next' => (int)(level_to_experience($player['level']+1) - $player['experience']),
-            'percent' => (int)(($player['experience'] - level_to_experience($player['level'])) / (level_to_experience($player['level']+1) - $player['experience']) * 100)
-        ),
-        'health' => array(
-            'now' => $player['health'],
-            'max' => $player['healthmax'],
-            'percent' => (int)($player['health'] / $player['healthmax'] * 100),
-        ),
-        'mana' => array(
-            'now' => $player['mana'],
-            'max' => $player['manamax'],
-            'percent' => (int)($player['mana'] / $player['manamax'] * 100),
-        )
-    );
-}
-// Incase they have more health/mana than they should due to equipment bonus etc
-if ($playerData['exp']['percent'] > 100) $playerData['exp']['percent'] = 100;
-if ($playerData['health']['percent'] > 100) $playerData['health']['percent'] = 100;
-if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
-//data_dump($playerData, false, "Player Data");
-?>
-<!-- PLAYER SKILLS TABLE -->
-<table cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
-    <tr class="yellow">
-        <th>Fist</th>
-        <th>Club</th>
-        <th>Sword</th>
-        <th>Axe</th>
-        <th>Dist</th>
-        <th>Shield</th>
-        <th>Fish</th>
-        <th>Magic</th>
-    </tr>
-    <tr>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['fist']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['club']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['sword']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['axe']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['dist']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['shield']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['fish']; ?>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['magic']; ?>
-        </td>
-    </tr>
-</table>
-<!-- PLAYER INFO TABLE -->
-<table cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
-    <tr>
-        <td bgcolor="#F1E0C6" align="left" width="20%">
-            <b>Player HP:</b>
-        </td>
-        <td bgcolor="#F1E0C6" align="left">
-            <?php echo $playerData['health']['now'].'/'.$playerData['health']['max']; ?>
-            <div style="width: 100%; height: 3px; border: 1px solid #000;">
-                <div style="background: red; width: <?php echo $playerData['health']['percent']; ?>%; height: 3px;">
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor="#D4C0A1" align="left">
-            <b>Player MP:</b>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo $playerData['mana']['now'].'/'.$playerData['mana']['max']; ?>
-            <div style="width: 100%; height: 3px; border: 1px solid #000;">
-                <div style="background: blue; width: <?php echo $playerData['mana']['percent']; ?>%; height: 3px;">
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor="#D4C0A1" align="left">
-            <b>Player XP:</b>
-        </td>
-        <td bgcolor="#D4C0A1" align="left">
-            <?php echo number_format($playerData['exp']['now'], 0, "", " "); ?> Experience.
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor="#F1E0C6" align="left">
-            <b>To Next Lvl:</b>
-        </td>
-        <td bgcolor="#F1E0C6" align="left">
-            Need <b><?php echo number_format($playerData['exp']['next'], 0, "", " "); ?> experience (<?php echo 100-$playerData['exp']['percent']; ?>%)</b> to Level <b><?php echo $player['level']+1; ?></b>.
-            <div title="99.320604545 %" style="width: 100%; height: 3px; border: 1px solid #000;">
-                <div style="background: red; width: <?php echo $playerData['exp']['percent']; ?>%; height: 3px;"></div>
-            </div>
-        </td>
-    </tr>
-</table>
-<!-- END detailed character info -->
-<?php
-/*/
 /   Player character profile EQ shower
 /   Based on code from CorneX
 /   Written to Znote AAC by Znote.
@@ -525,6 +372,159 @@ if ($PEQD !== false) {
     <?php
 }
 ?>    <!-- END EQ SHOWER -->
+				<?php
+/*/
+/   Znote AAC 1.4+ detailed character info (HP, MP, lvL, Exp, skills)
+/   HTML code based on code from Gesior
+/*/
+$tableWidth = 540;
+if ($config['TFSVersion'] != 'TFS_10') {
+    $playerData = mysql_select_multi("SELECT `value` FROM `player_skills` WHERE `player_id`='$user_id' LIMIT 7;");
+    $playerData['fist'] = $playerData[0]['value']; unset($playerData[0]);
+    $playerData['club'] = $playerData[1]['value']; unset($playerData[1]);
+    $playerData['sword'] = $playerData[2]['value']; unset($playerData[2]);
+    $playerData['axe'] = $playerData[3]['value']; unset($playerData[3]);
+    $playerData['dist'] = $playerData[4]['value']; unset($playerData[4]);
+    $playerData['shield'] = $playerData[5]['value']; unset($playerData[5]);
+    $playerData['fish'] = $playerData[6]['value']; unset($playerData[6]);
+
+    $player = mysql_select_single("SELECT `health`, `healthmax`, `mana`, `manamax`, `experience`, `maglevel`, `level` FROM `players` WHERE `id`='$user_id' LIMIT 1;");
+    $playerData['magic'] = $player['maglevel'];
+    $playerData['exp'] = array(
+        'now' => $player['experience'],
+        'next' => (int)(level_to_experience($player['level']+1) - $player['experience']),
+        'percent' => (int)(($player['experience'] - level_to_experience($player['level'])) / (level_to_experience($player['level']+1) - $player['experience']) * 100)
+    );
+    $playerData['health'] = array(
+        'now' => $player['health'],
+        'max' => $player['healthmax'],
+        'percent' => (int)($player['health'] / $player['healthmax'] * 100),
+    );
+    $playerData['mana'] = array(
+        'now' => $player['mana'],
+        'max' => $player['manamax'],
+        'percent' => (int)($player['mana'] / $player['manamax'] * 100),
+    );
+} else {
+    $player = mysql_select_single("SELECT `health`, `healthmax`, `mana`, `manamax`, `experience`, `skill_fist`, `skill_club`, `skill_sword`, `skill_axe`, `skill_dist`, `skill_shielding`, `skill_fishing`, `maglevel`, `level` FROM `players` WHERE `id`='$user_id' LIMIT 1;");
+    $playerData = array(
+        'fist' => $player['skill_fist'],
+        'club' => $player['skill_club'],
+        'sword' => $player['skill_sword'],
+        'axe' => $player['skill_axe'],
+        'dist' => $player['skill_dist'],
+        'shield' => $player['skill_shielding'],
+        'fish' => $player['skill_fishing'],
+        'magic' => $player['maglevel'],
+        'exp' => array(
+            'now' => $player['experience'],
+            'next' => (int)(level_to_experience($player['level']+1) - $player['experience']),
+            'percent' => (int)(($player['experience'] - level_to_experience($player['level'])) / (level_to_experience($player['level']+1) - $player['experience']) * 100)
+        ),
+        'health' => array(
+            'now' => $player['health'],
+            'max' => $player['healthmax'],
+            'percent' => (int)($player['health'] / $player['healthmax'] * 100),
+        ),
+        'mana' => array(
+            'now' => $player['mana'],
+            'max' => $player['manamax'],
+            'percent' => (int)($player['mana'] / $player['manamax'] * 100),
+        )
+    );
+}
+// Incase they have more health/mana than they should due to equipment bonus etc
+if ($playerData['exp']['percent'] > 100) $playerData['exp']['percent'] = 100;
+if ($playerData['health']['percent'] > 100) $playerData['health']['percent'] = 100;
+if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
+//data_dump($playerData, false, "Player Data");
+?>
+<!-- PLAYER SKILLS TABLE -->
+<table cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
+    <tr class="yellow">
+        <th>Fist</th>
+        <th>Club</th>
+        <th>Sword</th>
+        <th>Axe</th>
+        <th>Dist</th>
+        <th>Shield</th>
+        <th>Fish</th>
+        <th>Magic</th>
+    </tr>
+    <tr>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['fist']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['club']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['sword']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['axe']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['dist']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['shield']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['fish']; ?>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['magic']; ?>
+        </td>
+    </tr>
+</table>
+<!-- PLAYER INFO TABLE -->
+<table cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
+    <tr>
+        <td bgcolor="#F1E0C6" align="left" width="20%">
+            <b>Player HP:</b>
+        </td>
+        <td bgcolor="#F1E0C6" align="left">
+            <?php echo $playerData['health']['now'].'/'.$playerData['health']['max']; ?>
+            <div style="width: 100%; height: 3px; border: 1px solid #000;">
+                <div style="background: red; width: <?php echo $playerData['health']['percent']; ?>%; height: 3px;">
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#D4C0A1" align="left">
+            <b>Player MP:</b>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo $playerData['mana']['now'].'/'.$playerData['mana']['max']; ?>
+            <div style="width: 100%; height: 3px; border: 1px solid #000;">
+                <div style="background: blue; width: <?php echo $playerData['mana']['percent']; ?>%; height: 3px;">
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#D4C0A1" align="left">
+            <b>Player XP:</b>
+        </td>
+        <td bgcolor="#D4C0A1" align="left">
+            <?php echo number_format($playerData['exp']['now'], 0, "", " "); ?> Experience.
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#F1E0C6" align="left">
+            <b>To Next Lvl:</b>
+        </td>
+        <td bgcolor="#F1E0C6" align="left">
+            Need <b><?php echo number_format($playerData['exp']['next'], 0, "", " "); ?> experience (<?php echo 100-$playerData['exp']['percent']; ?>%)</b> to Level <b><?php echo $player['level']+1; ?></b>.
+            <div title="99.320604545 %" style="width: 100%; height: 3px; border: 1px solid #000;">
+                <div style="background: red; width: <?php echo $playerData['exp']['percent']; ?>%; height: 3px;"></div>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- END detailed character info -->
 				<!-- Achievements start -->
 <?php if ($config['Ach']) { ?>			
 	<h3 class="header-ok">Achievements</h3>
