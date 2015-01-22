@@ -262,6 +262,269 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
     </tr>
 </table>
 <!-- END detailed character info -->
+<?php
+/*/
+/   Player character profile EQ shower
+/   Based on code from CorneX
+/   Written to Znote AAC by Znote.
+/   Should work on all TFS versions.
+/   Znote AAC 1.4+
+/*/
+
+// Item image server
+$imageServer = $config['shop']['imageServer'];
+$imageType = $config['shop']['imageType'];
+if (count($imageType) < 3) $imageType = 'gif';
+// Fetch player equipped data
+$PEQD = mysql_select_multi("SELECT `player_id`, `pid`, `itemtype`, `count` FROM `player_items` WHERE `player_id`='$user_id' AND `pid`<'11'");
+// If player have equipped items
+if ($PEQD !== false) {
+    // PEQD = Player EQ Data
+    $PEQ = array(
+        1 => false,
+        2 => false,
+        3 => false,
+        4 => false,
+        5 => false,
+        6 => false,
+        7 => false,
+        8 => false,
+        9 => false,
+        10 => false,
+    );
+    // Fill player equipments array with fetched data results (PEQD)
+    foreach ($PEQD as $EQ) $PEQ[$EQ['pid']] = "http://{$imageServer}/".$EQ['itemtype'].".{$imageType}";
+    ?>
+    <!-- Fix item positions CSS -->
+    <style type="text/css">
+    /* CSS by CorneX */
+    .signBgrnd {
+        background-image:url('eq/outfit.png');
+        background-repeat:no-repeat;
+        position:relative;
+        float: right;
+        margin:10px;
+        padding:10px;
+        height:153px;
+        width:118px;
+    }
+    /* Weapon */
+    .signBgrnd .wep {
+        position: absolute;
+        top: 56px;
+        left: 6px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .wep img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* Armor */
+    .signBgrnd .arm {
+        position: absolute;
+        top: 41px;
+        left: 43px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .arm img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* Helmet */
+    .signBgrnd .helm {
+        position: absolute;
+        top: 5px;
+        left: 43px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .helm img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* legs */
+    .signBgrnd .legs {
+        position: absolute;
+        top: 79px;
+        left: 43px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .legs img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* boots */
+    .signBgrnd .boots {
+        position: absolute;
+        top: 116px;
+        left: 43px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .boots img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* ring */
+    .signBgrnd .ring {
+        position: absolute;
+        top: 93px;
+        left: 6px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .ring img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* amulet */
+    .signBgrnd .amulet {
+        position: absolute;
+        top: 20px;
+        left: 7px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .amulet img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* backpack */
+    .signBgrnd .backpack {
+        position: absolute;
+        top: 20px;
+        left: 80px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .backpack img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* shield */
+    .signBgrnd .shield {
+        position: absolute;
+        top: 56px;
+        left: 80px;
+        width: 32px;
+        height: 32px;
+    }
+    .signBgrnd .shield img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    /* arrow */
+    .signBgrnd .arrow {
+       position: absolute;
+       top: 93px;
+       left: 80px;
+       width: 32px;
+       height: 32px;
+    }
+    .signBgrnd .arrow img {
+        background-image:url('eq/bg.png');
+        max-width: 100%;
+    }
+    </style>
+    <!-- Render HTML -->
+    <div class="signBgrnd">
+        <div class="helm">
+            <?php
+            if ($PEQ[1] != false) {
+                ?>
+                <img src="<?php echo $PEQ[1]; ?>" alt="Image of player helmet">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="amulet">
+            <?php
+            if ($PEQ[2] != false) {
+                ?>
+                <img src="<?php echo $PEQ[2]; ?>" alt="Image of player amulet">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="wep">
+            <?php
+            if ($PEQ[6] != false) {
+                ?>
+                <img src="<?php echo $PEQ[6]; ?>" alt="Image of player left hand">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="ring">
+            <?php
+            if ($PEQ[9] != false) {
+                ?>
+                <img src="<?php echo $PEQ[9]; ?>" alt="Image of player ring">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="arm">
+            <?php
+            if ($PEQ[4] != false) {
+                ?>
+                <img src="<?php echo $PEQ[4]; ?>" alt="Image of player armor">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="legs">
+            <?php
+            if ($PEQ[7] != false) {
+                ?>
+                <img src="<?php echo $PEQ[7]; ?>" alt="Image of player legs">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="boots">
+            <?php
+            if ($PEQ[8] != false) {
+                ?>
+                <img src="<?php echo $PEQ[8]; ?>" alt="Image of player boots">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="backpack">
+            <?php
+            if ($PEQ[3] != false) {
+                ?>
+                <img src="<?php echo $PEQ[3]; ?>" alt="Image of player backpack">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="shield">
+            <?php
+            if ($PEQ[5] != false) {
+                ?>
+                <img src="<?php echo $PEQ[5]; ?>" alt="Image of player shield">
+                <?php
+            }
+            ?>
+        </div>
+        <div class="arrow">
+            <?php
+            if ($PEQ[10] != false) {
+                ?>
+                <img src="<?php echo $PEQ[10]; ?>" alt="Image of player arrow">
+                <?php
+            }
+            ?>
+        </div>
+    </div>
+    <?php
+}
+?>    <!-- END EQ SHOWER -->
 				<!-- Achievements start -->
 <?php if ($config['Ach']) { ?>			
 	<h3 class="header-ok">Achievements</h3>
