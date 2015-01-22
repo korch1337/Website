@@ -474,7 +474,7 @@
 	$config['page_admin_access'] = array(
 		//'otland0',
 		//'otland1',
-		'korch'
+		'123456'
 	);
 
 	// Built-in FORUM
