@@ -12,7 +12,7 @@
 	$config['site_title_context'] = 'David luktar som ett par kalsonger när man har gymmat i 3 timmar!';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
-	$config['server_path'] = 'forgottenserver'; 
+	$config['server_path'] = 'root\forgottenserver'; 
 
 
 	// ------------------------ \\
