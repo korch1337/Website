@@ -1,5 +1,4 @@
 <img src="layout/images/titles/t_news.png"/>
-<table>
 <?PHP 
 echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Server Information</center></td></tr> 
 <tr><td>'; 
@@ -18,6 +17,8 @@ echo '<tr><td><center>The best player is: <a href="characterprofile.php?name='.$
 echo '<tr><td><center>We have <b>'.$fetchshit3['shiter'].'</b> accounts in our database, <b>'.$fetchshit['shit'].'</b> players, and <b>'.$fetchshit4['yea'].' </b>guilds </center></td></tr>'; 
 echo '</table>'; 
 ?>
+<table>
+
 <?php
 $cache = new Cache('engine/cache/news');
 if ($cache->hasExpired()) {
