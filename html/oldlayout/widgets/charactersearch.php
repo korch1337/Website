@@ -1,3 +1,4 @@
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 <div class="sidebar">
 	<h1><font size="5">Character Search</font></h1>
 	<div class="inner">
@@ -9,6 +10,8 @@
 				Token::create();
 			?>
 			<li><input type="submit" value="Search">
+			
 		</form>
 	</div>
 </div>
+<?php include 'layout/overall/footer.php'; ?>
