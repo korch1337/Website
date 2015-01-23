@@ -1,5 +1,7 @@
 <?php
+error_reporting(0);
 switch ($_GET['page'])
+
 {
 	case 'blank':
 		include 'layout/sub/blank.php';
