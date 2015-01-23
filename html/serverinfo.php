@@ -9,7 +9,7 @@ Here you will find all basic information about <?php echo '<b>'.$config['site_ti
 if (file_exists($config['server_path'].'/data/XML/stages.xml') && file_exists($config['server_path'].'/config.lua'))
 {
 	// Check if server stages are enabled
-	$stages_path = simplexml_load_file($config['server_path'].'/data/xml/stages.xml');
+	$stages_path = simplexml_load_file($config['server_path'].'/data/XML/stages.xml');
 	$lua_path = parse_ini_file($config['server_path'].'/config.lua');
 
 	if ($stages_path->config['enabled'] != 0) {
