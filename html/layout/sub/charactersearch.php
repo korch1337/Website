@@ -1,4 +1,3 @@
-<img src="layout/images/titles/t_characters.png"/><p>
 
 <table>
 <tr><td>Search Character</td></tr>

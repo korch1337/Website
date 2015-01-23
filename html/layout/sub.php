@@ -58,10 +58,5 @@ $subpages = array(
         'file' => 'experiencetable.php',
         'override' => true
     ),
-	
-'charactersearch' => array(
-'file' => 'charactersearch.php',
-'override' => true
-),
 );
 ?>
