@@ -70,12 +70,12 @@
 					<li><a href="guildwar.php">&nbsp;&raquo; Guild Wars</a></li>
 				</ul>
 			
-				<div class="sidebar" style="font-family: martel; font-size:17px">Library</div>
-				<ul class="inner"> 
-					<li><a href="sub.php?page=map">&nbsp;&raquo; Map</a></li>
-					<li><a href="sub.php?page=monsters">&nbsp;&raquo; Monsters</a></li>
-					<li><a href="sub.php?page=experiencetable">&nbsp;&raquo; Experience</a></li>
-				</ul>
+				/*  <div class="sidebar" style="font-family: martel; font-size:17px">Library</div>
+				 <ul class="inner"> 
+					 <li><a href="sub.php?page=map">&nbsp;&raquo; Map</a></li>
+					 <li><a href="sub.php?page=monsters">&nbsp;&raquo; Monsters</a></li>
+					 <li><a href="sub.php?page=experiencetable">&nbsp;&raquo; Experience</a></li>
+				</ul> */
 				
 				<div class="sidebar" style="font-family: martel; font-size:17px">Information</div>
 				<ul class="inner"> 
