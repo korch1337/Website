@@ -1,7 +1,6 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 
 <h1>Who is online?</h1>
-<?php
 $array = online_list();
 if ($array) {
     ?>
@@ -28,5 +27,4 @@ if ($array) {
             echo '<td>'. $vocationName .'</td>';
             echo '</tr>';
             }
-            ?>
     </table>
