@@ -1,65 +1,62 @@
 <?php
-error_reporting(0);
-switch ($_GET['page'])
+/* Znote AAC Sub System
+    -    Used to create custom pages
+    -    Place the contents of the page in /layout/sub/ folder.
+        : You don't need to include init, header or footer. 
+        Its already taken care of, just write the contents you want.
 
-{
-	case 'blank':
-		include 'layout/sub/blank.php';
-	break;
-	
-	case 'houses':
-		include 'layout/sub/houses.php';
-	break;
-	
-	case 'news':
-		include 'layout/sub/index.php';
-	break;
-	
-	case 'login':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'recover':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'charactersearch':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'highscore':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'loggedin':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'whoisonline':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'map':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'monsters':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'quests':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'experiencetable':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	case 'guilcera':
-		include "layout/sub/". $_GET['page'] .".php";
-	break;
-	
-	default:
-		echo '<h2>Sub page not recognized.</h2><p>The sub page you requested is not recognized.</p>';
-}
+    Then add that page to the configuration below. Config syntax:
+    'PAGENAME' => array(
+        'file' => 'fileName.php',
+        'override' => false
+    ),
+    ................
+    There are 2 ways to view your page, by using sub.php file, or by overriding an existing default page.
+    1: yourwebiste.com/sub.php?page=PAGENAME
+    2: By having override => true, then it will load your sub file instead of the default znote aac file. 
+
+*/
+
+$subpages = array(
+    'houses' => array(
+        'file' => 'houses.php',
+        'override' => true
+    ),
+    'index' => array(
+        'file' => 'index.php',
+        'override' => true
+    ),
+    'recover' => array(
+        'file' => 'recover.php',
+        'override' => true
+    ),
+    'charactersearch' => array(
+        'file' => 'charactersearch.php',
+        'override' => true
+    ),
+    'highscore' => array(
+        'file' => 'highscore.php',
+        'override' => true
+    ),
+    'loggedin' => array(
+        'file' => 'loggedin.php',
+        'override' => true
+    ),
+    'whoisonline' => array(
+        'file' => 'whoisonline.php',
+        'override' => true
+    ),
+    'map' => array(
+        'file' => 'map.php',
+        'override' => true
+    ),
+    'quests' => array(
+        'file' => 'quests.php',
+        'override' => true
+    ),
+    'experiencetable' => array(
+        'file' => 'experiencetable.php',
+        'override' => true
+    ),
+);
 ?>
