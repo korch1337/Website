@@ -14,18 +14,19 @@ if ($array) {
         </tr>
             <?php
             foreach ($array as $value) {
+            $playerID = mysql_select_single("SELECT `id` FROM `players` WHERE `name` = '". $value[0] ."';");
+            $vocation = mysql_select_single("SELECT `value` FROM `player_storage` WHERE (`key` = 86228 AND `player_id` = '". $playerID['id'] ."');");
+           
+            if ($vocation['value'] == -1) { $vocationName = "Trainer"; }
+            elseif ($vocation['value'] == 3) { $vocationName = "Firetamer"; }
+            elseif ($vocation['value'] == 4) { $vocationName = "Waterdragon"; }
+            else { $vocationName = "Unknown Vocation"; }
+       
             echo '<tr>';
             echo '<td><a href="characterprofile.php?name='. $value[0] .'">'. $value[0] .'</a></td>';
             echo '<td>'. $value[1] .'</td>';
-            echo '<td>'. vocation_id_to_name($value[2]) .'</td>';
+            echo '<td>'. $vocationName .'</td>';
             echo '</tr>';
             }
             ?>
     </table>
-
-    <?php
-} else {
-    echo 'Nobody is online.';
-}
-?>
-<?php include 'layout/overall/footer.php'; ?>
