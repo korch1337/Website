@@ -27,7 +27,6 @@
 
 				
 <div class="sidebar">
-	<h1><font size="5">Character Search</font></h1>
 	<div class="inner">
 		<li><font size="3">Character Name:<br></font>
 		<form type="submit" action="characterprofile.php" method="get">
@@ -64,7 +63,6 @@
 					<li><a href="gallery.php">&nbsp;&raquo; Gallery</a></li>
 					<li><a href="deaths.php">&nbsp;&raquo; Deaths</a></li>
 					<li><a href="killers.php">&nbsp;&raquo; Killers</a></li>
-					<li><a href="charactersearch.php">&nbsp;&raquo; Characters</a></li>
 					<li><a href="sub.php?page=whoisonline">&nbsp;&raquo; Players Online</a></li>
 					<li><a href="highscores.php">&nbsp;&raquo; Highscores</a></li>
 					<li><a href="houses.php">&nbsp;&raquo; Houses</a></li>
