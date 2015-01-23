@@ -424,7 +424,7 @@
 		);
 
 	$config['status'] = array(
-		'status_check' => false, //enable or disable status checker
+		'status_check' => true, //enable or disable status checker
 		'status_ip' => '127.0.0.1',
 		'status_port' => "7171",
 		);
