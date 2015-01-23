@@ -1,16 +1,10 @@
-      </div>
-    </div>
-    <?php include 'layout/footer.php'; ?>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="layout/js/jquery.js"></script>
-  <script type="text/javascript" src="layout/js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="layout/js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
-    });
-  </script>
+
+		</div>
+	<div style="clear:both;"></div>
+	<div id="m_footer">
+		<img src="layout/images/foot.png">
+		<center><p>Guilcera Layout Peonso. Engine <a href="credits.php">Znote AAC</a><br>Tibia copyrighted by CipSoft GmbH.<br></p></center>
+	</div>
+</div>				
 </body>
 </html>

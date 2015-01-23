@@ -1,28 +1,10 @@
-<div class="sidebar">
-	<h2>Administration:</h2>
-	<div class="inner">
-		<ul>
-			<li>
-				<a href='admin.php'>Admin Page</a>
-			</li>
-			<li>
-				<a href='admin_news.php'>Admin News</a>
-			</li>
-			<li>
-				<a href='admin_gallery.php'>Admin Gallery</a>
-			</li>
-			<li>
-				<a href='admin_skills.php'>Admin Skills</a>
-			</li>
-			<li>
-				<a href='admin_reports.php'>Admin Reports</a>
-			</li>
-			<li>
-				<a href='admin_helpdesk.php'>Admin Helpdesk</a>
-			</li>
-			<li>
-				<a href='admin_shop.php'>Admin Shop</a>
-			</li>
+	<ul class="inner">
+		<li><a href='admin.php'>&nbsp;&raquo; Admin Page</a></li>
+		<li><a href='admin_news.php'>&nbsp;&raquo; Admin News</a></li>
+		<li><a href='admin_gallery.php'>&nbsp;&raquo; Admin Gallery</a></li>
+		<li><a href='admin_skills.php'>&nbsp;&raquo; Admin Skills</a></li>
+		<li><a href='admin_reports.php'>&nbsp;&raquo; Admin Reports</a></li>
+		<li><a href='admin_shop.php'>&nbsp;&raquo; Admin Shop</a></li>
 			<?php
 			$new = 0;
 			$cat = 4; //Category ID for feedback section
@@ -45,9 +27,5 @@
 				}
 			}
 			?>
-			<li>
-				<a href='forum.php?cat=4'>Feedback: [<?php echo $new; ?>] new</a>
-			</li>
-		</ul>
-	</div>
-</div>
+		<li><a href='forum.php?cat=4'>&nbsp;&raquo; Feedback: [<?php echo $new; ?>] new</a></li>
+	</ul>
