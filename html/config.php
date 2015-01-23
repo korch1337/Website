@@ -319,8 +319,24 @@
 	// Town ids and names: (In RME map editor, open map, click CTRL + T to view towns, their names and their IDs.
 	// townID => 'townName' etc: ['3'=>'Thais']
 	$config['towns'] = array(
-		2 => 'Thyrfing',
-		3 => 'Midgård',
+		2 => 'Thais',
+		3 => 'Kazordoon',
+		4 => 'Carlin',
+		5 => 'Ab Dendriel',
+		6 => 'Rookgaard',
+		7 => 'Liberty Bay',
+		8 => 'Port Hope',
+		9 => 'Ankrahmun',
+		10 => 'Darashia',
+		11 => 'Edron',
+		12 => 'Svargrond',
+		13 => 'Yalahar',
+		14 => 'Farmine',
+		28 => 'Gray Beach',
+		29 => 'Roshamuul',
+		30 => 'Rookgaard Tutorial Island',
+		31 => 'Isle of Solitude',
+		32 => 'Island Of Destiny',
 	);
 
 	// - TFS 1.0 ONLY -- HOUSE AUCTION SYSTEM!
