@@ -26,9 +26,9 @@
 				</div>
 
 				
-<div class="sidebar">
-	<div class="inner">
-		<li><font size="3">Character Name:<br></font>
+<div class="sidebar" style="font-family: martel; font-size:17px">Search</div>
+	<ul class="inner">
+		<li><font size="2">Character Name:<br></font>
 		<form type="submit" action="characterprofile.php" method="get">
 			<li><input type="text" name="name" class="search"><br><br>
 						<?php
@@ -37,8 +37,8 @@
 			?>
 			<li><input type="submit" value="Search">
 		</form>
-	</div>
-</div>
+	</ul>
+
 
 				<div class="sidebar" style="font-family: martel; font-size:17px">Home</div>
         		<ul class="inner"> 
