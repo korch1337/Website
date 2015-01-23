@@ -48,7 +48,7 @@
 					<li><a href="gallery.php">&nbsp;&raquo; Gallery</a></li>
 					<li><a href="deaths.php">&nbsp;&raquo; Deaths</a></li>
 					<li><a href="killers.php">&nbsp;&raquo; Killers</a></li>
-					<li><a href="sub.php?page=charactersearch">&nbsp;&raquo; Characters</a></li>
+					<li><a href="charactersearch.php">&nbsp;&raquo; Characters</a></li>
 					<li><a href="sub.php?page=whoisonline">&nbsp;&raquo; Players Online</a></li>
 					<li><a href="highscores.php">&nbsp;&raquo; Highscores</a></li>
 					<li><a href="houses.php">&nbsp;&raquo; Houses</a></li>
