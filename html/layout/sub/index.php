@@ -52,6 +52,7 @@ if ($news) {
 		return $string;
 	}
 	echo '<div id="news">';
+<<<<<<< HEAD
 		/ Most powerful guilds for TFS 0.3/4 and 1.0
 ////////////////////////
 // Create a cache file to avoid high SQL load
@@ -115,6 +116,9 @@ if (!empty($guilds) || !$guilds) {
 <?php
 }
 // End powerful guilds
+=======
+
+>>>>>>> 59205b3b39762af38802ccdedb441553cad4d6e7
 	foreach ($news as $n) {
 		?>
 <tr><td class="znewsdate"><?php echo date('l, d M Y', $n['date']); ?></td></tr>

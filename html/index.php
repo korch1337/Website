@@ -2,7 +2,6 @@
 
 
 
-
 	if (!isset($_GET['page'])) {
 		$page = 0;
 	} else {
