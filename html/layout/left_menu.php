@@ -16,7 +16,7 @@
 									$data='';
 									while (!feof($sock))$data .= fgets($sock, 1024);
 									fclose($sock);
-									echo '<font color="#9873DA"> Online</font><br><a href="sub.php?page=whoisonline">';
+									echo '<font color="#9873DA"> Online</font><br><a href="whoisonline.php">';
 									echo user_count_online();
 									echo ' players online<br/></a>';
 								}
