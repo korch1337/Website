@@ -1,5 +1,5 @@
 <img src="layout/images/titles/t_news.png"/>
-<?php require_once 'engine/init.php';  // Front page server information box by Raggaer. Improved by Znote. (Using cache system and Znote SQL functions)
+<?php  // Front page server information box by Raggaer. Improved by Znote. (Using cache system and Znote SQL functions)
 // Create a cache system
 $infoCache = new Cache('engine/cache/serverInfo');
 $infoCache->setExpiration(60); // This will be a short cache (60 seconds)
