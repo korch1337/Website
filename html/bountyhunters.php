@@ -64,5 +64,8 @@ if($num == 0){
         $main_content.='<TR BGCOLOR="'.$color.'"><TD colspan=4><center>Currently there are not any bounty hunter offer.</center></TD></TR>';
 }
     $main_content .='</TABLE></table>';
+    
+    ?>
 
+<?php 
 include 'layout/overall/footer.php'; ?>
