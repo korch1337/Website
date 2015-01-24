@@ -112,7 +112,7 @@ if (isset($_GET['name']) === true && empty($_GET['name']) === false) {
 /   Znote AAC 1.4+ detailed character info (HP, MP, lvL, Exp, skills)
 /   HTML code based on code from Gesior
 /*/
-$tableWidth = 540;
+$tableWidth = 640;
 if ($config['TFSVersion'] != 'TFS_10') {
     $playerData = mysql_select_multi("SELECT `value` FROM `player_skills` WHERE `player_id`='$user_id' LIMIT 7;");
     $playerData['fist'] = $playerData[0]['value']; unset($playerData[0]);
