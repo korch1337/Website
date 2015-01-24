@@ -52,7 +52,7 @@
 	// CUSTOM SERVER STUFF \\
 	// ------------------- \\
 	// Enable / disable Questlog function (true / false) 
-			$config['EnableQuests'] = false;
+			$config['EnableQuests'] = true;
 
 	// array for filling questlog (Questid, max value, name, end of the quest fill 1 for the last part 0 for all others)
 	$config['quests'] = array(
@@ -115,7 +115,7 @@
 	);
 
 	//Achivements based on "https://github.com/PrinterLUA/FORGOTTENSERVER-ORTS/blob/master/data/lib/achievements_lib.lua"  (TFS 1.0)
-	$config['Ach'] = false;
+	$config['Ach'] = true;
 	$config['achievements'] = array(
 	35000 => array(
 	'First Dragon', //name
@@ -520,7 +520,7 @@
 	// IMPORTANT! Write a character name(that exist) that will represent website bans!
 	// Or remember to create character "God Website" character exist.
 	// If you don't do this, bann from admin panel won't work properly.
-	$config['website_char'] = 'Luxitur';
+	$config['website_char'] = 'King Shit';
 
 	//----------------\\
 	// ADVANCED STUFF \\
@@ -662,12 +662,12 @@
 		if table never gets flushed once in a while. So I highly recommend you
 		to configure flush_ip_logs if IPs are logged.
 	*/
-	$config['log_ip'] = false;
+	$config['log_ip'] = true;
 
 	// Flush IP logs each configured seconds, 60 * 15 = 15 minutes.
 	// Set to false to entirely disable ip log flush. 
 	// It is important to flush for optimal performance.
-	$config['flush_ip_logs'] = 59 * 27;
+	$config['flush_ip_logs'] = 60 * 60;
 
 	/*	IP SECURTY REQUIRE: $config['log_ip'] = true;
 		Configure how tight this security shall be.
