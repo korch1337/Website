@@ -1,5 +1,5 @@
 <img src="layout/images/titles/t_news.png"/>
-<table>
+
 // Front page server information box by Raggaer. Improved by Znote. (Using cache system and Znote SQL functions)
 // Create a cache system
 $infoCache = new Cache('engine/cache/serverInfo');
@@ -61,6 +61,8 @@ if ($infoCache->hasExpired()) {
         </td>
     </tr>
 </table>
+<table>
+
 <?php
 $cache = new Cache('engine/cache/news');
 if ($cache->hasExpired()) {
