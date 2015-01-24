@@ -1,6 +1,6 @@
 <?php
-require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
-<?php
+
+require_once 'engine/init.php'; include 'layout/overall/header.php'; 
 $main_content .= '
     <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=1 WIDTH=100%>
         <TR>
@@ -65,7 +65,7 @@ if($num == 0){
 }
     $main_content .='</TABLE></table>';
     
-    ?>
+   
 
-<?php 
+
 include 'layout/overall/footer.php'; ?>
