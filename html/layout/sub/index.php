@@ -68,8 +68,7 @@ if (!empty($guilds) || !$guilds) {
             $number++;
         }
         ?>
-    </div>
-}
+<?php
 // End powerful guilds
 	
 	foreach ($news as $n) {
