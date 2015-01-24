@@ -52,7 +52,7 @@ if ($news) {
 		return $string;
 	}
 	echo '<div id="news">';
-	/ Most powerful guilds for TFS 0.3/4 and 1.0
+		/ Most powerful guilds for TFS 0.3/4 and 1.0
 ////////////////////////
 // Create a cache file to avoid high SQL load
 $cache = new Cache('engine/cache/guilds');
@@ -86,7 +86,7 @@ if (!empty($guilds) || !$guilds) {
         }
         ?>
     </div>
-    <!-- With table design -->
+    <!-- With table design 
     <table id="news">
         <tr class="yellow">
             <td class="zheadline"><center><b>Most powerful guilds</b></center></td>
@@ -110,7 +110,8 @@ if (!empty($guilds) || !$guilds) {
                </div>
             </td>
         </tr>
-    </table>
+    </table> -->
+    
 <?php
 }
 // End powerful guilds
