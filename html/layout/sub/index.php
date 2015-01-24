@@ -1,36 +1,4 @@
 <img src="layout/images/titles/t_news.png"/>
-
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; // Front page server information box by Raggaer. Improved by Znote. (Using cache system and Znote SQL functions)
-// Create a cache system
-$infoCache = new Cache('engine/cache/serverInfo');
-$infoCache->setExpiration(60); // This will be a short cache (60 seconds)
-if ($infoCache->hasExpired()) {
-
-    // Fetch data from database
-    $data = array(
-        'newPlayer' => mysql_select_single("SELECT `name` FROM `players` ORDER BY `id` DESC LIMIT 1"),
-        'bestPlayer' => mysql_select_single('SELECT `name`, `level`, `experience` FROM `players` WHERE `group_id` < ' . $config['highscore']['ignoreGroupId'] . ' ORDER BY `experience` DESC LIMIT 1;'),
-        'playerCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `players`"),
-        'accountCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `accounts`"),
-        'guildCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `guilds`")
-    );
-
-    // Initiate default values where needed
-    if ($data['playerCount'] !== false && $data['playerCount']['count'] > 0) $data['playerCount'] = $data['playerCount']['count'];
-    else $data['playerCount'] = 0;
-    if ($data['accountCount'] !== false && $data['accountCount']['count'] > 0) $data['accountCount'] = $data['accountCount']['count'];
-    else $data['accountCount'] = 0;
-    if ($data['guildCount'] !== false && $data['guildCount']['count'] > 0) $data['guildCount'] = $data['guildCount']['count'];
-    else $data['guildCount'] = 0;
-
-    // Store data to cache
-    $infoCache->setContent($data);
-    $infoCache->save();
-} else {
-    // Load data from cache
-    $data = $infoCache->load();
-}
-?>
 <table>
 
 <?php
