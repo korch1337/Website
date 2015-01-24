@@ -1,6 +1,6 @@
 <?php
-require_once 'engine/init.php'; include 'layout/overall/header.php';
-
+require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+<?php
 $main_content .= '
     <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=1 WIDTH=100%>
         <TR>
