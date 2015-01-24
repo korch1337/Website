@@ -1,5 +1,65 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php';
+// Front page server information box by Raggaer. Improved by Znote. (Using cache system and Znote SQL functions)
+// Create a cache system
+$infoCache = new Cache('engine/cache/serverInfo');
+$infoCache->setExpiration(60); // This will be a short cache (60 seconds)
+if ($infoCache->hasExpired()) {
 
+    // Fetch data from database
+    $data = array(
+        'newPlayer' => mysql_select_single("SELECT `name` FROM `players` ORDER BY `id` DESC LIMIT 1"),
+        'bestPlayer' => mysql_select_single("SELECT `name`, `level` FROM `players` ORDER BY `experience` DESC LIMIT 1"),
+        'playerCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `players`"),
+        'accountCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `accounts`"),
+        'guildCount' => mysql_select_single("SELECT COUNT(`id`) as `count` FROM `guilds`")
+    );
+
+    // Initiate default values where needed
+    if ($data['playerCount'] !== false && $data['playerCount']['count'] > 0) $data['playerCount'] = $data['playerCount']['count'];
+    else $data['playerCount'] = 0;
+    if ($data['accountCount'] !== false && $data['accountCount']['count'] > 0) $data['accountCount'] = $data['accountCount']['count'];
+    else $data['accountCount'] = 0;
+    if ($data['guildCount'] !== false && $data['guildCount']['count'] > 0) $data['guildCount'] = $data['guildCount']['count'];
+    else $data['guildCount'] = 0;
+
+    // Store data to cache
+    $infoCache->setContent($data);
+    $infoCache->save();
+} else {
+    // Load data from cache
+    $data = $infoCache->load();
+}
+?>
+
+<!-- Render HTML for server information -->
+<table border="0" cellspacing="0">
+    <tr class="yellow">
+        <td><center>Server Information</center></td>
+    </tr>
+    <tr>
+        <td>
+            <center>Welcome to our newest player:
+                <a href="characterprofile.php?name=<?php echo $data['newPlayer']['name']; ?>">
+                    <?php echo $data['newPlayer']['name']; ?>
+                </a>
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <center>The best player is:
+                <a href="characterprofile.php?name=<?php echo $data['bestPlayer']['name']; ?>">
+                    <?php echo $data['bestPlayer']['name']; ?>
+                </a> level: <?php echo $data['bestPlayer']['level']; ?> congratulations!
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <center>We have <b><?php echo $data['accountCount']; ?></b> accounts in our database, <b><?php echo $data['playerCount']; ?></b> players, and <b><?php echo $data['guildCount']; ?></b> guilds </center>
+        </td>
+    </tr>
+</table>
 
 
 	if (!isset($_GET['page'])) {
