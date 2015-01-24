@@ -69,32 +69,6 @@ if (!empty($guilds) || !$guilds) {
         }
         ?>
     </div>
-    <!-- With table design -->
-    <table id="news">
-        <tr class="yellow">
-            <td class="zheadline"><center><b>Most powerful guilds</b></center></td>
-        </tr>
-        <tr>
-            <td>
-                <div style="margin: auto; width: <?php echo $divsize; ?>px;">
-                    <?php
-                   $number = 1;
-                   foreach ($guilds as $guild) {
-                       ?>
-                       <div style="float: left; width: <?php echo (int)$divsize / 3; ?>px;">
-                           <a href="guilds.php?name=<?php echo $guild['name']; ?>"><img style="max-width: <?php echo (int)$divsize / 3; ?>px;" src="medals/<?php echo $number; ?>.png" alt="<?php echo $number; ?>"><br>
-                           <center><b><?php echo $guild['name']; ?></b><br>
-                           Kills: <?php echo $guild['frags']; ?></center></a>
-                       </div>
-                       <?php
-                       $number++;
-                   }
-                   ?>
-               </div>
-            </td>
-        </tr>
-    </table>
-<?php
 }
 // End powerful guilds
 	
