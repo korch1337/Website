@@ -1,39 +1,5 @@
 <?php
-$main_content .= '
-    <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=1 WIDTH=100%>
-        <TR>
-            <TD style="text-align:center;"><H2>Bounty Hunters</H2></TD>
-        </TR>
-        <TR BGCOLOR="'.$config['site']['vdarkborder'].'">
-            <TD><CENTER><FONT COLOR=WHITE SIZE=2><b>How to use...</b></FONT></CENTER></TD>
-        </TR>        
-        <TR BGCOLOR="'.$config['site']['darkborder'].'">
-            <TD style="text-align:center;"><b>!hunt prize,nick</b>
-        <br><font color="red">It is important to right exactly like this <b>prize,nick</b> with no spaces after the comma.</font>
-            <br><i>Example: !hunt 1000000,Player_name
-            <br> Will Pay 1KK(1,000,000 gold Pieces) for the Player who Kills Player_name.</i>
-<br><b>1kk = 1,000,000 gold</b>
-<br><b><font color="green">Money is added to your bank account automatically if you get a Bounty Kill.</font></b></TD>
-        </TR>        
-</TABLE><br><br><table>        
-';
-$main_content .= '
-        <TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%>
-            <TR BGCOLOR="#505050">
-                <TD CLASS=white width=28%>
-                    <center><B>Hunted by</B></center>
-                </TD>
-                <TD CLASS=white width=14%>
-                    <center><B>Reward</B></center>
-                </TD>
-                <TD CLASS=white width=28%>
-                    <center><B>Player hunted</B></center>
-                </TD>
-        <TD CLASS=white><b>Outfit</b></TD>
-                <TD CLASS=white width=28%>
-                    <center><B>Killed by</B></center>
-                </TD>
-            </TR>';
+
 foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
                         FROM bounty_hunters AS A
                         LEFT JOIN players AS B ON A.fp_id = B.id
