@@ -54,6 +54,10 @@ $subpages = array(
         'file' => 'quests.php',
         'override' => true
     ),
+	'bountyhunters' => array(
+        'file' => 'bountyhunters.php',
+        'override' => true
+	),
     'experiencetable' => array(
         'file' => 'experiencetable.php',
         'override' => true

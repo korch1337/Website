@@ -45,6 +45,7 @@
                 	<li><a href="index.php">&nbsp;&raquo; News</a></li>
                     <li><a href="downloads.php">&nbsp;&raquo; Downloads</a></li>
 					<li><a href="forum.php">&nbsp;&raquo; Forum</a></li>
+					<li><a href="sub.php?page=bountyhunters">&nbsp;&raquo; Forum</a></li>
 				</ul>
 
 				<div class="sidebar" style="font-family: martel; font-size:17px">Account</div>
