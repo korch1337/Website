@@ -1,4 +1,6 @@
-<?php
+<?php require_once 'engine/init.php';
+if ($config['require_login']['guilds']) protect_page();
+$isOtx = ($config['CustomVersion'] == 'OTX') ? true : false;
 
 foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
                         FROM bounty_hunters AS A
@@ -38,4 +40,5 @@ if($num == 0){
         $main_content.='<TR BGCOLOR="'.$color.'"><TD colspan=4><center>Currently there are not any bounty hunter offer.</center></TD></TR>';
 }
     $main_content .='</TABLE></table>';
+    include 'layout/overall/footer.php';
 ?> 
