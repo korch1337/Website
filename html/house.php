@@ -1,6 +1,6 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php';
 if ($config['log_ip']) {
-	znote_visitor_insert_detailed_data(3);
+	znote_visitors_insert_detailed_data(3);
 }
 
 $house = getValue($_GET['id']);
