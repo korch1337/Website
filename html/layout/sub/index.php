@@ -110,7 +110,8 @@ if (!empty($guilds) || !$guilds) {
                </div>
             </td>
         </tr>
-    </table>
+    </table> -->
+    
 <?php
 }
 // End powerful guilds
