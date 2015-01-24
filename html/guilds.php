@@ -59,7 +59,7 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 		<?php
 		foreach ($guilds as $guild) {
 			if ($guild['total'] >= 1) {
-				$url = url("176.9.35.68/guilds.php?name=". $guild['name']);
+				$url = url("guilds.php?name=". $guild['name']);
 				?>
 				<tr class="special" onclick="javascript:window.location.href='<?php echo $url; ?>'">
 					<td style="width: 100px;">
