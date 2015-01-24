@@ -9,7 +9,7 @@
 	$config['CustomVersion'] = false;
 
 	$config['site_title'] = 'HUEHUE OT';
-	$config['site_title_context'] = 'Patrik åker snålskjuts på denna servern!';
+	$config['site_title_context'] = 'Insert text here';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
 	$config['server_path'] = '/root/forgottenserver'; 
