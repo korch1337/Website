@@ -45,7 +45,7 @@
                 	<li><a href="index.php">&nbsp;&raquo; News</a></li>
                     <li><a href="downloads.php">&nbsp;&raquo; Downloads</a></li>
 					<li><a href="forum.php">&nbsp;&raquo; Forum</a></li>
-					<li><a href="sub.php?page=bountyhunters">&nbsp;&raquo; Forum</a></li>
+					<li><a href="bountyhunters.php">&nbsp;&raquo; Bounty</a></li>
 				</ul>
 
 				<div class="sidebar" style="font-family: martel; font-size:17px">Account</div>
@@ -64,7 +64,7 @@
 					<li><a href="gallery.php">&nbsp;&raquo; Gallery</a></li>
 					<li><a href="deaths.php">&nbsp;&raquo; Deaths</a></li>
 					<li><a href="killers.php">&nbsp;&raquo; Killers</a></li>
-					<li><a href="sub.php?page=whoisonline">&nbsp;&raquo; Players Online</a></li>
+					<li><a href="whoisonline.php">&nbsp;&raquo; Players Online</a></li>
 					<li><a href="highscores.php">&nbsp;&raquo; Highscores</a></li>
 					<li><a href="houses.php">&nbsp;&raquo; Houses</a></li>
 					<li><a href="guilds.php">&nbsp;&raquo; Guilds</a></li>
