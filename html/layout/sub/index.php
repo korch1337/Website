@@ -1,5 +1,4 @@
-<img src="layout/images/titles/t_news.png"/>
-<?php require_once 'engine/init.php';
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
 
 	if (!isset($_GET['page'])) {
 		$page = 0;
@@ -110,3 +109,4 @@
 			echo '<p>No news exist.</p>';
 		}
 	}
+include 'layout/overall/footer.php'; ?>
