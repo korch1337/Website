@@ -1,32 +1,31 @@
 <?php 
-require_once 'engine/init.php'; 
-include 'layout/overall/header.php'; 
-?> 
-<h2>Top Fraggers</h2> 
-<?php  
-  
+#    Online Players Records for ZnoteAAC
+#    By cbrm @ otland.net
 
-$i = 0;  
-$ee = mysql_query("SELECT `p`.`name` AS `name`, COUNT(`p`.`name`) as `frags`  
- FROM `killers` k  
- LEFT JOIN `player_killers` pk ON `k`.`id` = `pk`.`kill_id`  
- LEFT JOIN `players` p ON `pk`.`player_id` = `p`.`id`  
-WHERE `k`.`unjustified` = 1 AND `k`.`final_hit` = 1  
- GROUP BY `name`  
- ORDER BY `frags` DESC, `name` ASC  
- LIMIT 0,30;")or die(mysql_error()); 
- echo '<table><tr class="yellow"><td>Name</td><td>Frags</td></tr>'; 
-while($e = mysql_fetch_assoc($ee))  
-
-{  
- $i++;  
- echo  
-  
- '<tr><td>'.$e['name'] .'</td> <td> '.$e['frags'].'</tr><br>';  
-}  
-echo '</table>';  
-?> 
-<?php 
-
-include 'layout/overall/footer.php'; 
+require_once 'engine/init.php'; include 'layout/overall/header.php';
+echo'<h1>Online Players Records</h1>';
+$record = mysql_query('SELECT * FROM `server_record` ORDER BY `record` DESC LIMIT 20;');
+while ($row = mysql_fetch_assoc($record)) {$data[] = $row;}
+if (empty($data)) {echo 'This server is not born yet.'; return include 'layout/overall/footer.php';}
 ?>
+
+<center>
+    Max amount of online players was of <?php echo $data[0]['record'] ?> players on <?php echo date("M j Y", $data[0]['timestamp']) ?>
+</center>
+
+<table>
+<tr class="yellow">
+    <td width="30%">
+        <span style="font-weight:bold;">Players</span>
+    </td>
+    <td width="70%">
+        <span style="font-weight:bold;">Date</span>
+    </td>
+</tr>
+
+<?php
+foreach($data as $record):
+    echo'<tr><td>'.$record['record'].'</td>';
+    echo'<td>'.date("M j Y, H:i:s T", $record['timestamp']).'</td></tr>';
+endforeach;
+echo'</table>'; include 'layout/overall/footer.php'; ?>
