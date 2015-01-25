@@ -8,7 +8,7 @@ $main_content .= '<div style="text-align: center; font-weight: bold;">Top 30 fra
         <td class="white" style="text-align: center; font-weight: bold;">Name</td>
         <td class="white" style="text-align: center; font-weight: bold;">Frags</td>
     </tr>';
-
+?>
 $i = 0;
 foreach($SQL->query('SELECT `killed_by` as `name`, COUNT(`killed_by`) AS `frags` FROM `player_deaths` WHERE `is_player` = 1 GROUP BY `killed_by` ORDER BY COUNT(`killed_by`) DESC LIMIT 0, 30;') as $player)
 {
@@ -20,4 +20,6 @@ foreach($SQL->query('SELECT `killed_by` as `name`, COUNT(`killed_by`) AS `frags`
 }
 
 $main_content .= '</table>';
+
+<?php
 include 'layout/overall/footer.php'; ?>
