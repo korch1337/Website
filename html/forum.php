@@ -822,7 +822,7 @@ if (!empty($_GET)) {
 				}
 				*/
 				if ($access) {
-					$url = url("forum.php?cat=". $category['id']);
+					$url = url("179.9.35.68/forum.php?cat=". $category['id']);
 					echo '<tr class="special">';
 					echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
 					if ($category['closed'] == 1) echo $config['forum']['closed'],' ';
