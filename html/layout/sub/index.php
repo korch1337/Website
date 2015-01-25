@@ -65,6 +65,7 @@ if ($news) {
 		return $string;
 	}
 	echo '<div id="news">';
+	
 	// Most powerful guilds for TFS 0.3/4 and 1.0
 ////////////////////////
 // Create a cache file to avoid high SQL load
@@ -82,23 +83,6 @@ elseif ($config['TFSVersion'] == 'TFS_10') $guilds = mysql_select_multi('SELECT 
 if (!empty($guilds) || !$guilds) {
     $divsize = 400;
     ?>
-    <!-- No table design -->
-    <center><h1>Most powerful guilds</h1></center>
-    <div style="margin: auto; width: <?php echo $divsize; ?>px;">
-        <?php
-        $number = 1;
-        foreach ($guilds as $guild) {
-            ?>
-            <div style="float: left; width: <?php echo (int)$divsize / 3; ?>px;">
-                <a href="guilds.php?name=<?php echo $guild['name']; ?>"><img style="max-width: <?php echo (int)$divsize / 3; ?>px;" src="medals/<?php echo $number; ?>.png" alt="<?php echo $number; ?>"><br>
-                <center><b><?php echo $guild['name']; ?></b><br>
-                Kills: <?php echo $guild['frags']; ?></center></a>
-            </div>
-            <?php
-            $number++;
-        }
-        ?>
-    </div>
     <!-- With table design -->
     <table id="news">
         <tr class="yellow">
