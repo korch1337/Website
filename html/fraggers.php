@@ -1,5 +1,5 @@
-<?php include 'layout/overall/header.php'; ?>
-
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+<?php
 if(!defined('INITIALIZED'))
     exit;
 
@@ -20,6 +20,6 @@ foreach($SQL->query('SELECT `killed_by` as `name`, COUNT(`killed_by`) AS `frags`
     </tr>';
 }
 
-$main_content .= '</table>';
+$main_content .= '</table>'; ?>
 <?php
 include 'layout/overall/footer.php'; ?> 
