@@ -822,9 +822,9 @@ if (!empty($_GET)) {
 				}
 				*/
 				if ($access) {
-					$url = url("179.9.35.68/forum.php?cat=". $category['id']);
+					$url = url("forum.php?cat=". $category['id']);
 					echo '<tr class="special">';
-					echo '<td onclick= 'href= \'' . $url . '\'">';
+					echo '<td onclick="javascript:window.href=\'' . $url . '\'">';
 					if ($category['closed'] == 1) echo $config['forum']['closed'],' ';
 					if ($category['hidden'] == 1) echo $config['forum']['hidden'],' ';
 					if ($category['guild_id'] > 0) {
