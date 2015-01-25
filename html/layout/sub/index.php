@@ -35,7 +35,7 @@ if ($news) {
 		return $string;
 	}
 	echo '<div id="news">'; ?>
-	<?php
+<?php	
 echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Server Information</center></td></tr> 
 <tr><td>'; 
 $getshit11 = mysql_query("SELECT `id`, `name` FROM `players` ORDER BY `id` DESC LIMIT 1");  
@@ -51,8 +51,8 @@ $fetchshit4 = mysql_fetch_assoc($getshit4);
 echo '<center>Welcome to our newest player: <a href="characterprofile.php?name='.$fetchshitt['name'].'">'.$fetchshitt['name'].'</a></center></td></tr>'; 
 echo '<tr><td><center>The best player is: <a href="characterprofile.php?name='.$fetchshit2['name'].'">'.$fetchshit2['name'].'</a> level: '.$fetchshit2['level'].' congratulations!</center></td></tr>'; 
 echo '<tr><td><center>We have <b>'.$fetchshit3['shiter'].'</b> accounts in our database, <b>'.$fetchshit['shit'].'</b> players, and <b>'.$fetchshit4['yea'].' </b>guilds </center></td></tr>'; 
-echo '</table>'; 
-
+echo '</table>'; ?>
+<?php
 	// Most powerful guilds for TFS 0.3/4 and 1.0
 ////////////////////////
 // Create a cache file to avoid high SQL load
