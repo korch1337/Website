@@ -824,7 +824,7 @@ if (!empty($_GET)) {
 				if ($access) {
 					$url = url("forum.php?cat=". $category['id']);
 					echo '<tr class="special">';
-					echo <a href="$url" >link text</a>
+					echo '<td onclick="javascript.href=\'' . $url . '\'">';
 					if ($category['closed'] == 1) echo $config['forum']['closed'],' ';
 					if ($category['hidden'] == 1) echo $config['forum']['hidden'],' ';
 					if ($category['guild_id'] > 0) {
