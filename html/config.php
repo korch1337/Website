@@ -501,7 +501,7 @@
 	$config['forum'] = array(
 		'enabled' => true,
 		'guildboard' => true,
-		'level' => 1,
+		'level' => 5,
 		'cooldownPost' => 1,//60,
 		'cooldownCreate' => 1,//180,
 		'newPostsBumpThreads' => true,
