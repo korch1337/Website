@@ -1119,6 +1119,8 @@ function user_create_account($register_data, $maildata) {
 		
 		$mailer->sendMail($register_data['email'], $title, $body, $register_data['name']);
 	}
+
+	return $account_id;
 }
 
 // CREATE CHARACTER

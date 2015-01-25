@@ -298,7 +298,7 @@ function mysql_select_multi($query){
 // - mysql update
 function mysql_update($query){ voidQuery($query); }
 // mysql insert
-function mysql_insert($query){ voidQuery($query); }
+function mysql_insert($query) { return voidQuery($query);  }
 // mysql delete
 function mysql_delete($query){ voidQuery($query); }
 // Send a void query
@@ -309,5 +309,7 @@ function voidQuery($query) {
   global $accQueriesData;
   $accQueriesData[] = $query;
   mysqli_query($connect,$query) or die(var_dump($query)."<br>(query - <font color='red'>SQL error</font>) <br>Type: <b>voidQuery</b> (voidQuery is used for update, insert or delete from database)<br><br>".mysqli_error($connect));
+  $lastInsertId = mysqli_insert_id($connect);
+  return $lastInsertId;
 }
 ?>

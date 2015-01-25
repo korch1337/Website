@@ -20,6 +20,21 @@ if (empty($_POST) === false) {
 			$errors[] = 'Token is invalid.';
 		}
 
+		if (isset($_POST['ref_key']) && !$_POST['ref_key'] == "") {
+
+			$key = $_POST['ref_key'];
+			$ref_key = mysql_select_multi("SELECT * FROM `__cornex_referral` WHERE `referral_key` = '${key}' LIMIT 1; ");
+
+			if ($ref_key !== false) {
+				
+				// Ref key exist..
+
+			} else {
+				$errors[] = 'Referral key do not exist.';
+			}
+
+		}
+
 		if ($config['use_captcha']) {
 			include_once 'captcha/securimage.php';
 			$securimage = new Securimage();
@@ -117,7 +132,14 @@ if (isset($_GET['success']) && empty($_GET['success'])) {
 			'created'	=>	time()
 		);
 		
-		user_create_account($register_data, $config['mailserver']);
+		$register = user_create_account($register_data, $config['mailserver']);
+
+		if (isset($_POST['ref_key'])) {
+			$ref_key = $ref_key[0]['referral_key'];
+			$query = "INSERT INTO `__cornex_referral_actions` (`ref_key`, `registered_by`, `used_by_player`, `blocked`) VALUES ('${ref_key}', ${register}, null, 0) ";
+			mysql_insert($query);
+		}
+
 		if (!$config['mailserver']['debug']) header('Location: register.php?success');
 		exit();
 		//End register
@@ -145,6 +167,10 @@ if (isset($_GET['success']) && empty($_GET['success'])) {
 			<li>
 				Email:<br>
 				<input type="text" name="email">
+			</li>
+			<li>
+				Referral code:<br>
+				<input type="text" name="ref_key">
 			</li>
 			<?php
 			if ($config['use_captcha']) {

@@ -37,7 +37,6 @@ if (!empty($_POST['selected_character'])) {
 				}
 				break;
 			// end
-
 			// Hide character
 			case 'toggle_hide':
 				$hide = (user_character_hide($char_name) == 1 ? 0 : 1);
@@ -46,7 +45,6 @@ if (!empty($_POST['selected_character'])) {
 				}
 				break;
 			// end
-
 			// DELETE character
 			case 'delete_character':
 				if (user_character_account_id($char_name) === $session_user_id) {
@@ -68,76 +66,62 @@ if (!empty($_POST['selected_character'])) {
 				}
 				break;
 			// end
-
 			// CHANGE character name
 			case 'change_name':
 				$oldname = $char_name;
-				$newname = isset($_POST['newName']) ? getValue($_POST['newName']) : '';
+				$newname = getValue($_POST['newName']);
 
+				// Check if user is online
 				$player = false;
 				if ($config['TFSVersion'] === 'TFS_10') {
 					$player = mysql_select_single("SELECT `id`, `account_id` FROM `players` WHERE `name` = '$oldname'");
 					$player['online'] = (user_is_online_10($player['id'])) ? 1 : 0;
 				} else $player = mysql_select_single("SELECT `id`, `account_id`, `online` FROM `players` WHERE `name` = '$oldname'");
 
-				// Check if user is online
-				if ($player['online'] == 1) {
-					$errors[] = 'Character must be offline first.';
-				}
-
 				// Check if player has bough ticket
-				$accountId = $player['account_id'];
-				$order = mysql_select_single("SELECT `id`, `account_id` FROM `znote_shop_orders` WHERE `type`='4' AND `account_id` = '$accountId' LIMIT 1;");
-				if ($order === false) {
-					$errors[] = 'Did not find any name change tickets, buy them in our <a href="shop.php">shop!</a>';
-				}
-
-				// Check if player and account matches
-				if ($session_user_id != $accountId || $session_user_id != $order['account_id']) {
-					$errors[] = 'Failed to sync your account. :|';
-				}
-
-				$newname = validate_name($newname);
-				if ($newname === false) {
-					$errors[] = 'Your name can not contain more than 2 words.';
-				} else {
-					if (empty($newname)) {
-						$errors[] = 'Please enter a name!';
-					} else if (user_character_exist($newname) !== false) {
-						$errors[] = 'Sorry, that character name already exist.';
-					} else if (!preg_match("/^[a-zA-Z_ ]+$/", $newname)) {
-						$errors[] = 'Your name may only contain a-z, A-Z and spaces.';
-					} else if (strlen($newname) < $config['minL'] || strlen($newname) > $config['maxL']) {
-						$errors[] = 'Your character name must be between ' . $config['minL'] . ' - ' . $config['maxL'] . ' characters long.';
-					} else if (!ctype_upper($newname{0})) {
-						$errors[] = 'The first letter of a name has to be a capital letter!';
-					}
-
-					// name restriction
-					$resname = explode(" ", $_POST['newName']);
-					foreach($resname as $res) {
-						if(in_array(strtolower($res), $config['invalidNameTags'])) {
-							$errors[] = 'Your username contains a restricted word.';
-						} else if(strlen($res) == 1) {
-							$errors[] = 'Too short words in your name.';
-						}
-					}
-				}
-
-				if (!empty($newname) && empty($errors)) {
-					echo 'You have successfully changed your character name to ' . $newname . '.';
-					mysql_update("UPDATE `players` SET `name`='$newname' WHERE `id`='".$player['id']."' LIMIT 1;");
-					mysql_delete("DELETE FROM `znote_shop_orders` WHERE `id`='".$order['id']."' LIMIT 1;");
-
-				} else if (!empty($errors)) {
-					echo '<font color="red"><b>';
-					echo output_errors($errors);
-					echo '</b></font>';
-				}
-
+				$order = mysql_select_single("SELECT `id`, `account_id` FROM `znote_shop_orders` WHERE `type`='4' LIMIT 1;");
+				if ($order !== false) {
+					// Check if player and account matches
+					if ($session_user_id == $player['account_id'] && $session_user_id == $order['account_id']) {
+						// Check if new name is not occupied
+						$exist = mysql_select_single("SELECT `id` FROM `players` WHERE `name`='$newname';");
+						if (!$exist) {
+							// Check if new name follow rules
+							$newname = validate_name($newname);
+							if ($newname !== false) {
+								$error = false;
+								// name restriction
+								$resname = explode(" ", $_POST['name']);
+								foreach($resname as $res) {
+									if(in_array(strtolower($res), $config['invalidNameTags'])) {
+										$error = true;
+									}
+									else if(strlen($res) == 1) {
+										$error = true;
+									}
+								}
+								// Check name for illegal characters.
+								function checkNewNameForIllegal($name) {
+									if (preg_match('#^[\0-9åäö&()+%/*$€é,.\'"-]*$#i', $name)) {
+										return true;
+									}
+									return false;
+								}
+								if (checkNewNameForIllegal($newname)) {
+									$error = true;
+									echo 'This name contains illegal characters.';
+								}
+								if ($error === false) {
+									// Change the name!
+									mysql_update("UPDATE `players` SET `name`='$newname' WHERE `id`='".$player['id']."' LIMIT 1;");
+									mysql_delete("DELETE FROM `znote_shop_orders` WHERE `id`='".$order['id']."' LIMIT 1;");
+								}
+							} else echo 'Name validation failed, use another name.';
+						} else echo 'The character name you wish to change to already exist.';
+					} else echo 'Failed to sync your account. :|';
+				} else echo 'Did not find any name change tickets, buy them in our <a href="shop.php">shop!</a>';
 				break;
 			// end
-
 			// Change character sex
 			case 'change_gender':
 				if (user_character_account_id($char_name) === $session_user_id) {
@@ -145,8 +129,9 @@ if (!empty($_POST['selected_character'])) {
 					$account_id = user_character_account_id($char_name);
 
 					if ($config['TFSVersion'] == 'TFS_10') {
-						$chr_data['online'] = user_is_online_10($char_id) ? 1 : 0;
+						$chr_data = user_is_online_10($char_id);
 					} else $chr_data = user_character_data($char_id, 'online');
+
 					if ($chr_data['online'] != 1) {
 						// Verify that we are not messing around with data
 						if ($account_id != $user_data['id']) die("wtf? Something went wrong, try relogging.");
@@ -186,7 +171,6 @@ if (!empty($_POST['selected_character'])) {
 				}
 				break;
 			// end
-
 			// Change character comment PAGE1:
 			case 'change_comment':
 				$render_page = false; // Regular "myaccount" page should not render
@@ -263,9 +247,9 @@ if ($render_page) {
 				}
 			?>
 			</table>
-			<!-- FORMS TO EDIT CHARACTER-->
-			<form action="" method="post">
-				<table class="table">
+			<table class="table">
+				<!-- FORMS TO EDIT CHARACTER-->
+				<form action="" method="post">
 					<tr>
 						<td>
 							<select id="selected_character" name="selected_character" class="form-control">
@@ -298,14 +282,13 @@ if ($render_page) {
 							<input id="submit_button" type="submit" value="Submit" class="btn btn-primary btn-block"></input>
 						</td>
 					</tr>
-				</table>
-			</form>
+				</form>
+			</table>
 			<?php
 		} else {
 			echo 'You don\'t have any characters. Why don\'t you <a href="createcharacter.php">create one</a>?';
 		}
 		?>
-	</div>
 	<script>
 		function changedOption(e) {
 			// If selection is 'Change name' add a name field in the form
@@ -339,6 +322,69 @@ if ($render_page) {
 	</script>
 	<?php
 }
+
+	function count_ref_regs($ref_key) {
+		$ref_key = sanitize($ref_key);
+		$data = mysql_select_single("SELECT COUNT('id') AS `id` FROM `__cornex_referral_actions` WHERE `ref_key`='$ref_key'");
+		return ($data !== false) ? $data['id'] : 0;
+	}
+
+	function count_ref_players($ref_key) {
+		$ref_key = sanitize($ref_key);
+		$data = mysql_select_single("SELECT COUNT('id') AS `id` FROM `__cornex_referral_actions` WHERE `ref_key`='$ref_key' AND `blocked` = 1");
+		return ($data !== false) ? $data['id'] : 0;
+	}
+
+	// From felony
+	function ref_key_generate()
+	{
+		$template = 'XX99-XX99-99XX-99XX-XXXX-99XX';
+		$k = strlen($template);
+		$sernum = '';
+		for ($i=0; $i<$k; $i++)
+		{
+			switch($template[$i])
+			{
+				case 'X': $sernum .= chr(rand(65,90)); break;
+				case '9': $sernum .= rand(0,9); break;
+				case '-': $sernum .= '-';  break; 
+			}
+		}
+		return $sernum;
+	}
+
+	$ref_key = mysql_select_multi("SELECT * FROM `__cornex_referral` WHERE `belongs_to`= ".$user_data['id']." LIMIT 1; ");
+
+	// Check if user have or not have an key already
+	if ($ref_key !== false) {
+
+		$ref_key = $ref_key[0];
+
+	} else {
+
+		$key = ref_key_generate();
+		$belongs_to = sanitize($user_data['id']);
+		$query = "INSERT INTO `__cornex_referral` (`referral_key`, `belongs_to`) VALUES ('${key}', '${belongs_to}')";
+		mysql_update($query);
+		header("Location: myaccount.php");
+		exit;
+
+	}
+
+?>
+
+<h1>Referral system</h1>
+<hr>
+
+<h2>Your referall key: <font color="red"><?php echo $ref_key['referral_key']; ?></font></h2>
+
+<h2>Accounts registered with your key: <font color="red"><?php echo count_ref_regs($ref_key['referral_key']); ?></font> </h2>
+
+<h2>Players reached level 200 with your key: <font color="red"><?php echo count_ref_players($ref_key['referral_key']); ?></font>  </h2>
+
+
+</div>
+<?php
 include 'layout/overall/footer.php'; 
 // ZEOTSS: Register visitor
 if ($config['zeotss']['enabled'] && $config['zeotss']['visitors']) {
