@@ -169,7 +169,7 @@ if (isset($_GET['success']) && empty($_GET['success'])) {
 				<input type="text" name="email">
 			</li>
 			<li>
-				Referral code:<br>
+				Referral code (optional):<br>
 				<input type="text" name="ref_key">
 			</li>
 			<?php
