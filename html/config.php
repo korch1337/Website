@@ -491,6 +491,7 @@
 		//'otland0',
 		//'otland1',
 		'123456'
+		'nevnet'
 	);
 
 	// Built-in FORUM
