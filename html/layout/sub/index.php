@@ -34,7 +34,8 @@ if ($news) {
 
 		return $string;
 	}
-	echo '<div id="news">';
+	echo '<div id="news">'; ?>
+	<?php
 echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Server Information</center></td></tr> 
 <tr><td>'; 
 $getshit11 = mysql_query("SELECT `id`, `name` FROM `players` ORDER BY `id` DESC LIMIT 1");  
