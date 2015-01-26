@@ -170,7 +170,9 @@ text-decoration:underline;
 }
 
 .right{
-	width:800px;
+	position:fixed;
+	top:30px;
+	right:30px;
 	float:left;
 }
 
