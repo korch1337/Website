@@ -1,5 +1,5 @@
 <?php
-include 'lay/overall/footer.php'; ?>
+include 'layout/overall/footer.php'; ?>
 <style type="text/css">
     .alpha_wrapper {
             padding-top: 8px;
