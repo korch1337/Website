@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-			<?php include('layout/right_menu.php'); ?>
+		
 <?php
 $time = microtime();
 $time = explode(' ', $time);
@@ -25,6 +25,7 @@ $start = $time;
 		<div class="m_center">
 
 			<?php include('layout/left_menu.php'); ?>
+				<?php include('layout/right_menu.php'); ?>
 			<div class="m_center">
 			<div class="m_content">
 			
