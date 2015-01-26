@@ -1,7 +1,7 @@
 
 	<head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<div class="left">
+	<div class="right">
 	<style>
 	body
 	{
