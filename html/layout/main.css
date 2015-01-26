@@ -172,11 +172,9 @@ text-decoration:underline;
 }
 
 .right{
+	width:1px;
 	padding:0px 20px 10px 3px;
-	top:1px;
-	left:1px;
-	z-index:1;
-	fload:left;
+	float:left;
 }
 }
 
