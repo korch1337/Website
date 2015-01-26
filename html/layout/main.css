@@ -172,8 +172,7 @@ text-decoration:underline;
 .right{
 	position:fixed;
 	top:30px;
-	right:30px;
-	float:left;
+	left:30px;
 }
 
 h1 {
