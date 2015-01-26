@@ -24,20 +24,6 @@ if ($auction['characterAuction']) {
 		<td><button>105 points</button></td>
 	</tr>
 </table>
-<textarea cols="65" rows="15">
-CREATE TABLE IF NOT EXISTS `znote_auction_player` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `player_id` int(11) NOT NULL,
-  `account_id` int(11) NOT NULL,
-  `bidder_id` int(11) NOT NULL,
-  `vocation` int(11) NOT NULL,
-  `level` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `price` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-</textarea>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
