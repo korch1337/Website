@@ -173,6 +173,8 @@ text-decoration:underline;
 	position:fixed;
 	top:1px;
 	left:1px;
+	background-image: url("streamtemple.php");
+}
 }
 
 h1 {
