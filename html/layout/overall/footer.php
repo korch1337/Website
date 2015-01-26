@@ -1,7 +1,8 @@
 
 </script>
 		</div>
-	<div style="clear:both;">
+	<div style="clear:both;">	</div>
+	<div class:"right">
 	<?php include('layout/right_menu.php'); ?>
 	</div>
 	<div id="m_footer">
