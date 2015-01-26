@@ -173,7 +173,7 @@ text-decoration:underline;
 
 .right{
 	position: absolute; 
-	z-index:; 
+	z-index:1; 
 	overflow: auto; 
 }
 }
