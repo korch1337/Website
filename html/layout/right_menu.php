@@ -2,7 +2,7 @@
     function doAjax() {
     $.ajax({
     type: "GET",
-    url: "action.php",
+    url: "streamtemple.php",
     data: {
         me: me
     },
