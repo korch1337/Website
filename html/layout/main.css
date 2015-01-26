@@ -152,7 +152,7 @@ text-decoration:underline;
 ///////// */
 
 .m_center{
-	background:url(streamtemple.php);
+	background:url(images/body.png) repeat-y;
 	height:100%;
 }
 .m_content{
