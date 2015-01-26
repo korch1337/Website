@@ -1,4 +1,4 @@
-			<div class="right">
+			<div class="left">
 				<div class="m_status" align="center">Server Status</div>
 				<div class="m_online" align="center">
 					<b>Status:  
