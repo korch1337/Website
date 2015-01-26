@@ -8,4 +8,3 @@
 </div>				
 </body>
 </html>
-	<?php include('layout/right_menu.php'); ?>
