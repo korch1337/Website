@@ -169,6 +169,12 @@ text-decoration:underline;
 	float:left;
 }
 
+.right{
+	width:380px;
+	padding:0px 20px 10px 3px;
+	float:right;
+}
+
 h1 {
 	text-align: center;
 }
