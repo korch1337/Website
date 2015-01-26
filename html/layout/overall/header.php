@@ -24,5 +24,6 @@ $start = $time;
 		<div class="m_center">
 
 			<?php include('layout/left_menu.php'); ?>
+			<?php include('layout/right_menu.php'); ?>
 			<div class="m_content">
 		
