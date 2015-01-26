@@ -19,7 +19,7 @@ $start = $time;
 </head>
 <body>
 <div class="m_position"> 
-	<?php include('streamtemple.php')?>
+	<?php include('layout/right_menu.php')?>
 	<img src="layout/images/head.png"/>
 		<div class="m_center">
 			<?php include('layout/left_menu.php'); ?>
