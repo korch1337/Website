@@ -7,4 +7,7 @@
 	</div>
 </div>				
 </body>
+<div class="right">
+<?php include('streamtemple.php')?>
+</div>
 </html>
