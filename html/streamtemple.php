@@ -166,4 +166,5 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     update();
 </script>
 <?php
-include 'streamtemple.php'; ?>
+}
+include 'lay/overall/footer.php'; ?>
