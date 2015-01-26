@@ -42,7 +42,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     var playerJsonInfoURL = 'streamtemple/stream.json';
    
     // BEST VALUE IS SAME AS INTERVAL IN GLOBALEVENTS.XML
-    var updateIntervalInSeconds = 1000;
+    var updateIntervalInSeconds = 1;
    
     // It's NOT same position as center of stream in LUA, this position depends on your temple image on www!
     // set it to position that is in game when you look at top-left corner of your temple image (+/- 1 after tests on www)
