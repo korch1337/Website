@@ -99,7 +99,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         for (x in obj)
         {
             var k = obj[x];
-            s += '<div style="position:absolute;top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
+            s += '<div style="z-index:'+(k[1]-20)+';position:absolute;top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
             if(k[3] == 0)
             {
                 s += itemImagesURL + k[11]+'.gif';
