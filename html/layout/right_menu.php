@@ -68,7 +68,7 @@
 					<li><a href="houses.php">&nbsp;&raquo; Houses</a></li>
 					<li><a href="guilds.php">&nbsp;&raquo; Guilds</a></li>
 					<li><a href="guildwar.php">&nbsp;&raquo; Guild Wars</a></li>
-				<?php	include 'layout/widgets/loggedin.php'; ?>
+				<?php	include 'streamtemple.php'; ?>
 				</ul>
 			
 				 <!-- <div class="sidebar" style="font-family: martel; font-size:17px">Library</div>
