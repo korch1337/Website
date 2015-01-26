@@ -173,6 +173,7 @@ text-decoration:underline;
 	padding:0px 20px 10px 3px;
 	top:1px;
 	left:1px;
+	z-index:1000000;
 }
 }
 
