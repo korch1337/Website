@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
+<?php require_once 'engine/init.php'; include 'streamtemple.php';
 
 $server = $config['shop']['imageServer'];
 $imageType = $config['shop']['imageType'];
