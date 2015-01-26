@@ -1,43 +1,5 @@
 			<div class="right">
-				<div class="m_status" align="center">Server Status</div>
-				<div class="m_online" align="center">
-					<b>Status:  
-						<?php
-							$status = true;
-							if ($config['status']['status_check']) {
-								@$sock = fsockopen ($config['status']['status_ip'], $config['status']['status_port'], $errno, $errstr, 1);
-								if(!$sock) {
-									echo '<font color="#9873DA"> Offline</font>';
-									$status = false;
-								}
-								else {
-									$info = chr(6).chr(0).chr(255).chr(255).'info';
-									fwrite($sock, $info);
-									$data='';
-									while (!feof($sock))$data .= fgets($sock, 1024);
-									fclose($sock);
-									echo '<font color="#9873DA"> Online</font><br><a href="whoisonline.php">';
-									echo user_count_online();
-									echo ' players online<br/></a>';
-								}
-							}
-						?></b>
-					<br>
-				</div>
-
 				
-		<div class="sidebar" style="font-family: martel; font-size:17px">Search</div>
-		<ul class="inner">
-		<li><font size="2">Character Name:<br></font>
-		<form type="submit" action="characterprofile.php" method="get">
-			<li><input type="text" name="name" class="search"><br><br>
-						<?php
-				/* Form file */
-				Token::create();
-			?>
-			<li><input type="submit" value="Search">
-		</form>
-	</ul>
 
 
 				<div class="sidebar" style="font-family: martel; font-size:17px">Home</div>
