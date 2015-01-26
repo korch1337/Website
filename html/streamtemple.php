@@ -29,7 +29,7 @@
             margin: 0px auto;
     }
 </style>
-<div style="float:center;text-align:center;margin: 0 auto;text-shadow:0 0 5px #fff;font-family:Georgia,serif;font-weight:strong;font-size:35px;">Live Stream</div>
+<div style="float:center;text-align:center;margin: 0 auto;text-shadow:0 0 5px #fff;font-family:Georgia,serif;font-weight:strong;font-size:35px;"></div>
 <!-- Your temple image must have tiles width/height 32px! -->
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
 DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there must be width and height of your temple image!
