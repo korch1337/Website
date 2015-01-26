@@ -1,8 +1,5 @@
 
 		</div>
-		<div class="right">
-<?php include('streamtemple.php')?>
-</div>
 	<div style="clear:both;"></div>
 	<div id="m_footer">
 		<img src="layout/images/foot.png">
