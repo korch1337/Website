@@ -1,28 +1,5 @@
 			<div class="right">
-			
-
 				
-		<div class="sidebar" style="font-family: martel; font-size:17px">Search</div>
-		<ul class="inner">
-		<li><font size="2">Character Name:<br></font>
-		<form type="submit" action="characterprofile.php" method="get">
-			<li><input type="text" name="name" class="search"><br><br>
-						<?php
-				/* Form file */
-				Token::create();
-			?>
-			<li><input type="submit" value="Search">
-		</form>
-	</ul>
-
-
-				<div class="sidebar" style="font-family: martel; font-size:17px">Home</div>
-        		<ul class="inner"> 
-                	<li><a href="index.php">&nbsp;&raquo; News</a></li>
-                    <li><a href="downloads.php">&nbsp;&raquo; Downloads</a></li>
-					<li><a href="forum.php">&nbsp;&raquo; Forum</a></li>
-				</ul>
-
 				<div class="sidebar" style="font-family: martel; font-size:17px">Account</div>
 					<?php
 						if (user_logged_in() === true) {
