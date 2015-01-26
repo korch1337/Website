@@ -19,6 +19,8 @@ $start = $time;
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
+<div class="right">
+<?php include('streamtemple.php')?>
 <div class="m_position"> 
 	<img src="layout/images/head.png"/>
 		<div class="m_center">
