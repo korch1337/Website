@@ -6,7 +6,7 @@ $time = explode(' ', $time);
 $time = $time[1] + $time[0];
 $start = $time;
 ?>
-			<?php include('layout/right_menu.php'); ?>
+
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="distribution" content="Global" />
