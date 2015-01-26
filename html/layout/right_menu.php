@@ -1,8 +1,8 @@
 <script type="text/javascript">
     function doAjax() {
-        $.ajax({
+    $.ajax({
     type: "GET",
-    url: "streamtemple.php",
+    url: "action.php",
     data: {
         me: me
     },
@@ -10,6 +10,5 @@
         alert(data);
 
     }
-        });
-    };
+});
 </script>
