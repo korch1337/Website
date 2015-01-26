@@ -1,35 +1,6 @@
 			<div class="left">
 			
-<style type="text/css">
-    .alpha_wrapper {
-            padding-top: 8px;
-            float: left;
-            position: relative;
-            color: #fff;
-            width: 96px;
-            text-align: center;
-    }
-    .name {
-            white-space: nowrap;
-            color: rgb(0, 255, 0);
-            font-size:10px;
-            width: 50%;
-            margin: 0px auto;
-            padding-bottom: 2px;
-            font-family: Verdana;
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
-    .skull {
-            background: transparent url(images/skulls/redskull.gif) no-repeat;
-            position: absolute;
-            top: 31px;
-            left: 57px;
-            width: 11px;
-            height: 11px;
-            width: 50%;
-            margin: 0px auto;
-    }
-</style>
+
 <div style="float:center;text-align:center;margin: 0 auto;text-shadow:0 0 5px #fff;font-family:Georgia,serif;font-weight:strong;font-size:35px;">Live Stream</div>
 <!-- Your temple image must have tiles width/height 32px! -->
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
