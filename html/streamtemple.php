@@ -99,7 +99,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         for (x in obj)
         {
             var k = obj[x];
-            s += '<div style="right";
+            s += '<div style="';
             if(k[3] == 0)
             {
                 s += itemImagesURL + k[11]+'.gif';
