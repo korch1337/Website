@@ -1,3 +1,5 @@
+<?php
+include 'lay/overall/footer.php'; ?>
 <style type="text/css">
     .alpha_wrapper {
             padding-top: 8px;
@@ -165,6 +167,4 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     }
     update();
 </script>
-<?php
-}
-include 'lay/overall/footer.php'; ?>
+
