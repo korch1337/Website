@@ -1,6 +1,7 @@
 
 	<head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<div class="left">
 	<style>
 	body
 	{
@@ -13,6 +14,7 @@
 	</style>
 	<title></title>
 </head>
+</div>
 			
 				
 			
