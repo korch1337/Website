@@ -5,6 +5,6 @@
 
     <div class="right">
     
-    <a href="streamtemple.php"></a>;
+ <?php include 'streamtemple.php';?>
 	</div>
  
