@@ -22,8 +22,8 @@ $start = $time;
 <div class="m_position"> 
 	<img src="layout/images/logo.png" alt="<?PHP echo $config['site_title'];?> logo"/>
 	<img src="layout/images/head.png"/>
+	<?php include('layout/right_menu.php'); ?>
 		<div class="m_center">
-<?php include('layout/right_menu.php'); ?>
 			<?php include('layout/left_menu.php'); ?>
 			
 			<div class="m_content">
