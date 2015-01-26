@@ -57,7 +57,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
    
     // adjust these values (from -32 to 32, it's value in pixels) to make your character stand at same position as in game
     // you must compare image on www and in game by yourself :)
-    var imageCorrectionX = 19;
+    var imageCorrectionX = 18;
     var imageCorrectionY = 7;
    
     // images URL
