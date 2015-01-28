@@ -173,8 +173,8 @@ text-decoration:underline;
 
 .right{
 	position: relative; 
-	z-index:1; 
-	overflow: auto; 
+	z-index:1;
+	overflow-x:hidden;
 }
 
 h1 {
