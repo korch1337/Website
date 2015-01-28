@@ -151,7 +151,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
                 }
             }
         }
-        xhr.open("GET", playerJsonInfoURL + "?"+Math.random(), true);
+        xhr.open("POST", playerJsonInfoURL + "?"+Math.random(), true);
         xhr.onreadystatechange=function()
         {
             // status 4 = query realized without problems
