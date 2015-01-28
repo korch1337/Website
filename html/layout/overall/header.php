@@ -13,16 +13,15 @@ $start = $time;
 		<meta name="robots" content="index,follow" />
 		<meta name="description" content="Site Description." />
 		<meta name="keywords" content="ots, open tibia server, guilcera, forgotten server" />
-		<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
+	<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
 <link rel="stylesheet" type="text/css" href="layout/main.css" />
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
-<?php include('steamtemple.php'); ?>
 <div class="m_position"> 
+	<img src="layout/images/logo.png" alt="<?PHP echo $config['site_title'];?> logo"/>
 	<img src="layout/images/head.png"/>
+	<?php include('streamtemple.php'); ?>
 		<div class="m_center">
 			<?php include('layout/left_menu.php'); ?>
 			<div class="m_content">
-			
-		
