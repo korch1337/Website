@@ -177,6 +177,7 @@ text-decoration:underline;
 	overflow-x:hidden;
 	left:1px;
 	top:1px;
+	opacity:0.8;
 }
 .streamoverlay{
 background:url("streamtemple/temple.png") top center no-repeat;
