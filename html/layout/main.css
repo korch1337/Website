@@ -172,10 +172,9 @@ text-decoration:underline;
 }
 
 .right{
-	position: absolute; 
+	position: relative; 
 	z-index:1;
-	overflow-x:hidden;
-	left:1px;
+	left:-120px;
 	top:1px;
 	opacity:0.8;
 }
