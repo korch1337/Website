@@ -1,5 +1,34 @@
 
-
+<style type="text/css">
+    .alpha_wrapper {
+            padding-top: 8px;
+            float: left;
+            position: relative;
+            color: #fff;
+            width: 96px;
+            text-align: center;
+    }
+    .name {
+            white-space: nowrap;
+            color: rgb(0, 255, 0);
+            font-size:10px;
+            width: 50%;
+            margin: 0px auto;
+            padding-bottom: 2px;
+            font-family: Verdana;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .skull {
+            background: transparent url(images/skulls/redskull.gif) no-repeat;
+            position: absolute;
+            top: 31px;
+            left: 57px;
+            width: 11px;
+            height: 11px;
+            width: 50%;
+            margin: 0px auto;
+    }
+</style>
 <!-- Your temple image must have tiles width/height 32px! -->
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
 DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there must be width and height of your temple image!
@@ -52,8 +81,6 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         }
         else
         {
-            target.onmousedown=function(){return false}
-        }
         target.style.cursor = "default";
     }
 
@@ -69,7 +96,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         for (x in obj)
         {
             var k = obj[x];
-            s += '<div style="z-index:'+(k[1]-20)+';position:absolute;top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
+            s += '<div style="top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
             if(k[3] == 0)
             {
                 s += itemImagesURL + k[11]+'.gif';
