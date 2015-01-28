@@ -53,7 +53,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     // ---
     // but don't worry, if you set it to (1000,1000,7) and set width 15 and height 15 it will work too! (just use more CPU then it should)
     var leftTopCornetX = 32363;
-    var leftTopCornetY = 32222;
+    var leftTopCornetY = 32218;
    
     // adjust these values (from -32 to 32, it's value in pixels) to make your character stand at same position as in game
     // you must compare image on www and in game by yourself :)
