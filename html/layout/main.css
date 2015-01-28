@@ -176,9 +176,8 @@ text-decoration:underline;
 .right{
 	position: fixed; 
 	left:1px;
-	width:100px;
 	top:1px;
-	opacity:0.8;
+	opacity:0.99;
 }
 .rights{
 	position: absolute; 
