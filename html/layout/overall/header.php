@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<?php include=('streamtemple.php'); ?>
 <?php
 $time = microtime();
 $time = explode(' ', $time);
@@ -18,6 +17,7 @@ $start = $time;
 <link rel="stylesheet" type="text/css" href="layout/main.css" />
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
+	<?php include=('streamtemple.php'); ?>
 <body>
 <div class="m_position"> 
 	<img src="layout/images/head.png"/>
