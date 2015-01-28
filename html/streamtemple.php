@@ -68,25 +68,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     var outfitImagesURL = 'outfit.php';
    
    // -- END OF CONFIG --
-   
-    function disableSelection(target)
-    {
-        if (typeof target.onselectstart!="undefined")
-        {
-            target.onselectstart=function(){return false}
-        }
-        else if (typeof target.style.MozUserSelect!="undefined")
-        {
-            target.style.MozUserSelect="none";
-        }
-        else
-        {
-            target.onmousedown=function(){return false}
-        }
-        target.style.cursor = "default";
-    }
 
-    disableSelection(document.body);
 
     var uid = Math.floor(Math.random()*(10000000-1))+10000000;
     function handler(data)
