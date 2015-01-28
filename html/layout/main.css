@@ -172,10 +172,9 @@ text-decoration:underline;
 }
 
 .right{
-	position: absolute; 
-	z-index:; 
+	position: relative; 
+	z-index:1; 
 	overflow: auto; 
-}
 }
 
 h1 {
