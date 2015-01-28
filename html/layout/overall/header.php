@@ -16,6 +16,8 @@ $start = $time;
 	<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
 <link rel="stylesheet" type="text/css" href="layout/main.css" />
 <link href="layout/favicon.ico" rel="shortcut icon" />
+<div class="right">
+<?php include('streamtemple.php'); ?>
 </head>
 <body>
 <div class="m_position"> 
