@@ -7,19 +7,18 @@ $time = $time[1] + $time[0];
 $start = $time;
 ?>
 	<head>
-		<--
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="distribution" content="Global" />
 		<meta name="author" content="Vean" />
 		<meta name="robots" content="index,follow" />
 		<meta name="description" content="Site Description." />
 		<meta name="keywords" content="ots, open tibia server, guilcera, forgotten server" />
-	<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
-		-->
+		<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
 <link rel="stylesheet" type="text/css" href="layout/main.css" />
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
+<?php include('steamtemple.php'); ?>
 <div class="m_position"> 
 	<img src="layout/images/head.png"/>
 		<div class="m_center">
