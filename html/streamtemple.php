@@ -1,4 +1,4 @@
-
+<-- 
 <style type="text/css">
     .alpha_wrapper {
             padding-top: 8px;
@@ -28,7 +28,7 @@
             width: 50%;
             margin: 0px auto;
     }
-</style>
+</style> -->
 <div style="float:center;text-align:center;margin: 0 auto;text-shadow:0 0 5px #fff;font-family:Georgia,serif;font-weight:strong;font-size:35px;"></div>
 <!-- Your temple image must have tiles width/height 32px! -->
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
