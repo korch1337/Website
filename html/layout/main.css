@@ -174,7 +174,7 @@ text-decoration:underline;
 }
 
 .right{
-	position: relative; 
+	position: absolute; 
 	z-index:1;
 	left:-720px;
 	top:1px;
