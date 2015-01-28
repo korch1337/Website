@@ -33,7 +33,7 @@
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
 DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there must be width and height of your temple image!
 -->
-<div style="background-image:url('streamtemple/temple.png');width:600px;height:380px;box-shadow:0 0 20px #000;font-family:Arial, sans-serif;border:2px solid black;margin:5px auto;text-align:center;overflow:hidden;position:relative;" id="templeAnimationWindow"></div>
+<div style="background-image:url('streamtemple/backright.jpg');width:494px;height:975px;box-shadow:0 0 20px #000;font-family:Arial, sans-serif;border:2px solid black;margin:5px auto;text-align:center;overflow:hidden;position:relative;" id="templeAnimationWindow"></div>
 
 <script type="text/javascript">
     // -- CONFIG --
