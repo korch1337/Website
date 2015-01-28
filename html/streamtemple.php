@@ -67,7 +67,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     // http://otland.net/threads/gesior2012-make-your-own-outfits-items-country-flags-hosting-recommended.210844/
     var outfitImagesURL = 'outfit.php';
    
-    // -- END OF CONFIG --
+   // -- END OF CONFIG --
    
     function disableSelection(target)
     {
@@ -81,6 +81,8 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         }
         else
         {
+            target.onmousedown=function(){return false}
+        }
         target.style.cursor = "default";
     }
 
@@ -96,7 +98,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
         for (x in obj)
         {
             var k = obj[x];
-            s += '<div style="opacity:0.8;z-index:'+(k[1]-20)+';position:absolute;top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
+            s += '<div style="z-index:'+(k[1]-20)+';position:absolute;top:'+(((k[1]-leftTopCornetY)*32)+imageCorrectionY)+'px;left:'+(((k[0]-leftTopCornetX)*32)+imageCorrectionX)+'px;width:64px;height:64px;background:transparent url(';
             if(k[3] == 0)
             {
                 s += itemImagesURL + k[11]+'.gif';
@@ -163,4 +165,3 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     }
     update();
 </script>
-
