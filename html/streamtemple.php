@@ -33,7 +33,7 @@
 <!-- There is 'streamtemple/temple.png', if you keep your temple image in other format or on other host, edit this.
 DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there must be width and height of your temple image!
 -->
-<div id="templeAnimationWindow">
+<div class="templeoverlay" id="templeAnimationWindow">
 
 <script type="text/javascript">
     // -- CONFIG --
