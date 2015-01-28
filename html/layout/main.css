@@ -180,10 +180,11 @@ text-decoration:underline;
 	opacity:0.8;
 }
 .streamoverlay{
-background-image:url(templestream/temple.png) left  no-repeat;
-width:187px;
-padding:0px 20px 10px 3px;
-float:left;
+background-image:url(templestream/temple.png) no-repeat;
+opacity:0.8;
+left:1px;
+
+
 
 }
 
