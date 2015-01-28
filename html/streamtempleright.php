@@ -39,7 +39,7 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     // -- CONFIG --
    
     // url to stream file - it's NOT full path to that file like 'c:\xampp\...'
-    var playerJsonInfoURL = 'streamtemple/stream.json';
+    var playerJsonInfoURL = 'streamtemple/streamright.json';
    
     // BEST VALUE IS SAME AS INTERVAL IN GLOBALEVENTS.XML
     var updateIntervalInSeconds = 1;
@@ -52,8 +52,8 @@ DO NOT FORGET TO EDIT THIS PART OF LINE BELOW: 'width:600px;height:380px', there
     // YES! It's: Position(1008, 1004, 7), width: 8 (8*2+1 = 17, more then your image!), height: 4 (4*2+1 = 9, more ..!)
     // ---
     // but don't worry, if you set it to (1000,1000,7) and set width 15 and height 15 it will work too! (just use more CPU then it should)
-    var leftTopCornetX = 32339;
-    var leftTopCornetY = 32218;
+    var leftTopCornetX = 32363;
+    var leftTopCornetY = 32220;
    
     // adjust these values (from -32 to 32, it's value in pixels) to make your character stand at same position as in game
     // you must compare image on www and in game by yourself :)
