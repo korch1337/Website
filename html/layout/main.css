@@ -180,10 +180,10 @@ text-decoration:underline;
 	opacity:0.99;
 }
 .rights{
-	position: absolute; 
-	left:-720px;
+	position: fixed; 
+	right:1px;
 	top:1px;
-	opacity:0.8;
+	opacity:0.99;
 }
 .streamoverlay{
 background-image:url(templestream/temple.png) no-repeat;
