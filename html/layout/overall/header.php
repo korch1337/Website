@@ -18,7 +18,9 @@ $start = $time;
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
+<div id="templeAnimationWindow">
 <?php include('streamtemple.php'); ?>
+</div>
 <div class="m_position"> 
 	<img src="layout/images/logo.png" alt="<?PHP echo $config['site_title'];?> logo"/>
 	<img src="layout/images/head.png"/>
