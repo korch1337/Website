@@ -181,8 +181,8 @@ text-decoration:underline;
 }
 .streamoverlay{
 background:url("streamtemple/temple.png") no-repeat;
-left:700px;
-position:relative;
+left:1px;
+position:fixed;
 z-index:1;
 opacity:0.8;
 
