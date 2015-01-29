@@ -62,8 +62,9 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 				$url = url("guilds.php?name=". $guild['name']);
 				?>
 				<tr class="special" onclick="javascript:window.location.href='<?php echo $url; ?>'">
+				<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
 					<td style="width: 100px;">
-						<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
+						//<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
 					</td>
 					<td>
 						<b><?php echo $guild['name']; ?></b>
