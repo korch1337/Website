@@ -1,12 +1,19 @@
 <?php include 'layout/overall/header.php';
 
-echo'
-<h1>Latest Bounties</h1>
-<table id="bountyTable" class="table table-striped">
-	<tr class="yellow">
-		<th>Bounty</th>
-		<th>Name</th>
-	</tr>
-</table>'
+echo '
+<table>
+  <tr>
+    <td>Customer Name</td>
+    <td>' '</td>
+  </tr>
+  <tr>
+    <td>Customer Age</td>
+    <td>' '</td>
+  </tr>
+  <tr>
+    <td>Customer ...</td>
+    <td>' '</td>
+  </tr>
+</table>';
 
 include 'layout/overall/footer.php'; ?>
