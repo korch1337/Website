@@ -175,3 +175,4 @@ if (!$compare) {
 		}
 		?>
 	</table>
+	<?php
