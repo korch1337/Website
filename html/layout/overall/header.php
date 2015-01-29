@@ -18,10 +18,6 @@ $start = $time;
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
-<div class="right">
-
-<?php include('streamtemple.php'); ?>
-</div>
 <div class="rights">
 
 <?php include('streamtempleright.php'); ?>
