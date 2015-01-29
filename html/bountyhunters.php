@@ -1,4 +1,4 @@
-<?php include 'layout/overall/header.php';
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
 
 echo '
 <table>
