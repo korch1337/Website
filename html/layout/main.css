@@ -181,7 +181,7 @@ text-decoration:underline;
 }
 .rights{
 	position: fixed;
-	background-image:url(templestream/backrightedited.jpg) no-repeat;
+	background:url(templestream/backrightedited.jpg) no-repeat;
 	right:1px;
 	top:1px;
 	opacity:0.99;
