@@ -186,6 +186,8 @@ text-decoration:underline;
 	top:1px;
 	opacity:0.99;
 	background-origin:content-box;
+	width:485px;
+	height:975px;
 }
 .streamoverlay{
 background-image:url(templestream/temple.png) no-repeat;
