@@ -4,10 +4,10 @@ $main_content .= '
         <TR>
             <TD style="text-align:center;"><H2>Bounty Hunters</H2></TD>
         </TR>
-        <TR BGCOLOR="'.$config['site']['vdarkborder'].'">
+        <TR BGCOLOR="'.$config['site_title']['vdarkborder'].'">
             <TD><CENTER><FONT COLOR=WHITE SIZE=2><b>How to use...</b></FONT></CENTER></TD>
         </TR> 
-        <TR BGCOLOR="'.$config['site']['darkborder'].'">
+        <TR BGCOLOR="'.$config['site_title']['darkborder'].'">
             <TD style="text-align:center;"><b>!hunt prize,nick</b>
        <br><font color="red">It is important to right exactly like this <b>prize,nick</b> with no spaces after the comma.</font>
             <br><i>Example: !hunt 1000000,Player_name
@@ -40,7 +40,7 @@ foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, 
                         LEFT JOIN players AS C ON A.sp_id = C.id
                         LEFT JOIN players AS D ON A.k_id = D.id
                         ORDER BY A.killed,A.prize DESC') as $bounty) {
-        if($num%2 == 0){$color=$config['site']['darkborder'];}else{$color=$config['site']['lightborder'];}
+        if($num%2 == 0){$color=$config['site_title']['darkborder'];}else{$color=$config['site_title']['lightborder'];}
         if ($bounty['killed_by']){
                 $killed_by = '<a href="?subtopic=characters&name='.$bounty['killed_by'].'">'.$bounty['killed_by'].'</a>';
         } else {
