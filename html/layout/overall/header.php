@@ -19,7 +19,7 @@ $start = $time;
 </head>
 <body>
 <div class="right">
-<noscript>Enable Javascript to get full functionality of this <a href="http://www.freeshoutbox.net/">shoutbox</a><br /></noscript><iframe src="http://huehueOT.freeshoutbox.net/" height="500" width="430" frameborder="0"></iframe>
+<noscript>Enable Javascript to get full functionality of this <a href="http://www.freeshoutbox.net/">shoutbox</a><br /></noscript><iframe src="http://huehueOT.freeshoutbox.net/" height="500" width="450" frameborder="0"></iframe>
 </div>
 <div class="rights">
 
