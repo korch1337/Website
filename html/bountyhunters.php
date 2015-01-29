@@ -16,7 +16,7 @@ $main_content .=
 <br><b><font color="green">Money is added to your bank account automatically if you get a Bounty Kill.</font></b></TD>
         </TR> 
 </TABLE><br><br><table> 
-;
+
 $main_content .= 
         <TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%>
             <TR BGCOLOR="#505050">
@@ -34,12 +34,12 @@ $main_content .=
                     <center><B>Killed by</B></center>
                 </TD>
             </TR>;
-foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
+foreach($SQL->query(SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
                         FROM bounty_hunters AS A
                         LEFT JOIN players AS B ON A.fp_id = B.id
                         LEFT JOIN players AS C ON A.sp_id = C.id
                         LEFT JOIN players AS D ON A.k_id = D.id
-                        ORDER BY A.killed,A.prize DESC') as $bounty) {
+                        ORDER BY A.killed,A.prize DESC) as $bounty) {
         if($num%2 == 0){$color=$config['site_title']['darkborder'];}else{$color=$config['site_title']['lightborder'];}
         if ($bounty['killed_by']){
                 $killed_by = '<a href="?subtopic=characters&name='.$bounty['killed_by'].'">'.$bounty['killed_by'].'</a>';
