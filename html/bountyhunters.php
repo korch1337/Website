@@ -1,3 +1,5 @@
+<?php require_once 'engine/init.php';
+include 'layout/overall/header.php'; ?>
 <?php
 $main_content .= '
     <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=1 WIDTH=100%>
@@ -72,4 +74,6 @@ if($num == 0){
         $main_content.='<TR BGCOLOR="'.$color.'"><TD colspan=4><center>Currently there are not any bounty hunter offer.</center></TD></TR>';
 }
     $main_content .='</TABLE></table>';
-?> 
+?>
+<?php 
+include 'layout/overall/footer.php'; ?>
