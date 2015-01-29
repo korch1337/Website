@@ -48,7 +48,7 @@ foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, 
         }
     $b = round($bounty[prize] / 1000000,2);
     $skill = $SQL->query('SELECT * FROM '.$SQL->tableName('players').' WHERE '.$SQL->fieldName('id').' = '.$bounty['sp_id'].'')->fetch();
-if($skill['online'] == 1)
+if(Player::isPlayerOnline($skill['id']))
                 $main_content .= '
                 <TR BGCOLOR="'.$color.'">
                     <TD><center><b><a href="?subtopic=characters&name='.$bounty['hunted_by'].'">'.$bounty['hunted_by'].'</a></b></center></TD>
