@@ -9,7 +9,7 @@
 	$config['CustomVersion'] = false;
 
 	$config['site_title'] = 'HUEHUE OT';
-	$config['site_title_context'] = 'Insert text here';
+	$config['site_title_context'] = 'Custom Realmap BEST EU';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
 	$config['server_path'] = '/root/forgottenserver'; 
@@ -346,7 +346,7 @@
 		'auctionPeriod' => 24 * 60 * 60, // 24 hours auction time.
 		'housesPerPlayer' => 1,
 		'requirePremium' => false,
-		'levelToBuyHouse' => 8,
+		'levelToBuyHouse' => 150,
 	);
 
 	// Leave on black square in map and player should get teleported to their selected town.
