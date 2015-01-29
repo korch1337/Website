@@ -1,6 +1,4 @@
-<?php
-
-require_once 'engine/init.php'; include 'layout/overall/header.php'; 
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; 
 
 foreach($SQL->query('SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
                         FROM bounty_hunters AS A
