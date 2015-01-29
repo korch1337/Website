@@ -185,7 +185,7 @@ text-decoration:underline;
 	right:1px;
 	top:1px;
 	opacity:0.99;
-	background-origin:content-box;
+	background-origin:border-box;
 	width:485px;
 	height:975px;
 }
