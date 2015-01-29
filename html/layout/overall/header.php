@@ -18,6 +18,9 @@ $start = $time;
 <link href="layout/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
+<div class="right">
+<noscript>Enable Javascript to get full functionality of this <a href="http://www.freeshoutbox.net/">shoutbox</a><br /></noscript><iframe src="http://huehueOT.freeshoutbox.net/" height="500" width="430" frameborder="0"></iframe>
+</div>
 <div class="rights">
 
 <?php include('streamtempleright.php'); ?>
