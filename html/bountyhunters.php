@@ -1,20 +1,47 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+<?php
 
-<h1>Bounty</h1>
-foreach($SQL->query(SELECT A.* , B.name AS hunted_by, C.name AS player_hunted, D.name AS killed_by
-                        FROM bounty_hunters AS A
-                        LEFT JOIN players AS B ON A.fp_id = B.id
-                        LEFT JOIN players AS C ON A.sp_id = C.id
-                        LEFT JOIN players AS D ON A.k_id = D.id
-                        ORDER BY A.killed,A.prize DESC) as $bounty) {
-        if($num%2 == 0){$color=$config['site_title']['darkborder'];}else{$color=$config['site_title']['lightborder'];}
-        if ($bounty['killed_by']){
-                $killed_by = '<a href="?subtopic=characters&name='.$bounty['killed_by'].'">'.$bounty['killed_by'].'</a>';
-        } else {
-                $killed_by = 'still alive';
-        }
-    $b = round($bounty[prize] / 1000000,2);
-    $skill = $SQL->query('SELECT * FROM '.$SQL->tableName('players').' WHERE '.$SQL->fieldName('id').' = '.$bounty['sp_id'].'')->fetch();
+#########################
+# BOUNTY HUNTERS SCRIPT #
+#  MADE FOR MODERN AAC  #
+#      BY ARCHEZ        #
+#########################
+#  HTTP://ARCHEZOT.COM  #
+#########################
+#  RESPECT THE CREDITS  #
+#########################
 
-<?php 
-include 'layout/overall/footer.php'; ?>
+require("config.php");
+$ots = POT::getInstance();
+$ots->connect(POT::DB_MYSQL, connection());
+$SQL = $ots->getDBHandle();
+
+# Tables
+$a = '#c6c6c6';
+$b = '#d5d5d5';
+$c = '#e4e4e4';
+
+# Data
+$list = $SQL->query('SELECT * FROM `bounty_hunters` ORDER by `id` DESC');
+
+echo '<table border="0" cellspacing="1" width="100%">
+<tr bgcolor="'.$a.'"><td width="3%">#</td><td width="20%"><b>Hunted by</b></td><td width="15%" colspan="2"><b>Reward</b></td><td width="20%"><b>Hunted player</b></td><td width="20%"><b>Killed by</b></td></tr>';
+
+$datalist = 0;
+foreach($list as $data) {
+    if(is_int($datalist / 2))
+        $bgcolor = $b;
+            else
+        $bgcolor = $c;
+$datalist++;
+
+$huntedby = $SQL->query('SELECT * FROM `players` WHERE `id` = '.$data['fp_id'].'')->fetch();
+$huntedplayer = $SQL->query('SELECT * FROM `players` WHERE `id` = '.$data['sp_id'].'')->fetch();
+$killedby = $SQL->query('SELECT * FROM `players` WHERE `id` = '.$data['k_id'].'')->fetch();
+
+if($killedby == 0) { $killedby['name'] = 'STILL ALIVE'; }
+
+echo '<tr bgcolor="'.$bgcolor.'"><td><span style="font-size:11px;color:#a8a8a8;">'.$datalist.'</span></td><td><a href="/index.php/character/view/'.strtolower($huntedby['name']).'"><span style="font-size:11px;">'.strtoupper($huntedby['name']).'</span></a></td><td><span style="font-size:11px;color:#909090;">'.$data['prize'].'</span></td><td><span style="font-size:11px;">GOLD</span></td><td><a href="/index.php/character/view/'.strtolower($huntedplayer['name']).'"><span style="font-size:11px;">'.strtoupper($huntedplayer['name']).'</a></td><td><a href="/index.php/character/view/'.strtolower($killedby['name']).'"><span style="font-size:11px;">'.strtoupper($killedby['name']).'</a></td></tr>';
+}
+echo '</table>';
+
+?> 
