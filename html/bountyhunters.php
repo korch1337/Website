@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
+<?php include 'layout/overall/header.php';
 ?>
 
 <h1>Latest Deaths</h1>
@@ -9,5 +9,4 @@
 	</tr>
 </table>
 <?php
-} else echo 'No bountys at the moment.';
 include 'layout/overall/footer.php'; ?>
