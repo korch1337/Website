@@ -176,5 +176,3 @@ if (!$compare) {
 		?>
 	</table>
 	<?php
-}
-include 'streamtemple.php'; ?>
