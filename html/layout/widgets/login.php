@@ -14,5 +14,5 @@
 	</div>
 	<ul class="inner">
 		<li><a href='register.php'>&nbsp;&raquo; Create Account</a></li>
-		<li><a href='sub.php?page=recover'>&nbsp;&raquo; Lost Account</a></li>
+		<li><a href='recovery.php'>&nbsp;&raquo; Lost Account</a></li>
 	</ul>
