@@ -54,7 +54,7 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 		<th>Logo</th>
 		<th>Description</th>
 		<th>Guild data</th>
-		<!-- <th>Founded:</th> -->
+		<th>Founded:</th>
 	</tr>
 		<?php
 		foreach ($guilds as $guild) {
@@ -62,9 +62,8 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 				$url = url("guilds.php?name=". $guild['name']);
 				?>
 				<tr class="special" onclick="javascript:window.location.href='<?php echo $url; ?>'">
-				<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
 					<td style="width: 100px;">
-						//<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
+					<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
 					</td>
 					<td>
 						<b><?php echo $guild['name']; ?></b>
@@ -77,7 +76,7 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 					</td>
 				</tr>
 				<?php
-				//echo '<td>'. getClock($guild['creationdata'], true) .'</td>';
+				echo '<td>'. getClock($guild['creationdata'], true) .'</td>';
 			}
 		}
 		?>
