@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php';
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
 
 $records = mysql_select_multi('SELECT * FROM `server_record` ORDER BY `record` DESC LIMIT 1;');
 ?>
@@ -53,4 +53,6 @@ if ($array) {
 			}
 			?>
 	</table>
+	
+<?php include 'layout/overall/footer.php'; ?>
 	
