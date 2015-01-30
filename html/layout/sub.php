@@ -35,6 +35,13 @@ $subpages = array(
 	'index' => array(
 		'file' => 'index.php',
 		'override' => true
+		),
+	'whoisonline' => array(
+		// layout/sub/blank.php
+		'file' => 'whoisonline.php',
+		// false means don't run this file instead of the regular file at website.com/blank.php
+		'override' => false
 		)
+		
 );
 ?>
