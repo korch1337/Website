@@ -1,5 +1,4 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php';
-<?PHP
 echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Server Information</center></td></tr>
 <tr><td>';
 $getshit11 = mysql_query("SELECT `id`, `name` FROM `players` ORDER BY `id` DESC LIMIT 1"); 
@@ -16,7 +15,7 @@ echo '<center>Welcome to our newest player: <a href="characterprofile.php?name='
 echo '<tr><td><center>The best player is: <a href="characterprofile.php?name='.$fetchshit2['name'].'">'.$fetchshit2['name'].'</a> level: '.$fetchshit2['level'].' congratulations!</center></td></tr>';
 echo '<tr><td><center>We have <b>'.$fetchshit3['shiter'].'</b> accounts in our database, <b>'.$fetchshit['shit'].'</b> players, and <b>'.$fetchshit4['yea'].' </b>guilds </center></td></tr>';
 echo '</table>';
-?>
+
 
 	if (!isset($_GET['page'])) {
 		$page = 0;
