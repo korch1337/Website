@@ -51,6 +51,4 @@ if ($array) {
             ?>
     </table>
 
-
-}
 <?php include 'layout/overall/footer.php';?>
