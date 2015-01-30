@@ -8,8 +8,8 @@
 	// As far as I know, OTX is based on TFS_03, so make sure TFS version is configured TFS_03
 	$config['CustomVersion'] = false;
 
-	$config['site_title'] = 'HUEHUE OT';
-	$config['site_title_context'] = 'Custom Realmap BEST EU';
+	$config['site_title'] = 'Zerexxa OT';
+	$config['site_title_context'] = 'Custom Realmap';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
 	$config['server_path'] = '/root/forgottenserver'; 
@@ -693,7 +693,7 @@
 	// Write your paypal address here, and what currency you want to recieve money in.
 	$config['paypal'] = array(
 		'enabled' => true,
-		'email' => 'felixkorch1@gmail.com', // Example: paypal@mail.com
+		'email' => 'mail.zerexxa.net', // Example: paypal@mail.com
 		'currency' => 'EUR',
 		'points_per_currency' => 10, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
