@@ -1,7 +1,7 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php';
+<?php require_once 'engine/init.php';
 
 $records = mysql_select_single('SELECT `value` FROM `server_config` WHERE `config` = "players_record"');
-
+?>
 <img src="layout/images/titles/t_plaonline.png"/><p>
 <table>
 <tr class="yellow"><th>Server Status</th></tr>
@@ -50,6 +50,7 @@ if ($array) {
             }
             ?>
     </table>
- }
 
-<?php include 'layout/overall/footer.php'; ?>
+    <?php
+}
+?>
