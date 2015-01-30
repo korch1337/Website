@@ -24,7 +24,7 @@ $start = $time;
 <?php include('streamtempleright.php'); ?>
 </div>
 <div class="m_position"> 
-	<img src="layout/images/logo.png" alt="<?PHP echo $config['site_title'];?> logo"/>
+	<img src="layout/images/logo.jpg" alt="<?PHP echo $config['site_title'];?> logo"/>
 	<img src="layout/images/head.png"/>
 
 		<div class="m_center">
