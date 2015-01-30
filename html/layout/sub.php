@@ -33,7 +33,8 @@ $subpages = array(
 		'override' => false
 	),
 	'index' => array(
-		'file' => 'index.php'
-		'override' => true)
+		'file' => 'index.php',
+		'override' => true
+		)
 );
 ?>
