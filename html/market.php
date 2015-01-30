@@ -176,3 +176,5 @@ if (!$compare) {
 		?>
 	</table>
 	<?php
+}
+include 'layout/overall/footer.php'; ?>
