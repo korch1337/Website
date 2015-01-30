@@ -34,7 +34,7 @@ $subpages = array(
 	),
 	'index' => array(
 		'file' => 'index.php',
-		'override' => true
+		'override' => false
 		),
 	'whoisonline' => array(
 		// layout/sub/blank.php
@@ -42,7 +42,7 @@ $subpages = array(
 		// false means don't run this file instead of the regular file at website.com/blank.php
 		'override' => false
 		),
-			'guilds' => array(
+	'guilds' => array(
 		// layout/sub/blank.php
 		'file' => 'guilds.php',
 		// false means don't run this file instead of the regular file at website.com/blank.php
