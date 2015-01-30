@@ -181,7 +181,7 @@ text-decoration:underline;
 }
 .rights{
 	position: fixed;
-	background:url(images/backrightedited.jpg) no-repeat;
+	background:url(images/right.png) no-repeat;
 	right:1px;
 	top:1px;
 	opacity:0.99;
