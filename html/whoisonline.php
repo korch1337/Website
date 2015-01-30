@@ -1,6 +1,6 @@
 <?php require_once 'engine/init.php';
 
-$records = mysql_select_single('SELECT `value` FROM `server_config` WHERE `config` = `players_record`');
+$records = mysql_select_single('SELECT `value` FROM `server_config` WHERE `config` = "players_record"');
 ?>
 <img src="layout/images/titles/t_plaonline.png"/><p>
 <table>
