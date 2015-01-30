@@ -53,5 +53,4 @@ if ($array) {
 
 
 }
-?>
-<?php  include 'layout/overall/footer.php';?>
+<?php include 'layout/overall/footer.php';?>
