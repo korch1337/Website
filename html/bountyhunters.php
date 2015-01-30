@@ -1,14 +1,4 @@
-<?php
-
-#########################
-# BOUNTY HUNTERS SCRIPT #
-#  MADE FOR MODERN AAC  #
-#      BY ARCHEZ        #
-#########################
-#  HTTP://ARCHEZOT.COM  #
-#########################
-#  RESPECT THE CREDITS  #
-#########################
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 
 require("config.php");
 $ots = POT::getInstance();
@@ -44,4 +34,4 @@ echo '<tr bgcolor="'.$bgcolor.'"><td><span style="font-size:11px;color:#a8a8a8;"
 }
 echo '</table>';
 
-?> 
+<?php include 'layout/overall/footer.php'; ?>
