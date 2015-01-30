@@ -41,7 +41,7 @@ $subpages = array(
 		'file' => 'whoisonline.php',
 		// false means don't run this file instead of the regular file at website.com/blank.php
 		'override' => true
-		)
+		),
 		
 );
 ?>
