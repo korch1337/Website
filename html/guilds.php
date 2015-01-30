@@ -66,7 +66,7 @@ if (isset($guilds) && !empty($guilds) && $guilds !== false) {
 					<img style="max-height: 100px; margin: auto; display: block;" src="<?php logo_exists($guild['name']); ?>">
 					</td>
 					<td>
-						<a href="<?php echo 'guilds.php?name='.$guild['name']. ?>'"/a>
+						<a href="<?php echo 'guilds.php?name='.$guild['name']; ?>"/a>
 						<b><?php echo $guild['name']; ?></b>
 						<?php if (strlen($guild['motd']) > 0) echo '<br>'.$guild['motd']; ?>
 					</td>
