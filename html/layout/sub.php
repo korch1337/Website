@@ -34,6 +34,6 @@ $subpages = array(
 	),
 	'index' => array(
 		'file' => 'index.php'
-		'override' => false)
+		'override' => true)
 );
 ?>
