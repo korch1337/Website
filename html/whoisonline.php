@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php';
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 
 $records = mysql_select_single('SELECT `value` FROM `server_config` WHERE `config` = "players_record"');
 ?>
@@ -51,6 +51,6 @@ if ($array) {
             ?>
     </table>
 
-    <?php
+    <?php include 'layout/overall/footer.php'; ?>
 }
 ?>
