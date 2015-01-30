@@ -42,11 +42,7 @@ $subpages = array(
         'file' => 'loggedin.php',
         'override' => true
     ),
-    'whoisonline' => array(
-        'file' => 'whoisonline.php',
-        'override' => true
-    ),
-    'map' => array(
+     'map' => array(
         'file' => 'map.php',
         'override' => true
     ),
