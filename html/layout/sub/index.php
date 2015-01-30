@@ -2,7 +2,7 @@
 
 <?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Server Information</center></td></tr> 
 <tr><td>'; 
-$getshit11 = mysql_query("SELECT `id`, `name` FROM `players` ORDER BY `id` DESC LIMIT 1");  
+$getshit11 = mysql_query('SELECT `id`, `name` FROM `players` ORDER BY `id` DESC LIMIT 1');  
 $fetchshitt = mysql_fetch_assoc($getshit11);  
 $getshit1 = mysql_query("SELECT COUNT(*) as `shit` FROM `players` "); 
 $fetchshit = mysql_fetch_assoc($getshit1); 
