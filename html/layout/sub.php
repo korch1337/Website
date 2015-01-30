@@ -18,41 +18,6 @@
 */
 
 $subpages = array(
-    'houses' => array(
-        'file' => 'houses.php',
-        'override' => true
-    ),
-    'index' => array(
-        'file' => 'index.php',
-        'override' => true
-    ),
-    'recover' => array(
-        'file' => 'recover.php',
-        'override' => true
-    ),
-    'charactersearch' => array(
-        'file' => 'charactersearch.php',
-        'override' => true
-    ),
-    'highscore' => array(
-        'file' => 'highscore.php',
-        'override' => true
-    ),
-    'loggedin' => array(
-        'file' => 'loggedin.php',
-        'override' => true
-    ),
-     'map' => array(
-        'file' => 'map.php',
-        'override' => true
-    ),
-    'quests' => array(
-        'file' => 'quests.php',
-        'override' => true
-    ),
-    'experiencetable' => array(
-        'file' => 'experiencetable.php',
-        'override' => true
-    ),
+
 );
 ?>
