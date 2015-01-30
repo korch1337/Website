@@ -538,7 +538,7 @@
 	*/
 	$config['mailserver'] = array(
 		'register' => false, // Send activation mail
-		'accountRecovery' => false, // Recover username or password through mail
+		'accountRecovery' => true, // Recover username or password through mail
 		'host' => "felixkorch2@gmail.com", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
 		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
