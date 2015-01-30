@@ -42,6 +42,12 @@ $subpages = array(
 		// false means don't run this file instead of the regular file at website.com/blank.php
 		'override' => false
 		),
+			'guilds' => array(
+		// layout/sub/blank.php
+		'file' => 'guilds.php',
+		// false means don't run this file instead of the regular file at website.com/blank.php
+		'override' => false
+		),
 		
 );
 ?>
