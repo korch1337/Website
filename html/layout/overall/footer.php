@@ -1,4 +1,10 @@
-
+</div>
+	<div style="clear:both;"></div>
+	<div id="m_footer">
+		<img src="layout/images/foot.png">
+		<center><p>Guilcera Layout Peonso. Engine <a href="credits.php">Znote AAC</a><br>Tibia copyrighted by CipSoft GmbH.<br></p></center>
+	</div>
+ 
  <div id="footer">
  <ul id="footer_menu">
  
