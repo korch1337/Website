@@ -67,7 +67,7 @@
     <div id="site_content">
       <div id="sidebar_container">
         <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
-        
+        <?php include 'layout/rightwidgets.php'; ?>
         <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Top 5 players</h3>
