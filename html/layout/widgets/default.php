@@ -1,6 +1,15 @@
 <div class="sidebar">
         <!-- insert your sidebar items here -->
         <h3>Character Search</h3>
-        <h4>Enter name:</h4>
-        <p>Put your latest news item here, or anything else you would like in the sidebar!<br /><a href="#">Read more</a></p>
+        <div class="inner">
+		<li><font size="3">Character Name:<br></font>
+		<form type="submit" action="characterprofile.php" method="get">
+			<li><input type="text" name="name" class="search"><br><br>
+						<?php
+				/* Form file */
+				Token::create();
+			?>
+			<li><input type="submit" value="Search">
+		</form>
+	</div>
         </div>
