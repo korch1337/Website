@@ -608,10 +608,11 @@ table tr td
   border-top: 1px solid #FFF;} */
  
  table { 
-background: transparent url(images/transparent.png);
+background: rgba(204, 204, 204, 0.5);
 	margin: 10px 0 0 0;
 	width: 100%;
 	border-spacing: 1px;
+	
 
 }
 table tr th, table tr td { 
