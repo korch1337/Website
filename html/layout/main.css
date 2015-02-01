@@ -619,28 +619,28 @@ table tr th, table tr td {
 	padding: 4px 4px;
 }
 table tr:nth-child(odd) td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);
 
 }
 table tr:nth-child(even) td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);
 
 }
 table tr:first-child th, table tr:first-child td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);
 	font-weight: bold;
 	text-align: left;
 
 }
 tr.darkborder  td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);;
 
 }
 tr.lightborder  td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);
 
 }
 table.transborder  tr td{
-background: transparent url(images/transparent.png);
+background: rgba(0, 0, 0, 0.001);
 }
   
