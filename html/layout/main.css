@@ -551,7 +551,6 @@ a.notificationIcons:hover span {
   
 .form_settings input, .form_settings textarea
 { width: 252px; 
-height:50px;
   font: 100% 'trebuchet ms', arial;
   border: 0;
   border: 1px solid #eee;
@@ -562,6 +561,7 @@ height:50px;
 .form_settings .submit
 { border: 0; 
   width: auto;
+  height:50px;
   margin: 0 0 0 200px; 
   cursor: pointer; 
   color: #35BDF5;
