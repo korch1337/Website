@@ -30,23 +30,23 @@ img
 h1, h2, h3, h4, h5, h6 
 { font: normal 250% 'Yanone Kaffeesatz', arial, sans-serif;
   color: #FFF;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px 30px;
   padding: 5px 0 5px 0;}
 
 h2
 { font: normal 170% 'Yanone Kaffeesatz', arial, sans-serif;
   color: #FFF;  
   margin: 0;
-  padding: 0 0 8px 0;}
+  padding: 0 0 8px 30px;}
 
 h3
 { font-size: 200%;
-  margin: 0 0 9px 0;
+  margin: 0 0 9px 30px;
   color: #FFF;}
 
 h4, h5, h6
 { margin: 0;
-  padding: 0 0 5px 0;
+  padding: 0 0 5px 30px;
   font: normal 100% arial, sans-serif;
   color: #FFF;
   line-height: 1em;}
