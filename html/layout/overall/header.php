@@ -17,7 +17,10 @@ $start = $time;
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
 </head>
+<div class="login">
 
+	<?php include'login.php'; ?>
+	</div>
 <body>
   <div id="main">
     <div id="header">
@@ -31,7 +34,7 @@ $start = $time;
           <ul>
 		  <li class="current"><a href="index.php">Home</a></li>
 		  
-		  <li class="current"><a href="#">Account</a>
+		  <li><a href="index.php">Account</a>
 		  <ul>
 		  <li><a href="register.php">Create Account</a></li>
 		  <li><a href="recovery.php">Lost Account</a></li>
