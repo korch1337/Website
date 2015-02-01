@@ -73,15 +73,15 @@ $start = $time;
     </div>
     <div id="site_content">
       <div id="sidebar_container">
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
         <?php include 'layout/rightwidgets.php'; ?>
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Top 5 players</h3>
           <p>1. asdads<br>2. asdsad</p>
           
         </div>
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Wanted list:</h3>
           <h4>Find and kill these people!</h4>
