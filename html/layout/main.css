@@ -607,7 +607,7 @@ table tr td
   border-top: 1px solid #FFF;} */
  
  table { 
-	color: #5a2800;
+	color: #000000;
 	margin: 10px 0 0 0;
 	width: 100%;
 	border-spacing: 1px;
@@ -617,33 +617,33 @@ table tr th, table tr td {
 	padding: 4px 4px;
 }
 table tr:nth-child(odd) td{
-	background: #d4c0a1;
+	background: #000000;
 		opacity:0.01%;
 }
 table tr:nth-child(even) td{
-	background: #f1e0c6;
+	background: #000000;
 		opacity:0.01%;
 }
 table tr:first-child th, table tr:first-child td{
-	background: #505050;
+	background :#000000;
 	color: #efefef;
 	font-weight: bold;
 	text-align: left;
 		opacity:0.01%;
 }
 tr.darkborder  td{
-	background: #d4c0a1 ;
-	color: #5a2800 ;
+	background: #000000 ;
+	color: #000000 ;
 		opacity:0.01%;
 }
 tr.lightborder  td{
-	background: #f1e0c6 ;
-	color: #5a2800 ;
+	background:#000000 ;
+	color: #000000 ;
 		opacity:0.01%;
 }
 table.transborder  tr td{
 	background-color:transparent ;
-	color: #5a2800;
+	color: #000000;
 		opacity:0.01%;
 }
   
