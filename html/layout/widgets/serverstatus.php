@@ -1,4 +1,5 @@
 <div class="sidebar">
+        <h2>Server Status: </h2>
         <div class="m_online" align="center">
 					<b>Status:  
 						<?php
@@ -6,7 +7,7 @@
 							if ($config['status']['status_check']) {
 								@$sock = fsockopen ($config['status']['status_ip'], $config['status']['status_port'], $errno, $errstr, 1);
 								if(!$sock) {
-									echo '<font color="#9873DA"> Offline</font>';
+									echo '<font color="#BA0000"> Offline</font>';
 									$status = false;
 								}
 								else {
