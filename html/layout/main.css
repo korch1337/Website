@@ -567,10 +567,10 @@ a.notificationIcons:hover span {
   border: 1px solid #ddd;
   padding: 5px 15px;
   background: #fff;
-  font: normal 180% 'Yanone Kaffeesatz', sans-serif;}
+  font: normal 140% 'Yanone Kaffeesatz', sans-serif;}
 
 .form_settings textarea, .form_settings select
-{ font: 100% 'trebuchet ms', arial; 
+{ font: 150% 'trebuchet ms', arial; 
   border: 1px solid #eee;
   padding: 5px 10px;
   background: #fff;
