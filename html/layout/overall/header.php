@@ -81,4 +81,4 @@
           <p>1. David<br /><a href="#">List of all</a></p>
         </div>
       </div>
-      <div id="content">
+      <div class="content">
