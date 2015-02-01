@@ -22,7 +22,7 @@ $start = $time;
     <div id="header">
       <div id="logo">
         <h1>Zerexxa<a href="#"> OT</a></h1>
-        <div class="slogan">Learn to play noobs!</div>
+        <div class="slogan">Welcome to the best open tibia server ever!</div>
       </div>
       <div id="menubar">
         <ul id="menu">
