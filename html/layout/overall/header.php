@@ -31,9 +31,9 @@ $start = $time;
           <ul>
 		  <li class="current"><a href="index.php">Home</a></li>
 		  
-		  <li><a href="index.php">Account</a>
+		  <li><a href="#">Account</a>
 		  <ul>
-		  <li><a href="register.php">Create Account</a></li>
+		  <li class="current"><a href="register.php">Create Account</a></li>
 		  <li><a href="recovery.php">Lost Account</a></li>
 		  </ul>
 		  </li>
