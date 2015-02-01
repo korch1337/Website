@@ -33,7 +33,7 @@ $start = $time;
 		  
 		  <li><a href="index.html">Account</a>
 		  <ul>
-		  <li><a href="#">Create Account</a></li>
+		  <li><a href="register.php">Create Account</a></li>
 		  <li><a href="#">Lost Account</a></li>
 		  </ul>
 		  </li>
