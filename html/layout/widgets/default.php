@@ -1,4 +1,5 @@
-<div class="sidebar">
+<img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
         <!-- insert your sidebar items here -->
         <h3>Character Search</h3>
         <div class="inner">
@@ -14,6 +15,7 @@
 	</div>
 </div>
 
+<img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
 <div class="sidebar">
         <h2>Server Status: </h2>
         <div class="m_online" align="center">
@@ -40,4 +42,20 @@
 						?></b>
 					<br>
 				</div>
+        </div>
+        
+        
+        <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Top 5 players</h3>
+          <p>1. asdads<br>2. asdsad</p>
+          
+        </div>
+        
+        
+        <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Wanted list:</h3>
+          <h4>Find and kill these people!</h4>
+          <p>1. David<br /><a href="#">List of all</a></p>
         </div>
