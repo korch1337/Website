@@ -632,18 +632,18 @@ table tr:first-child th, table tr:first-child td{
 		opacity:0.01%;
 }
 tr.darkborder  td{
-	background: #d4c0a1 !important;
-	color: #5a2800 !important;
+	background: #d4c0a1 ;
+	color: #5a2800 ;
 		opacity:0.01%;
 }
 tr.lightborder  td{
-	background: #f1e0c6 !important;
-	color: #5a2800 !important;
+	background: #f1e0c6 ;
+	color: #5a2800 ;
 		opacity:0.01%;
 }
 table.transborder  tr td{
-	background-color:transparent !important;
-	color: #5a2800 !important;
+	background-color:transparent ;
+	color: #5a2800;
 		opacity:0.01%;
 }
   
