@@ -71,8 +71,7 @@ $start = $time;
 		
       </div>
     </div>
-    <div id="site_content">
-      <div id="sidebar_container">
+    <div id="sidebar_container">
         <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
         <?php include 'layout/rightwidgets.php'; ?>
         <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
@@ -88,4 +87,6 @@ $start = $time;
           <p>1. David<br /><a href="#">List of all</a></p>
         </div>
       </div>
+    <div id="site_content">
+      
       <div class="content">
