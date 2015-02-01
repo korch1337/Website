@@ -1,4 +1,4 @@
-<?php include 'layout/overall/header.php'; ?>
+
         <!-- insert the page content here -->
         <h1>Welcome to this fucking open tibia server</h1>
         <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>), which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...</p>
@@ -31,4 +31,4 @@
 		  <li>Safari 4</li>
 		  <li>Safari 4</li>
 		  <li>Safari 4</li>
-       <?php include 'layout/overall/footer.php'; ?>
+   
