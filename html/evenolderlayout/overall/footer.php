@@ -1,7 +1,11 @@
- </ul>
-      </div>
-    </div>
-    <div id="footer">
+</div>
+	<div style="clear:both;"></div>
+	<div id="m_footer">
+		<img src="layout/images/foot.png">
+		<center><p>Guilcera Layout Peonso. Engine <a href="credits.php">Znote AAC</a><br>Tibia copyrighted by CipSoft GmbH.<br></p></center>
+	</div>
+ 
+ <div id="footer">
  <ul id="footer_menu">
  
  <li class="homeButton"><a href="#"></a></li>
@@ -112,18 +116,6 @@
  </ul>
  </li> 
  
-  <li>
- <a href="#">Bajs!!</a> 
- <ul class="dropup">
- <li><a href="#">asdasdasdasd</a></li>
- <li><a href="#">patrik luktar ko</a></li>
- <li><a href="#">davod '</a></li>
- <li><a href="#">bajsnss</a></li>
- <li><a href="#">Private Merrnger</a></li>
- <li><a href="#">Textrövor</a></li>
- </ul>
- </li> 
- 
  <li class="right"><a href="#" class="drop">Log Out</a>
  </li>
  
@@ -149,6 +141,5 @@
  </ul>
  
  </div>
-  </div>
 </body>
 </html>

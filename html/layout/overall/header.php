@@ -1,32 +1,84 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<?php
-$time = microtime();
-$time = explode(' ', $time);
-$time = $time[1] + $time[0];
-$start = $time;
-?>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="distribution" content="Global" />
-		<meta name="author" content="Vean" />
-		<meta name="robots" content="index,follow" />
-		<meta name="description" content="Site Description." />
-		<meta name="keywords" content="ots, open tibia server, guilcera, forgotten server" />
-	<title><?PHP echo $config['site_title'];?> - <?PHP echo $config['site_title_context'];?></title>
-<link rel="stylesheet" type="text/css" href="layout/main.css" />
-<link href="layout/favicon.ico" rel="shortcut icon" />
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Zerexxa OT</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="layout/style.css" />
 </head>
+
 <body>
-
-<div class="rights">
-
-<?php include('streamtempleright.php'); ?>
-</div>
-<div class="m_position"> 
-	<img src="layout/images/logo.jpg" alt="<?PHP echo $config['site_title'];?> logo"/>
-	<img src="layout/images/head.png"/>
-
-		<div class="m_center">
-			<?php include('layout/left_menu.php'); ?>
-			<div class="m_content">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Zerexxa<a href="#"> OT</a></h1>
+        <div class="slogan">Learn to play noobs!</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <ul>
+		  <li class="current"><a href="index.html">Home</a></li>
+		  
+		  <li><a href="index.html">Account</a>
+		  <ul>
+		  <li><a href="#">Create Account</a></li>
+		  <li><a href="#">Lost Account</a></li>
+		  </ul>
+		  </li>
+		  
+          <li><a href="index.html">Community</a>
+		  <ul>
+		  <li><a href="#">Item Market</a></li>
+		  <li><a href="#">Gallery</a></li>
+		  <li><a href="#">Deaths</a></li>
+		  <li><a href="#">Killers</a></li>
+		  <li><a href="#">Players Online</a></li>
+		  <li><a href="#">Highscores</a></li>
+		  <li><a href="#">Houses</a></li>
+		  <li><a href="#">Guilds</a></li>
+		  <li><a href="#">Guild Wars</a></li>
+		  </ul>
+		  </li>
+		  
+          <li><a href="index.html">Information</a>
+		  <ul>
+		  <li><a href="#">Server Info</a></li>
+		  <li><a href="#">Staff</a></li>
+		  </ul>
+		  </li>
+          <li><a href="index.html">Shop</a>
+		  <ul>
+		  <li><a href="#">Buy Points</a></li>
+		  <li><a href="#">Shop Offers</a></li>
+		  </ul>
+		  </li>
+		 
+		 </ul>
+        </ul>
+		
+		
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <?php include 'layout/rightwidgets.php'; ?>
+        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Top 5 players</h3>
+          <p>1. asdads<br>2. asdsad</p>
+          
+        </div>
+        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Wanted list:</h3>
+          <h4>Find and kill these people!</h4>
+          <p>1. David<br /><a href="#">List of all</a></p>
+        </div>
+      </div>
+      <div id="content">
