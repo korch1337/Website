@@ -183,7 +183,7 @@ ol li
 }
 #menu ul li:hover
 { 
-  background: transparent url(images/transparent.png) repeat;
+  
   border: 1px solid #000;
   border-bottom: 0;
   color: #F14E23;
