@@ -86,6 +86,7 @@ $start = $time;
           <p>1. David<br /><a href="#">List of all</a></p>
         </div>
       </div>
+      <?php include('layout/left_menu.php'); ?>
     <div id="site_content">
       
       <div class="content">
