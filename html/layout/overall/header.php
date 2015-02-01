@@ -17,16 +17,6 @@ $start = $time;
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
 </head>
-<div class="login">
-<?php
-						if (user_logged_in() === true) {
-							include 'layout/widgets/loggedin.php'; 
-						} else {
-							include 'layout/widgets/login.php'; 
-						}
-						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
-					?> </div>
-
 <body>
   <div id="main">
     <div id="header">
