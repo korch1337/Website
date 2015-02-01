@@ -608,7 +608,7 @@ table tr td
   border-top: 1px solid #FFF;} */
  
  table { 
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 	margin: 10px 0 0 0;
 	width: 100%;
 	border-spacing: 1px;
@@ -618,28 +618,28 @@ table tr th, table tr td {
 	padding: 4px 4px;
 }
 table tr:nth-child(odd) td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 
 }
 table tr:nth-child(even) td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 
 }
 table tr:first-child th, table tr:first-child td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 	font-weight: bold;
 	text-align: left;
 
 }
 tr.darkborder  td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 
 }
 tr.lightborder  td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 
 }
 table.transborder  tr td{
-background-color: rgba(112, 128, 144, 0.5);
+background: transparent url(images/transparent.png);
 }
   
