@@ -118,7 +118,7 @@ ol li
 #logo h1
 { font: normal 350% 'Yanone Kaffeesatz', arial, sans-serif;
   padding: 5px 0 0 17px;
-  color: #587FBA;
+  color: #FFF;
   float: left;}
 
 #logo h1 a
@@ -134,7 +134,7 @@ ol li
   padding-right: 25px;
   text-align: right; 
   font: 500% 'tangerine', arial; 
-  color: #FF9900;}
+  color: #587FBA;}
 
 #menubar
 { height: 46px;
