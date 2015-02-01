@@ -243,6 +243,7 @@ li > a:only-child:after { content: ''; }
 
 #sidebar_container
 { 
+  float:right;
   width: 250px;
   margin: 0 auto 0 auto;
   }
