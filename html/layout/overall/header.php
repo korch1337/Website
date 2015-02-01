@@ -29,39 +29,39 @@ $start = $time;
         <ul id="menu">
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
           <ul>
-		  <li class="current"><a href="index.html">Home</a></li>
+		  <li class="current"><a href="index.php">Home</a></li>
 		  
-		  <li><a href="index.html">Account</a>
+		  <li><a href="index.php">Account</a>
 		  <ul>
 		  <li><a href="register.php">Create Account</a></li>
-		  <li><a href="#">Lost Account</a></li>
+		  <li><a href="recovery.php">Lost Account</a></li>
 		  </ul>
 		  </li>
 		  
-          <li><a href="index.html">Community</a>
+          <li><a href="#">Community</a>
 		  <ul>
-		  <li><a href="#">Item Market</a></li>
-		  <li><a href="#">Gallery</a></li>
-		  <li><a href="#">Deaths</a></li>
-		  <li><a href="#">Killers</a></li>
-		  <li><a href="#">Players Online</a></li>
-		  <li><a href="#">Highscores</a></li>
-		  <li><a href="#">Houses</a></li>
-		  <li><a href="#">Guilds</a></li>
-		  <li><a href="#">Guild Wars</a></li>
+		  <li><a href="market.php">Item Market</a></li>
+		  <li><a href="gallery.php">Gallery</a></li>
+		  <li><a href="deaths.php">Deaths</a></li>
+		  <li><a href="killers.php">Killers</a></li>
+		  <li><a href="whoisonline.php">Players Online</a></li>
+		  <li><a href="highscores.php">Highscores</a></li>
+		  <li><a href="houses.php">Houses</a></li>
+		  <li><a href="guilds.php">Guilds</a></li>
+		  <li><a href="guildwar.php">Guild Wars</a></li>
 		  </ul>
 		  </li>
 		  
-          <li><a href="index.html">Information</a>
+          <li><a href="#">Information</a>
 		  <ul>
-		  <li><a href="#">Server Info</a></li>
+		  <li><a href="serverinfo.php">Server Info</a></li>
 		  <li><a href="#">Staff</a></li>
 		  </ul>
 		  </li>
-          <li><a href="index.html">Shop</a>
+          <li><a href="#">Shop</a>
 		  <ul>
-		  <li><a href="#">Buy Points</a></li>
-		  <li><a href="#">Shop Offers</a></li>
+		  <li><a href="buypoints.php">Buy Points</a></li>
+		  <li><a href="shop.php">Shop Offers</a></li>
 		  </ul>
 		  </li>
 		 
