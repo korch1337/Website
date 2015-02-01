@@ -114,5 +114,5 @@
  </ul>
  </li> 
  
- <li class="right"><a href="#" class="drop">Log Out</a>
+ <li class="right"><a href="logout.php" class="drop">Log Out</a>
  </li>
