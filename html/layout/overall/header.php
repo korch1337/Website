@@ -17,10 +17,7 @@ $start = $time;
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
 </head>
-<div class="login">
 
-	<?php include'login.php'; ?>
-	</div>
 <body>
   <div id="main">
     <div id="header">
