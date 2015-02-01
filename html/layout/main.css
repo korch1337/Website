@@ -604,37 +604,3 @@ table tr td
   color: #111;
   border-top: 1px solid #FFF;} 
   
-  /* table { 
-	color: #5a2800;
-	margin: 10px 0 0 0;
-	width: 100%;
-	border-spacing: 1px;
-}
-table tr th, table tr td { 
-	padding: 4px 4px;
-}
-table tr:nth-child(odd) td{
-	background: #d4c0a1;
-}
-table tr:nth-child(even) td{
-	background: #f1e0c6;
-}
-table tr:first-child th, table tr:first-child td{
-	background: #505050;
-	color: #efefef;
-	font-weight: bold;
-	text-align: left;
-}
-tr.darkborder  td{
-	background: #d4c0a1 !important;
-	color: #5a2800 !important;
-}
-tr.lightborder  td{
-	background: #f1e0c6 !important;
-	color: #5a2800 !important;
-}
-table.transborder  tr td{
-	background-color:transparent !important;
-	color: #5a2800 !important;
-}
-*/
