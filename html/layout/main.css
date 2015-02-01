@@ -618,32 +618,32 @@ table tr th, table tr td {
 }
 table tr:nth-child(odd) td{
 	background: #000000;
-		opacity:0.01%;
+		opacity:0.01;
 }
 table tr:nth-child(even) td{
 	background: #000000;
-		opacity:0.01%;
+		opacity:0.01;
 }
 table tr:first-child th, table tr:first-child td{
 	background :#000000;
 	color: #efefef;
 	font-weight: bold;
 	text-align: left;
-		opacity:0.01%;
+		opacity:0.01;
 }
 tr.darkborder  td{
 	background: #000000 ;
 	color: #000000 ;
-		opacity:0.01%;
+		opacity:0.01;
 }
 tr.lightborder  td{
 	background:#000000 ;
 	color: #000000 ;
-		opacity:0.01%;
+		opacity:0.01;
 }
 table.transborder  tr td{
 	background-color:transparent ;
 	color: #000000;
-		opacity:0.01%;
+		opacity:0.01;
 }
   
