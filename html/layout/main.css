@@ -236,7 +236,7 @@ li > a:only-child:after { content: ''; }
 #site_content
 { width: 950px;
   overflow: hidden;
-  margin: 0 auto 0 auto;
+  margin: 50px auto 0 auto;
   padding: 0;
   background: transparent url(images/transparent.png) repeat;
   border: 1px solid #000;} 
@@ -244,14 +244,13 @@ li > a:only-child:after { content: ''; }
 #sidebar_container
 { 
   float:right;
-  width: 250px;
-  margin: 0 auto 0 auto;
+  width: 0px;
+  margin: 50px -150px 0 auto;
   }
 
 .sidebar
-{ right: 150px;
-  width: 200px;
-  margin: 0 24px 27px 0;
+{ width: 200px;
+  margin: 0 24px 28px 0;
   background: #1d1d1d;
   border: 1px solid #000;
   padding: 0 15px 15px 15px;}
