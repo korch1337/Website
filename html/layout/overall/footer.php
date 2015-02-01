@@ -1,6 +1,4 @@
- </ul>
-      </div>
-    </div>
+
     <div id="footer">
  <ul id="footer_menu">
  
@@ -120,7 +118,7 @@
  <li><a href="#">davod '</a></li>
  <li><a href="#">bajsnss</a></li>
  <li><a href="#">Private Merrnger</a></li>
- <li><a href="#">Textrövor</a></li>
+ <li><a href="#">TextrÃ¶vor</a></li>
  </ul>
  </li> 
  
