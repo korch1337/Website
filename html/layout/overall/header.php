@@ -20,7 +20,7 @@ $start = $time;
 <body>
 
 <div id="head">
-<p>IMAGE</p>
+
 </div>
 
   <div id="main">
