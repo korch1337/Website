@@ -14,7 +14,7 @@
  <a class="listLinks" href="settings.php">Settings</a>
  
  
- <a class="#">Friends</a>
+ <a class="headerLinks">Friends</a>
  <a class="listLinks">All</a>
  <a class="listLinks" style="font-weight:bold;color:white;">Requested (13)</a>
  <a class="listLinks">Pending</a>
