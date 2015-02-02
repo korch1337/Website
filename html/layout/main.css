@@ -189,7 +189,7 @@ ol li
 }
 #menu ul li ul:hover
 { 
- 
+ background: rgba(0, 0, 0, 0.001);
   border-bottom: 0;
 
 }
