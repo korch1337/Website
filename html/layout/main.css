@@ -436,7 +436,7 @@ a.notificationIcons:hover span {
  display: block;
  position: absolute;
  margin: 0 0 0 -15px; /*move left 15px to line up properly*/
- bottom:40px; /* distance to the bottom of the browser */
+ top:40px; /* distance to the bottom of the browser */
  border: 1px solid #111111;
  border-bottom:none;
  background: rgba(0,0,0,0.5);
