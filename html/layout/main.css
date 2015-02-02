@@ -151,7 +151,7 @@ ol li
 { float: left;
   padding: 0 0 0px 0px;
   list-style: none;
-  margin: 2px 0 0 0;
+  margin: 0px 0 0 0;
   background: transparent;}
 
 #menu ul li a
@@ -171,6 +171,7 @@ ol li
   display: block; 
   float: left; 
   height: 20px;
+  width:82px;
   padding: 7px 23px 15px 23px;
   text-align: left;
   
@@ -179,7 +180,6 @@ ol li
   #menu ul li a:hover
 { 
   display:block;
-  color: #F14E23;
 }
 #menu ul li:hover
 { 
@@ -187,6 +187,7 @@ ol li
   border-bottom: 0;
   background: transparent url(images/transparent.png) repeat;
 }
+
 #menu ul ul {
    display: none;
    position: absolute;
@@ -206,7 +207,7 @@ opacity: 0;
 visibility: hidden;
 }
 #menu ul li ul li { 
-  
+  background:transparent;
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
