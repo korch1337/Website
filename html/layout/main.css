@@ -198,7 +198,7 @@ padding: 0;
 z-index: 2000;
 background: transparent url(images/transparent.png) repeat;
 position: absolute;
-margin: 0 0 0 0px;
+margin: 0 0 0 -1px;
 top: 166px;
 width: 130px;
 box-shadow: none;
