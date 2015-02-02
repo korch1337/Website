@@ -298,7 +298,6 @@ li > a:only-child:after { content: ''; }
  left:0;
  right:0;
  width: 100%;
- height: 40px;
  font-family:Arial;
  text-shadow: 1px 1px 1px black; /*h,v,blur,color */
  /* glass effect */
@@ -400,7 +399,7 @@ a.notificationIcons:hover span {
 #footer_menu li { /* the "buttons" */
  list-style: none;
  float: left;
- font-size:12px;
+ font-size:18px;
  padding: 12px 14px 14px 14px;
  /* cool glass look */
  border-right:1px solid rgba(0,0,0,0.4);
@@ -444,7 +443,6 @@ a.notificationIcons:hover span {
  display: block;
  position: absolute;
  margin: 0 0 0 -15px; /*move left 15px to line up properly*/
- top:40px; /* distance to the bottom of the browser */
  border: 1px solid #111111;
  border-bottom:none;
  background: rgba(0,0,0,0.5);
@@ -466,11 +464,12 @@ a.notificationIcons:hover span {
 }
 /* Stream, Messages, etc... */
 #footer_menu li:hover a.headerLinks {
- font-size:14px;
+ font-size:18px;
  text-decoration:underline;
  color: #CC0000;
  margin-top:10px;
  margin-left:10px;
+
 }
 #footer_menu li:hover a.headerLinks:hover {
  color: white;
@@ -478,7 +477,7 @@ a.notificationIcons:hover span {
 }
 /* List Links */
 #footer_menu li:hover a.listLinks {
- font-size:12px;
+ font-size:18px;
  color: #999999;
  margin-left:10px;
 }
@@ -507,7 +506,7 @@ a.notificationIcons:hover span {
 }
  
 /* Layout Sizes */
-#footer .one_column_layout {width: 140px;}
+#footer .one_column_layout {width: 200px;}
 #footer .two_column_layout {width: 350px;}
 #footer .three_column_layout {width: 420px;}
  
@@ -518,7 +517,7 @@ a.notificationIcons:hover span {
  display: block;
  position: absolute;
  margin: 0 0 0 -15px;
- top:40px;
+ top:46px;
  border: 1px solid #111111;
  border-radius: 7px 7px 0px 0px;
  background: rgba(0,0,0,0.5);
