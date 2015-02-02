@@ -1,4 +1,5 @@
 <img class="paperclip" src="layout/images/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
         <!-- insert your sidebar items here -->
         <h3>Character Search</h3>
 		<li><font size="3">Character Name:<br></font>
