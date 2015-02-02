@@ -229,7 +229,7 @@ li > a:only-child:after { content: ''; }
   margin: 50px auto 0 auto;
   padding: 0;
   opacity: 0.9;
-  background: #323A4A;
+  background: #1d1d1d;
   border: 1px solid #000;} 
 
 #sidebar_container
