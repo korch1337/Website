@@ -183,7 +183,6 @@ ol li
 }
 #menu ul li:hover
 { 
-  border: 1px solid #000;
   border-bottom: 0;
   background: transparent url(images/transparent.png) repeat;
 }
@@ -198,14 +197,13 @@ padding: 0;
 z-index: 2000;
 background: transparent url(images/transparent.png) repeat;
 position: absolute;
-margin: 0 0 0 -1px;
+margin: 0 0 0 0px;
 top: 166px;
 width: 130px;
 box-shadow: none;
 display: none;
 opacity: 0;
 visibility: hidden;
-border: 1px solid #000;
 }
 #menu ul li ul li { 
   background:transparent;
