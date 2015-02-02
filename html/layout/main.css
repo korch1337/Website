@@ -631,7 +631,7 @@ background: rgba(0, 0, 0, 0.001);
 	margin: 10px 0 0 30px;
 	width: 100%;
 	border-spacing: 1px;
-	
+	font-size:17px;
 
 }
 table tr th, table tr td { 
