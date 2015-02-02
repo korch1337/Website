@@ -196,6 +196,7 @@ ol li
 #menu ul li ul {
 padding: 0;
 z-index: 2000;
+background: transparent url(images/transparent.png) repeat;
 position: absolute;
 margin: 0 0 0 0px;
 top: 166px;
