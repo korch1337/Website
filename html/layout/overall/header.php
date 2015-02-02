@@ -19,10 +19,6 @@ $start = $time;
 </head>
 <body>
 
-<div id="head">
-
-</div>
-
   <div id="main">
     <div id="header">
       <div id="logo">
