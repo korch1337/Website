@@ -2,7 +2,7 @@
         <div class="sidebar">
         <!-- insert your sidebar items here -->
         <h3>Character Search</h3>
-		<li><font size="3">Character Name:<br></font>
+		<h2>Character Name: </h2>
 		<form type="submit" action="characterprofile.php" method="get">
 			<li><input type="text" name="name" class="search"><br><br>
 						<?php
