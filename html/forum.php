@@ -724,7 +724,8 @@ if (!empty($_GET)) {
 							<tr class="special">
 								<?php
 								$url = url("forum.php?forum=". $category['name'] ."&cat=". $getCat ."&thread=". $thread['id']);
-								echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
+							//	echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
+								echo '<td> <a href="forum.php?cat='. $category['name'] .'" /a>';
 								?>
 								<!--<td>-->
 									<?php
