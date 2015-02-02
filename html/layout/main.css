@@ -284,7 +284,7 @@ li > a:only-child:after { content: ''; }
 
 #footer{
  position: fixed; /* the footer must stick to the bottom of the page, the fixed positionning is here necessary. */
- bottom: 0px;
+ top: 0px;
  margin:0;
  padding:0;
  left:0;
