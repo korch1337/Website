@@ -65,16 +65,28 @@
  </div>
  </li>
  
-  <li>
- <a href="#">Programs</a> 
- <ul class="dropup">
- <li><a href="#">Calculator</a></li>
- <li><a href="#">Group Chat</a></li>
- <li><a href="#">Image Editor 2.0</a></li>
- <li><a href="#">Meme Generator</a></li>
- <li><a href="#">Private Messenger</a></li>
- <li><a href="#">Text Editor</a></li>
- </ul>
+<li><a href="#">Programs</a>
+ <div class="one_column_layout">
+ <div class="col_1">
+ 
+ <a class="headerLinks">Messages</a>
+ <a class="listLinks" style="font-weight:bold;color:white;">Inbox (7)</a>
+ <a class="listLinks">Sent</a>
+ <a class="listLinks">Trash</a>
+ <a class="listLinks">Compose</a>
+ 
+ <a class="headerLinks">Account</a>
+ <a class="listLinks" href="myaccount.php">My Account</a>
+ <a class="listLinks" href="createcharacter.php">Create Character</a>
+ <a class="listLinks" href="settings.php">Settings</a>
+ 
+ 
+ <a class="headerLinks">Friends</a>
+ <a class="listLinks">All</a>
+ <a class="listLinks" style="font-weight:bold;color:white;">Requested (13)</a>
+ <a class="listLinks">Pending</a>
+ </div>
+ </div>
  </li> 
  
  <li class="right"><a href="logout.php" class="drop">Log Out</a>
