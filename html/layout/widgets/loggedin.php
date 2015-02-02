@@ -8,10 +8,11 @@
  <a class="listLinks">Trash</a>
  <a class="listLinks">Compose</a>
  
- <a class="#">Account</a>
- <a class="myaccount.php">My Account</a>
- <a class="createcharacter.php">Create Character</a>
- <a class="settings.php">Settings</a>
+ <a class="headerLinks">Account</a>
+ <a class="listLinks" href="myaccount.php">My Account</a>
+ <a class="listLinks" href="createcharacter.php">Create Account</a>
+ <a class="listLinks" href="settings.php">Settings</a>
+ 
  
  <a class="#">Friends</a>
  <a class="listLinks">All</a>
