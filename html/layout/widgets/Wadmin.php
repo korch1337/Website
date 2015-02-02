@@ -1,11 +1,14 @@
-<li>
- <a href="#">Admin Privileges</a> 
- <ul class="dropup">
- <li><a href="admin.php">Admin Page</a></li>
- <li><a href="admin_news.php">Admin News</a></li>
- <li><a href="admin_gallery.php">Admin Gallery</a></li>
- <li><a href="admin_skills.php">Admin Skills</a></li>
- <li><a href="admin_reports.php">Admin Reports</a></li>
- <li><a href="admin_shop.php">Admin Shop</a></li>
- </ul>
+<li><a href="#">Admin Privileges</a>
+ <div class="one_column_layout">
+ <div class="col_1">
+ 
+ <a class="headerLinks">Admin Shit :D</a>
+ <a class="listLinks" href="admin.php">Admin Page</a>
+ <a class="listLinks" href="admin_news.php">Admin News</a>
+ <a class="listLinks" href="admin_gallery.php">Admin Gallery</a>
+ <a class="listLinks" href="admin_skills.php">Admin Skills</a>
+ <a class="listLinks" href="admin_reports.php">Admin Reports</a>
+ <a class="listLinks" href="admin_shop.php">Admin Shop</a>
+ </div>
+ </div>
  </li> 
