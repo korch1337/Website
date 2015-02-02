@@ -205,6 +205,7 @@ box-shadow: none;
 display: none;
 opacity: 0;
 visibility: hidden;
+border: 1px solid #000;
 }
 #menu ul li ul li { 
   background:transparent;
