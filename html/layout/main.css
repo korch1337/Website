@@ -320,7 +320,7 @@ li > a:only-child:after { content: ''; }
 }
 #footer p{
  color:white;
- font-size:12px;
+ font-size:15px;
  float:left;
  padding:0px 10px; /*top & bottom = 0px */
  margin:10px 0px;
