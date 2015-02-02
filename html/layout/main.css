@@ -190,7 +190,7 @@ ol li
 #menu ul li:hover
 { 
   border-bottom: 0;
-  background: black;
+  background: #101010;
 }
 
 #menu ul ul {
