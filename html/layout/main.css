@@ -178,14 +178,14 @@ ol li
   } 
   
   #menu ul li a:hover
-{ color: #F14E23;
+{ 
   display:block;
 }
 #menu ul li:hover
 { 
   border: 1px solid #000;
   border-bottom: 0;
-  background: transparent url(images/transparent.png) repeat;
+  color: #F14E23;
 }
 
 #menu ul ul {
