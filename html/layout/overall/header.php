@@ -18,6 +18,11 @@ $start = $time;
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
 </head>
 <body>
+
+<div id="head">
+<p>IMAGE</p>
+</div>
+
   <div id="main">
     <div id="header">
       <div id="logo">
