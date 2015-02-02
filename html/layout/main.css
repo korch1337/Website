@@ -187,14 +187,6 @@ ol li
   border-bottom: 0;
   background: transparent url(images/transparent.png) repeat;
 }
-#menu ul li ul:hover
-{ 
-  background: transparent url(images/transparent.png) repeat;
-}
-#menu ul li ul li:hover
-{ 
-  background: transparent url(images/transparent.png) repeat;
-}
 #menu ul ul {
    display: none;
    position: absolute;
