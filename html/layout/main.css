@@ -190,7 +190,7 @@ ol li
 #menu ul li:hover
 { 
   border-bottom: 0;
-  background: transparent url(images/transparent.png) repeat;
+ background: #101010;
 }
 
 #menu ul ul {
@@ -212,11 +212,16 @@ opacity: 0;
 visibility: hidden;
 }
 #menu ul li ul li { 
-  background:transparent;
+  background: #101010;
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
+
+#menu ul li ul li:hover { 
+  background: #505050;
+}
+
 #menu ul li:hover ul {
   display: block;
   opacity: 1;
