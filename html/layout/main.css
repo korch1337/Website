@@ -190,7 +190,7 @@ ol li
 #menu ul li:hover
 { 
   border-bottom: 0;
-  background: #101010;
+  background: transparent url(images/transparent.png) repeat;
 }
 
 #menu ul ul {
@@ -201,7 +201,7 @@ ol li
 #menu ul li ul {
 padding: 0;
 z-index: 2000;
-background: transparent url(images/transparent.png) repeat;
+background: #101010;
 position: absolute;
 margin: 0 0 0 0px;
 top: 166px;
