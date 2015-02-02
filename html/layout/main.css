@@ -145,6 +145,7 @@ ol li
 
 #menu ul
 { float: right;
+background: rgba(0,0,0,0.4);
 }
 
 #menu ul li
@@ -183,7 +184,7 @@ ol li
 }
 #menu ul li:hover
 { 
-  
+  background: transparent url(images/transparent.png) repeat;
   border: 1px solid #000;
   border-bottom: 0;
   color: #F14E23;
@@ -197,7 +198,7 @@ ol li
 #menu ul li ul {
 padding: 0;
 z-index: 2000;
-background: rgba(0,0,0,0.4);
+
 position: absolute;
 margin: 0 0 0 0px;
 top: 166px;
