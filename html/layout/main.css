@@ -185,7 +185,13 @@ ol li
 { 
   border: 1px solid #000;
   border-bottom: 0;
-  /* background: transparent url(images/transparent.png) repeat;*/
+  background: transparent url(images/transparent.png) repeat;
+}
+#menu ul li ul:hover
+{ 
+ 
+  border-bottom: 0;
+
 }
 
 #menu ul ul {
