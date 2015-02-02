@@ -28,7 +28,12 @@ $start = $time;
         <ul id="menu">
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
           <ul>
-		  <li><a href="index.php">Home</a></li>
+		  <li><a href="index.php">Home</a>
+		  <ul>
+		  <li><a href="downloads.php">Downloads</a></li>
+		  <li><a href="forum.php">Forum</a></li>
+		  </ul>
+		  </li>
 		  
 		  <li><a href="index.php">Account</a>
 		  <ul>
