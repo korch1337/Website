@@ -10,7 +10,7 @@
 			?>
 			<li><input type="submit" value="Search">
 		</form>
-
+		<br>
         <h2>Server Status: </h2>
         <div class="m_online" align="center">
 					<b>Status:  
@@ -36,11 +36,11 @@
 						?></b>
 					<br>
 				</div>
-        
+          <br>
           <h3>Top 5 players</h3>
           <p>1. asdads<br>2. asdsad</p>
         
-        
+         <br>
           <h3>Wanted list:</h3>
           <h4>Find and kill these people!</h4>
           <p>1. David<br /><a href="#">List of all</a></p>
