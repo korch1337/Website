@@ -1,7 +1,6 @@
 <li><a href="#">Account</a>
  <div class="one_column_layout">
  <div class="col_1">
- <a class="headerLinks">Stream</a>
  
  <a class="headerLinks">Messages</a>
  <a class="listLinks" style="font-weight:bold;color:white;">Inbox (7)</a>
@@ -9,19 +8,12 @@
  <a class="listLinks">Trash</a>
  <a class="listLinks">Compose</a>
  
- <a class="headerLinks">Pictures</a>
- <a class="listLinks">Manage Albums</a>
- <a class="listLinks">Manage Photos</a>
- <a class="listLinks">View All</a> 
+ <a class="#">Account</a>
+ <a class="myaccount.php">My Account</a>
+ <a class="createcharacter.php">Create Character</a>
+ <a class="settings.php">Settings</a>
  
- <a class="headerLinks">Information</a>
- <a class="listLinks">Basic Info</a>
- <a class="listLinks">Contact</a>
- <a class="listLinks">Education</a>
- <a class="listLinks">Employment</a>
- <a class="listLinks">Links</a>
- 
- <a class="headerLinks">Friends</a>
+ <a class="#">Friends</a>
  <a class="listLinks">All</a>
  <a class="listLinks" style="font-weight:bold;color:white;">Requested (13)</a>
  <a class="listLinks">Pending</a>
