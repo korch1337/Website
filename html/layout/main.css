@@ -237,9 +237,10 @@ li > a:only-child:after { content: ''; }
   overflow: hidden;
   margin: 50px auto 0 auto;
   padding: 0;
-  opacity: 0.95;
   background: #111a21;
-  border: 1px solid #000;} 
+  border: 1px solid #000;
+  border-radius: 20px;
+  } 
 
 #sidebar_container
 { 
@@ -251,10 +252,11 @@ li > a:only-child:after { content: ''; }
 .sidebar
 { width: 200px;
   margin: 0 24px 28px 0;
-  background: #1d1d1d;
-  opacity:0.95;
+  background: #111a21;
   border: 1px solid #000;
-  padding: 0 15px 15px 15px;}
+  padding: 0 15px 15px 15px;
+  border-radius: 10px;
+  }
 
 .sidebar h3, .content h1
 { padding: 10px 15px;
