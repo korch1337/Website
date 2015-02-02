@@ -590,7 +590,8 @@ a.notificationIcons:hover span {
   margin: 0;
   padding: 10px 5px;
   width: 189px;
-  color: #F14E23;}
+  height: 7px;
+  color: #000000;}
   
 .subscribe
 { color: #35BDF5;
