@@ -149,7 +149,9 @@ ol li
 { float: right;
   border-radius: 5px;
   border: 2px solid #000000;
-  background: #57616a;
+  background: -webkit-linear-gradient(top, #de7b54 0%,#67280f 50%,#561b04 51%,#94533a 100%);
+  box-shadow: 8px 8px 5px rgba(0,0,0,0.7);
+  
 }
 
 #menu ul li
