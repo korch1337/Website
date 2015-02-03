@@ -41,13 +41,6 @@ $start = $time;
 						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
 					?>
 		  
-		  <li><a href="index.php">Account</a>
-		  <ul>
-		  <li><a href="register.php">Create Account</a></li>
-		  <li><a href="recovery.php">Lost Account</a></li>
-		  </ul>
-		  </li>
-		  
           <li><a href="#">Community</a>
 		  <ul>
 		  <li><a href="forum.php">Forum</a></li>
