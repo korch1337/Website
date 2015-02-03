@@ -119,7 +119,7 @@ $start = $time;
     <script type="text/javascript">
         $('#footer').scrollToFixed();
     </script>
-    
+    </div>
     <div id="sidebar_container">
         <?php include 'layout/rightwidgets.php'; ?>
       </div>
