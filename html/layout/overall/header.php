@@ -30,10 +30,6 @@ $start = $time;
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
           <ul>
 		  <li><a href="index.php">Home</a>
-		  <ul>
-		  <li><a href="downloads.php">Downloads</a></li>
-		  <li><a href="forum.php">Forum</a></li>
-		  </ul>
 		  </li>
 		  
 		  <li><a href="index.php">Account</a>
@@ -45,12 +41,19 @@ $start = $time;
 		  
           <li><a href="#">Community</a>
 		  <ul>
-		  <li><a href="market.php">Item Market</a></li>
-		  <li><a href="gallery.php">Gallery</a></li>
+		  <li><a href="downloads.php">Downloads</a></li>
+		  <li><a href="forum.php">Forum</a></li>
 		  <li><a href="deaths.php">Deaths</a></li>
 		  <li><a href="killers.php">Killers</a></li>
 		  <li><a href="whoisonline.php">Players Online</a></li>
 		  <li><a href="highscores.php">Highscores</a></li>
+		  </ul>
+		  </li>
+		  
+		  <li><a href="#">Library</a>
+		  <ul>
+		  <li><a href="market.php">Item Market</a></li>
+		  <li><a href="gallery.php">Gallery</a></li>
 		  <li><a href="houses.php">Houses</a></li>
 		  <li><a href="guilds.php">Guilds</a></li>
 		  <li><a href="guildwar.php">Guild Wars</a></li>
