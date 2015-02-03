@@ -115,11 +115,11 @@ $start = $time;
  </div>
  
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="layout/overall/jquery-scrolltofixed.js"></script>
     <script type="text/javascript">
         $('#footer').scrollToFixed();
     </script>
-    </div>
+    
     <div id="sidebar_container">
         <?php include 'layout/rightwidgets.php'; ?>
       </div>
