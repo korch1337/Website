@@ -18,9 +18,8 @@ if ($auction['characterAuction']) {
 	</tr>
 	<?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Player Auctions</center></td></tr> 
 <tr><td>'; 
-$aucPlayer = mysql_select_single('SELECT `id` FROM `znote_auction_player` ORDER BY `id` DESC');
-$aucName = mysql_select_single('SELECT `name` FROM `players` WHERE id='$aucPlayer' ORDER BY `id` DESC');
-echo '<a href="characterprofile.php?name='.$aucName['name'].'">'.$aucName['name'].'</a></td></tr>';
+$aucPlayer = mysql_select_single('SELECT `players.name`, `znote_auction_player.id` FROM `players` LEFT OUTER JOIN `znote_auction_player` ON `znote_auction_player.id`=`players.id`');
+echo '<a href="characterprofile.php?name='.$aucPlayer['name'].'">'.$aucPlayer['name'].'</a></td></tr>';
 echo '</table>'; ?>
 </table>
 	<?php
