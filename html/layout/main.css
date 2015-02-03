@@ -247,6 +247,9 @@ li > a:only-child:after { content: ''; }
   background: #e5e5e5;
   border: 1px solid #000;
   border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 20px 3px rgba(0,0,0,0.75);
   } 
 
 #sidebar_container
