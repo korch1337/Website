@@ -725,8 +725,10 @@ if (!empty($_GET)) {
 								<?php
 								$url = url("forum.php?forum=". $category['name'] ."&cat=". $getCat ."&thread=". $thread['id']);
 							//	echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
-								echo '<td> <a href="forum.php?forum='. $category['name'] .'&cat='. $getCat .'&thread='. $thread['id']'" /a>';
+								echo '<td> <a href="forum.php?forum='. $category['name'] .'&cat='. $getCat .'&thread='. $thread['id'] .'"/a>';
+								// echo '<td> <a href="forum.php?cat='. $category['id'] .'" /a>';
 								?>
+				
 								<!--<td>-->
 									<?php
 									if ($thread['sticky'] == 1) echo $config['forum']['sticky'],' ';
