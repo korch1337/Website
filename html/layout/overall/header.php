@@ -77,3 +77,6 @@ $start = $time;
       </div>
     </div>
     
+    <div id="site_content">
+      
+      <div class="content">
