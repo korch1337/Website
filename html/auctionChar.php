@@ -19,7 +19,7 @@ if ($auction['characterAuction']) {
 	<?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Player Auctions</center></td></tr> 
 <tr><td>'; 
 $aucPlayer = mysql_select_single('SELECT `id` FROM `znote_auction_player` ORDER BY `id` DESC');
-echo '<center>Welcome to our newest player: <a href="characterprofile.php?name='.$aucPlayer['id'].'">'.$aucPlayer['id'].'</a></center></td></tr>';
+echo '<a href="characterprofile.php?name='.$aucPlayer['id'].'">'.$aucPlayer['id'].'</a></td></tr>';
 echo '</table>'; ?>
 </table>
 	<?php
