@@ -41,7 +41,6 @@ $start = $time;
 		  
           <li><a href="#">Community</a>
 		  <ul>
-		  <li><a href="downloads.php">Downloads</a></li>
 		  <li><a href="forum.php">Forum</a></li>
 		  <li><a href="deaths.php">Deaths</a></li>
 		  <li><a href="killers.php">Killers</a></li>
@@ -52,6 +51,7 @@ $start = $time;
 		  
 		  <li><a href="#">Library</a>
 		  <ul>
+		  <li><a href="downloads.php">Downloads</a></li>
 		  <li><a href="market.php">Item Market</a></li>
 		  <li><a href="gallery.php">Gallery</a></li>
 		  <li><a href="houses.php">Houses</a></li>
