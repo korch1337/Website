@@ -3,10 +3,10 @@
 <h1>Login Page</h1>
 <form action="login.php" method="post">
 				&nbsp;<i style="font-size:11px">Account number:</i> <br>
-			<input type="text" name="username">
+			<input type="text" name="username"> <br>
 				&nbsp;<i style="font-size:11px">Password:</i> <br>
 			<input type="password" name="password">
-			<br><br><center><input type="submit" value="Log in"></center>
+			<br><br><input type="submit" value="Log in">
 			<?php
 				/* Form file */
 				Token::create();
