@@ -32,6 +32,15 @@ $start = $time;
 		  <li><a href="index.php">Home</a>
 		  </li>
 		  
+		   <?php
+						if (user_logged_in() === true) {
+							include 'layout/widgets/loggedin.php'; 
+						} else {
+							include 'layout/widgets/login.php'; 
+						}
+						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
+					?>
+		  
 		  <li><a href="index.php">Account</a>
 		  <ul>
 		  <li><a href="register.php">Create Account</a></li>
