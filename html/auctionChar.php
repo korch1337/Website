@@ -16,13 +16,16 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
+	<?php
+	$aucPlayer = mysql_select_single('SELECT `id` FROM `znote_auction_player` ORDER BY `id` DESC');
 	<tr>
-		<td><a href="characterprofile.php?name=Tester" target="_BLANK">Tester</a></td>
+		<td><a href="characterprofile.php?name=Tester" target="_BLANK">$aucPlayer['id']</a></td>
 		<td>105</td>
 		<td>Sorcerer</td>
 		<td><a href="asd" target="_BLANK">VIEW</a></td>
 		<td><button>105 points</button></td>
 	</tr>
+	?>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
