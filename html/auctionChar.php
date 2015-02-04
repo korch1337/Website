@@ -24,7 +24,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	<tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo '$row->name';
+			echo '<td>'.'$row->name'.'</td>';
 	       }
 		   $aucPlayers->free();
 	       ?>
