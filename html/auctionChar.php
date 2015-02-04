@@ -13,8 +13,10 @@ if ($auction['characterAuction']) {
 	
 	if($result->num_rows){
 		$rows = $result->fetch_assoc();
+		foreach($rows as $row){
+			echo '<p>', $row['name'], '<br>', '</p>';
+		}
 		
-		echo '<p>', $rows['name'], '<br>', '</p>';
 	}
 	
 	?>
