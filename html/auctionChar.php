@@ -18,13 +18,13 @@ if ($auction['characterAuction']) {
 	<tr class="yellow">
 		<td>Name</td>
 		<td>Level</td>
-		<td>Vocation<br></td>
+		<td>Vocation</td>
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
 	<tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo '<td>', $row->name, '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>', '<td>','Image?', '</td>', '<td>', $row->price, '<br>', '</td>';
+			echo '<td>', $row->name, '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>', '<td>','Image?', '</td>', '<td>', $row->price, '</td>'."<br>";
 	       }
 		   $aucPlayers->free();
 	       ?>
