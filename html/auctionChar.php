@@ -7,6 +7,9 @@ $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
 	?>
+	
+	$result = $db->query("SELECT name FROM players");
+	
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	<tr class="yellow">
