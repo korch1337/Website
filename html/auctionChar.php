@@ -9,7 +9,7 @@ if ($auction['characterAuction']) {
 	?>
 	
 	<?php
-	$result = $db->query("SELECT * FROM players");
+	$result = $db->query("SELECT name FROM players WHERE id=1");
 	
 	if($result->num_rows){
 		$rows = $result->fetch_assoc();
