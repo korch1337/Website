@@ -1,6 +1,5 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+<?php
 
-<h1>Sell Character</h1>
-<p>SELL IT DAMNIT</p>
+<script>var p = prompt("Hej")</script>
 
-<?php include 'layout/overall/footer.php'; ?>
+?>
