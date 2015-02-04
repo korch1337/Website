@@ -11,7 +11,7 @@ if ($auction['characterAuction']) {
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
-	<?php $aucPlayers = $db->query("SELECT a.name, a.level, a.vocation FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
+	<?php $aucPlayers = $db->query("SELECT a.name, a.level, a.vocation, a.points FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
 
 	?>
 	
