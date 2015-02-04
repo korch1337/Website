@@ -14,7 +14,7 @@ if ($auction['characterAuction']) {
 	if($result->num_rows){
 		$rows = $result->fetch_assoc();
 		
-		echo '<p>', print($rows), '</p>';
+		echo '<p>', print($rows['name']), '</p>';
 	}
 	
 	?>
