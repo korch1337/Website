@@ -36,12 +36,6 @@ if (!empty($_POST['selected_character'])) {
 					echo 'Successfully updated comment.';
 				}
 				break;
-				
-			case 'sell_character':
-				if ($user_data['level'] > 150) {
-					
-				}
-				break;
 			// end
 			// Hide character
 			case 'toggle_hide':
@@ -240,14 +234,14 @@ if ($render_page) {
 			?>
 			<table id="myaccountTable" class="table table-striped table-hover">
 				<tr class="yellow">
-					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th>
+					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th><th>SELL</th>
 				</tr>
 				<?php
 				$characters = array();
 				foreach ($char_array as $value) {
 					// characters: [0] = name, [1] = level, [2] = vocation, [3] = town_id, [4] = lastlogin, [5] = online
 					echo '<tr>';
-					echo '<td><a href="characterprofile.php?name='. $value['name'] .'">'. $value['name'] .'</a></td><td>'. $value['level'] .'</td><td>'. $value['vocation'] .'</td><td>'. $value['town_id'] .'</td><td>'. $value['lastlogin'] .'</td><td>'. $value['online'] .'</td><td>'. hide_char_to_name(user_character_hide($value['name'])) .'</td>';
+					echo '<td><a href="characterprofile.php?name='. $value['name'] .'">'. $value['name'] .'</a></td><td>'. $value['level'] .'</td><td>'. $value['vocation'] .'</td><td>'. $value['town_id'] .'</td><td>'. $value['lastlogin'] .'</td><td>'. $value['online'] .'</td><td>'. hide_char_to_name(user_character_hide($value['name'])) .'</td><td>'.'bajs'.'</td>';
 					echo '</tr>';
 					$characters[] = $value['name'];
 				}
@@ -278,7 +272,6 @@ if ($render_page) {
 								<option value="change_gender">Change gender</option>
 								<option value="change_name">Change name</option>
 								<option value="delete_character" class="needconfirmation">Delete character</option>
-								<option value="sell_character" class="needconfirmation">Sell Character</option>
 							</select>
 						</td>
 						<td id="submit_form">
