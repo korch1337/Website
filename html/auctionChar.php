@@ -13,10 +13,9 @@ if ($auction['characterAuction']) {
 	
 	if($result->num_rows){
 	
-		<td>while($row = $result->fetch_object()){
+		while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
 		}
-		</td>
 	}
 	
 	?>
@@ -31,9 +30,12 @@ if ($auction['characterAuction']) {
 	</tr>
 	
 	<tr class="yellow">
-	    <td><?php while($row = $result->fetch_object()){
+	    <td>if($result->num_rows){
+	
+		while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
-		} ?></td>
+		}
+	}</td>
 	</tr>
 	
 </table>
