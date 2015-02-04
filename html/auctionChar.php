@@ -30,12 +30,12 @@ if ($auction['characterAuction']) {
 	</tr>
 	
 	<tr class="yellow">
-	    <td>if($result->num_rows){
+	    <td><?php if($result->num_rows){
 	
 		while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
 		}
-	}</td>
+	} ?></td>
 	</tr>
 	
 </table>
