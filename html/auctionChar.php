@@ -12,7 +12,7 @@ if ($auction['characterAuction']) {
 	$result = $db->query("SELECT name FROM players");
 	
 	if($result->num_rows){
-		$rows = $result->fetch_all();
+		$rows = $result->fetch_assoc();
 		
 		echo '<pre>', print_r($rows), '</pre>';
 	}
