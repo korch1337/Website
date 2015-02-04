@@ -28,8 +28,8 @@ if ($auction['characterAuction']) {
 		   $aucPlayers->free();
 		   ?>
 	      </td>
-	      <td><?php while($row = $aucPlayers->fetch_object()){
-			echo $row->name, '<br>'; echo $row->level, '<br>';}
+	      <td><?php while($row = $aucPlayers->fetch_assoc()){
+			echo $row['level'], '<br>';}
 		   $aucPlayers->free();
 		   ?>
 	      </td>
