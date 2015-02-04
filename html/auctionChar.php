@@ -21,11 +21,13 @@ if ($auction['characterAuction']) {
 		<td>Price/Buy</td>
 	</tr>
 	<tr>
-	      <td><?php
-	while($row = $result->fetch_object()){
+	      <td><?php while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
-		}
-	?></td>
+		} ?></td>
+	      
+	      <td><?php while($row = $result->fetch_object()){
+			echo $row->name, '<br>';
+		} ?></td>
 	</tr>
 </table>
 	<?php
