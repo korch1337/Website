@@ -6,9 +6,8 @@ include 'layout/overall/header.php';
 $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
-	?>
 	
-	<?php
+	
 	$result = $db->query("SELECT a.name FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id");
 	
 	if($result->num_rows){
@@ -19,7 +18,6 @@ if ($auction['characterAuction']) {
 		
 	}
 	
-	?>
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	<tr class="yellow">
@@ -35,8 +33,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	
 </table>
-	<?php
+	
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
 include 'layout/overall/footer.php'; ?>
-
