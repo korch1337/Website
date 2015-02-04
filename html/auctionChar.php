@@ -7,8 +7,11 @@ $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
 	?>
+	
 	<?php
-	$result = $db->query("SELECT troll FROM players");
+	$result = $db->query("SELECT name FROM players");
+	
+	print_r($result);
 	?>
 <h1>Character auctioning</h1>
 <table class="auction_char">
