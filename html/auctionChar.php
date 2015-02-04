@@ -8,17 +8,6 @@ $auction = $config['shop_auction'];
 if ($auction['characterAuction']) {
 	?>
 	
-	<?php
-	$result = $db->query("SELECT a.name FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id");
-	
-	if($result->num_rows){
-	
-		while($row = $result->fetch_object()){
-			echo $row->name, '<br>';
-		}
-	}
-	
-	?>
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
@@ -31,11 +20,13 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
-	<?php
+	<tr>
+	      <td><?php
 	while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
 		}
-	?>
+	?></td>
+	</tr>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
