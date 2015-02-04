@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php' require 'connect.php';
+<?php require_once 'engine/init.php';
 protect_page();
 include 'layout/overall/header.php'; 
 
