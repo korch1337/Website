@@ -12,7 +12,7 @@ if ($auction['characterAuction']) {
 <table class="auction_char">
 	
 	<?php $aucPlayers = $db->query("SELECT a.name, a.level, a.vocation FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
-	
+
 	?>
 	
 	<tr class="yellow">
@@ -23,16 +23,10 @@ if ($auction['characterAuction']) {
 		<td>Price/Buy</td>
 	</tr>
 	<tr>
-	      <td><?php while($row = $aucPlayers->fetch_assoc()){
-			echo $row['name'], '<br>';}
+	       <?php while($row = $aucPlayers->fetch_object()){
+			echo '<td>', $row->name, '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>';}
 		   $aucPlayers->free();
-		   ?>
-	      </td>
-	      <td><?php while($row = $aucPlayers->fetch_assoc()){
-			echo $row['level'], '<br>';}
-		   $aucPlayers->free();
-		   ?>
-	      </td>
+	       ?>
 	      
 	</tr>
 </table>
