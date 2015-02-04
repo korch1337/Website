@@ -18,7 +18,7 @@ if ($auction['characterAuction']) {
 	<tr class="yellow">
 		<td>Name</td>
 		<td>Level</td>
-		<td>Vocation</td>
+		<td>Vocation<br></td>
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
