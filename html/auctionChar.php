@@ -24,7 +24,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	<tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo 'This will not expand: \n a newline';
+			echo nl2br("One line.\nAnother line.");
 	       }
 		   $aucPlayers->free();
 	       ?>
