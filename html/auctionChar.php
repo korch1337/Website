@@ -22,14 +22,12 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
-	<tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo '<td>', $row->name, '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>', '<td>','Image?', '</td>', '<td>', $row->price, '</td>', '<br>';
+			echo '<tr>', '<td>', $row->name, '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>', '<td>','Image?', '</td>', '<td>', $row->price, '</td>', '</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
 	      
-	</tr>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
