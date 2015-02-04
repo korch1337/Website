@@ -21,6 +21,9 @@ if ($auction['characterAuction']) {
 	?>
 <h1>Character auctioning</h1>
 <table class="auction_char">
+	
+	<?php $result = $db->query("SELECT a.name FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id"); ?>
+	
 	<tr class="yellow">
 		<td>Name</td>
 		<td>Level</td>
