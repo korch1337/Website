@@ -36,6 +36,14 @@ if (!empty($_POST['selected_character'])) {
 					echo 'Successfully updated comment.';
 				}
 				break;
+				
+			case 'sell_character':
+				if ($user_data['level'] > 150) {
+					<script>
+					var useranswer = prompt("BLALBA")
+					</script>
+				}
+				break;
 			// end
 			// Hide character
 			case 'toggle_hide':
@@ -234,7 +242,7 @@ if ($render_page) {
 			?>
 			<table id="myaccountTable" class="table table-striped table-hover">
 				<tr class="yellow">
-					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th><th><button type="button" onclick="alert('Hello world!')">Click Me!</button></th>
+					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th>
 				</tr>
 				<?php
 				$characters = array();
@@ -272,6 +280,7 @@ if ($render_page) {
 								<option value="change_gender">Change gender</option>
 								<option value="change_name">Change name</option>
 								<option value="delete_character" class="needconfirmation">Delete character</option>
+								<option value="sell_character" class="needconfirmation">Sell Character</option>
 							</select>
 						</td>
 						<td id="submit_form">
