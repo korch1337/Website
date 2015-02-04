@@ -14,7 +14,7 @@ if ($auction['characterAuction']) {
 	if($result->num_rows){
 		$rows = $result->fetch_all(MYSQLI_ASSOC);
 		foreach($rows as $row){
-			echo '<p>', $row['name'], '<br>', '</p>';
+			echo '<p>', $row['name'], '</p>', '<br>';
 		}
 		
 	}
