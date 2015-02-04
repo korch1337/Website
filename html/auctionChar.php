@@ -11,7 +11,10 @@ if ($auction['characterAuction']) {
 	<?php
 	$result = $db->query("SELECT name FROM players");
 	
-	print_r($result);
+	if($result->num_rows){
+		echo 'It worked, im best';
+	}
+	
 	?>
 <h1>Character auctioning</h1>
 <table class="auction_char">
