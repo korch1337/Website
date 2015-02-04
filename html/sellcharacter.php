@@ -1,8 +1,10 @@
 <?php
+$a = 0;
+?>
+<script>
+var a = prompt("Hej");
+</script>
 
-echo '<script type="text/javascript">';
-var p = prompt("Enter something");
-echo '</script>';
-
-
+<?php
+echo $a;
 ?>
