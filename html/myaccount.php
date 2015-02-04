@@ -234,7 +234,7 @@ if ($render_page) {
 			?>
 			<table id="myaccountTable" class="table table-striped table-hover">
 				<tr class="yellow">
-					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th>
+					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th><th><button type="button" onclick="alert('Hello world!')">Click Me!</button></th>
 				</tr>
 				<?php
 				$characters = array();
