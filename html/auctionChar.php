@@ -12,7 +12,7 @@ if ($auction['characterAuction']) {
 	$result = $db->query("SELECT a.name FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id");
 	
 	if($result->num_rows){
-		$rows = $result->fetch_assoc();
+		$rows = $result->fetch_all(MYSQLI_ASSOC);
 		foreach($rows as $row){
 			echo '<p>', $row['name'], '<br>', '</p>';
 		}
