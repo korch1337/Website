@@ -19,7 +19,8 @@ if ($auction['characterAuction']) {
 	<?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Player Auctions</center></td></tr> 
 <tr><td>'; 
 $aucPlayer = mysql_query('SELECT `a.name`, `a.id`, `b.id` FROM `players` AS a, znote_auction_player AS b WHERE `a.id`="b.id"');
-echo '<a href="characterprofile.php?name='.$aucPlayer['a.name'].'">'.$aucPlayer['a.name'].'</a></td></tr>';
+$display = mysql_fetch_assoc($aucPlayer[a.name]);
+echo '<a href="characterprofile.php?name='.$display.'">'.$display.'</a></td></tr>';
 echo '</table>'; ?>
 </table>
 	<?php
