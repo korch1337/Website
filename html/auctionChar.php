@@ -24,7 +24,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	<tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo nl2br("<td> . $row->name . \n . $row->level . </td>");
+			echo nl2br("<td> $row->name $row->level </td>");
 	       }
 		   $aucPlayers->free();
 	       ?>
