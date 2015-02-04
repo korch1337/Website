@@ -9,13 +9,12 @@ if ($auction['characterAuction']) {
 	?>
 	
 	<?php
-	<h1>Auctions:</h1>
-	$result = $db->query("SELECT name FROM players WHERE id=1");
+	$result = $db->query("SELECT a.name FROM players AS a, znote_auction_player AS b WHERE a.id=b.id");
 	
 	if($result->num_rows){
 		$rows = $result->fetch_assoc();
 		
-		echo '<p>', $rows['name'], '</p>';
+		echo '<p>', $rows['name'], '<br>', '</p>';
 	}
 	
 	?>
