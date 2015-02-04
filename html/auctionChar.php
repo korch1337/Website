@@ -11,7 +11,8 @@ if ($auction['characterAuction']) {
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
-	<?php $result = $db->query("SELECT * FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id"); ?>
+	<?php $names = $db->query("SELECT name FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id"); ?>
+	<?php $levels = $db->query("SELECT level FROM players AS a, znote_auction_player AS b WHERE a.id=b.player_id"); ?>
 	
 	<tr class="yellow">
 		<td>Name</td>
@@ -21,15 +22,15 @@ if ($auction['characterAuction']) {
 		<td>Price/Buy</td>
 	</tr>
 	<tr>
-	      <td><?php while($row = $result->fetch_object()){
+	      <td><?php while($row = $names->fetch_object()){
 			echo $row->name, '<br>'; }
-		   $result->free();
+		   $names->free();
 		   ?>
 	      </td>
 	      
-	      <td><?php while($row = $result->fetch_object()){
+	      <td><?php while($row = $levels->fetch_object()){
 			echo $row->level, '<br>'; }
-		   $result->free();
+		   $levels->free();
 		   ?></td>
 	</tr>
 </table>
