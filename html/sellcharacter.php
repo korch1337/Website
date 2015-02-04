@@ -1,6 +1,7 @@
-<script>var p = prompt("Hej alla bögar")</script>
-
 <?php
-echo 'p';
+
+echo '<script type="text/javascript">';
+echo 'document.write("Hello World!")';
+echo '</script>';
 
 ?>
