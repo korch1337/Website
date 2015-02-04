@@ -32,9 +32,6 @@ if ($auction['characterAuction']) {
 	while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
 		}
-	<tr>
-	    <td></td>
-	</tr>
 	?>
 </table>
 	<?php
