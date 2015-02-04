@@ -18,7 +18,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	<?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Player Auctions</center></td></tr> 
 <tr><td>'; 
-$aucPlayer = mysql_select_single('SELECT `name` FROM `players` WHERE `players.id`=`znote_auction_player.id`');
+$aucPlayer = mysql_select_single('SELECT `name` FROM `players` WHERE `id`=`znote_auction_player.id`');
 echo '<a href="characterprofile.php?name='.$aucPlayer['name'].'">'.$aucPlayer['name'].'</a></td></tr>';
 echo '</table>'; ?>
 </table>
