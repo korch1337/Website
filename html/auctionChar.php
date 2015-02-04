@@ -18,7 +18,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	<?php echo '<table border="0" cellspacing="0"><tr class="yellow"><td><center>Player Auctions</center></td></tr> 
 <tr><td>'; 
-$aucPlayer = mysql_select_multi('SELECT a.name, a.id, b.id FROM players AS a, znote_auction_player AS b WHERE a.id=b.id');
+$aucPlayer = mysql_select_multi('SELECT `a.name`, `a.id`, `b.id` FROM `players` AS a, `znote_auction_player` AS b WHERE `a.id`=`b.id`');
 echo '<a href="characterprofile.php?name='.$aucPlayer['name'].'">'.$aucPlayer['name'].'</a></td></tr>';
 echo '</table>'; ?>
 </table>
