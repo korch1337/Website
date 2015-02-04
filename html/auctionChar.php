@@ -25,9 +25,7 @@ if ($auction['characterAuction']) {
 			echo $row->name, '<br>';
 		} ?></td>
 	      
-	      <td><?php while($row = $result->fetch_object()){
-			echo $row->name, '<br>';
-		} ?></td>
+	      <td>100</td>
 	</tr>
 </table>
 	<?php
