@@ -9,6 +9,7 @@ if ($auction['characterAuction']) {
 	?>
 	
 	<?php
+	<h1>Auctions:</h1>
 	$result = $db->query("SELECT name FROM players WHERE id=1");
 	
 	if($result->num_rows){
