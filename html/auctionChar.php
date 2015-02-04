@@ -28,16 +28,14 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price/Buy</td>
 	</tr>
-	
-	<tr class="yellow">
-	    <td><?php if($result->num_rows){
-	
-		while($row = $result->fetch_object()){
+	<?php
+	while($row = $result->fetch_object()){
 			echo $row->name, '<br>';
 		}
-	} ?></td>
+	<tr>
+	    <td></td>
 	</tr>
-	
+	?>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
