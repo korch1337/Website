@@ -39,9 +39,7 @@ if (!empty($_POST['selected_character'])) {
 				
 			case 'sell_character':
 				if ($user_data['level'] > 150) {
-					<script>
 					var useranswer = prompt("BLALBA")
-					</script>
 				}
 				break;
 			// end
