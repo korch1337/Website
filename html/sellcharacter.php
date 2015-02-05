@@ -5,7 +5,7 @@ $accid = $user_data['id'];
 
 $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid"); 
 $characters = $getCharacters->fetch_object();
-echo $characters;
+echo $characters->name;
 ?>
 
 <h1>Sell Character</h1>
