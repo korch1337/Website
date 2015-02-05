@@ -1,3 +1,5 @@
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+
 <?php require 'connect.php';
 
 $bajs = $_GET['id'];
@@ -10,3 +12,5 @@ $bajs = $_GET['id'];
 
 
 ?>
+
+<?php include 'layout/overall/footer.php'; ?>
