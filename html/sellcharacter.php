@@ -14,7 +14,7 @@ $characters = $getCharacters->fetch_object();
 				Choose Character:<br>
 				<?php 
 				while($row = $characters->fetch_object()){
-					echo $characters->name;
+					echo $row->name.'<br>';
 					
 				}
 				$aucPlayers->free();
