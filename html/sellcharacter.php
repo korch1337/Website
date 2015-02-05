@@ -2,7 +2,7 @@
 
 <h1>Sell Your Character</h1>
 <p>Enter char id: </p>
-<form action=sell() method="post">
+<form action="sellcharacter.php" method="post">
 ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
 </form>
