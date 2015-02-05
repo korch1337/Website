@@ -7,7 +7,7 @@ ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
 </form> -->
 <script>
-<?php
+console.log(<?php
 
 // function sell(){
   $aucPlayers = $db->query("SELECT name, id from players WHERE id=1"); 
@@ -22,6 +22,7 @@ ID: <input type="text" name="id">
  //  sell();
 //} 
 
-?>
+?>)
+
 </script>
 <?php include 'layout/overall/footer.php'; ?>
