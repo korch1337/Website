@@ -12,7 +12,7 @@ $characters = $getCharacters->fetch_object();
 				<li>
 				
 				Choose Character:<br>
-				<?php echo 'Hej'; ?>
+				<?php echo $characters->name; ?>
 				
 				</li>
 				</ul>
