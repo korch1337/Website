@@ -12,6 +12,6 @@
 				</select>
 			</li>
 			</ul>
-		<?php echo $user_znote_data['id']; ?>
+		<?php echo $user_znote_data['account_id']; ?>
 
 <?php include 'layout/overall/footer.php'; ?>
