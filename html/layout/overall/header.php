@@ -16,6 +16,7 @@ $start = $time;
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
+   <script type="text/javascript" src="david.js"></script>
 </head>
 <body>
 
