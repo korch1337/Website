@@ -3,7 +3,7 @@
 <?php require 'connect.php';
 $accid = $user_data['id'];
 
-$getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid"); 
+$getCharacters = $db->query("SELECT name, id FROM players WHERE account_id=$accid"); 
 $characters = $getCharacters->fetch_object();
 ?>
 
@@ -12,7 +12,11 @@ $characters = $getCharacters->fetch_object();
 				<li>
 				
 				Choose Character:<br>
-				<?php echo $characters->name; ?>
+				<?php 
+				foreach ($characters as $chars){
+					echo $chars->name;
+				}
+				?>
 				
 				</li>
 				</ul>
