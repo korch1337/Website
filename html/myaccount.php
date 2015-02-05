@@ -3,21 +3,6 @@
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
 <?php require_once 'engine/init.php';
-if (isset($_POST)) {
-  <script>
-  $(function() {
-    $( "#dialog" ).dialog();
-  });
-  </script>
-  
-  <div id="dialog" title="Confirmation and price">
-  <p>Enter char id: </p>
-<form type="submit" action="sellchar.php" method="get">
-ID: <input type="text" name="id">
-<input type="submit" value="Auction">
-</form>
-</div>
-}
 protect_page();
 include 'layout/overall/header.php'; 
 #region CANCEL CHARACTER DELETE
