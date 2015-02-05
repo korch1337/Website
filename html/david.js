@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var $menu = $('li');
+var $menu = $(':contains(menu)');
 
 $menu.mouseenter(function() {
 $menu.fadeTo('fast', 0.8);
