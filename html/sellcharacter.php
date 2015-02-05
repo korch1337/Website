@@ -1,10 +1,6 @@
-<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; require 'connect.php'; ?>
-
-<h1>Sell Your Character</h1>
-<p>Enter char id: </p>
-<form type="submit" action="sellchar.php" method="get">
-ID: <input type="text" name="id">
-<input type="submit" value="Auction">
-</form>
-
-<?php include 'layout/overall/footer.php'; ?>
+<div class="messagepop pop">
+    <form method="post" id="new_message" action="/messages">
+        <p><label for="price">Enter your price: </label><input type="text" size="30" name="price" id="price" /></p>
+        <p><input type="submit" value="Confirm" name="commit" id="message_submit"/> or <a class="close" href="/">Cancel</a></p>
+    </form>
+</div>
