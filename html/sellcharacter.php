@@ -7,23 +7,13 @@ ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
 </form>
 
-Welcome <?php echo $_POST["id"]; ?>
+<?php
 
-<?php /*
-
-
-function sell(){
-  $aucPlayers = $db->query("SELECT name, id from players WHERE id=1"); 
+  $aucPlayers = $db->query("SELECT name, id from players WHERE id=$_POST["id"]"); 
    while($row = $aucPlayers->fetch_object()){
 			echo $row->name;
 	       }
 		   $aucPlayers->free();
-} */
-
-//if(isset($_POST['submit']))
-//{
- //  sell();
-//} 
 
 ?>
 
