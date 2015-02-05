@@ -13,9 +13,8 @@ $characters = $getCharacters->fetch_object();
 				
 				Choose Character:<br>
 				<?php 
-				while($characters){
-					echo $characters->name;
-					
+				for ($x = 0; $x <= 3; $x++) {
+					echo $characters->name;	
 				}
 				$aucPlayers->free();
 				?>
