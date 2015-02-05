@@ -4,7 +4,6 @@
 $accid = $user_data['id'];
 
 $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid"); 
-$characters = $getCharacters->fetch_object();
 ?>
 
 				<h1>Sell Character</h1>
@@ -12,9 +11,9 @@ $characters = $getCharacters->fetch_object();
 				<li>
 				
 				Choose Character:<br>
-				<?php 
-				for ($x = 0; $x <= 3; $x++) {
-					echo $characters->name;	
+				<?php while($row = $getCharacters->fetch_object()){
+					echo $row->name;;
+					
 				}
 				$aucPlayers->free();
 				?>
