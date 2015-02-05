@@ -4,7 +4,7 @@
 <p>Enter char id: </p>
 <form action="sellcharacter.php" method="post">
 ID: <input type="text" name="id">
-<input type="submit">
+<input type="submit" name="submit" value="Auction">
 </form>
 
 <?php
