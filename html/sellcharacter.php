@@ -8,11 +8,7 @@ $characters = $getCharacters->fetch_object();
 ?>				
 				
 				Choose Character:<br>
-				<select name="selected_character">
-				<?php foreach ($characters as $chars) { ?>
-				<option value="<?php echo '1'; ?>"><?php echo $chars->name ?></option>
-				<?php } ?>
-				</select>
+				
 			</li>
 			</ul>
 		<?php echo $user_data['id']; ?>
