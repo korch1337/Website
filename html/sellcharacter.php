@@ -13,7 +13,7 @@ $characters = $getCharacters->fetch_object();
 				
 				Choose Character:<br>
 				<?php 
-				echo characters->id.' '.characters->name;
+				echo characters->id;
 				?>
 				
 				</li>
