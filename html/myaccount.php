@@ -1,7 +1,4 @@
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+
 <?php require_once 'engine/init.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -245,24 +242,9 @@ if ($render_page) {
 				foreach ($char_array as $value) {
 					// characters: [0] = name, [1] = level, [2] = vocation, [3] = town_id, [4] = lastlogin, [5] = online
 					echo '<tr>';
-					echo '<td><a href="characterprofile.php?name='. $value['name'] .'">'. $value['name'] .'</a></td><td>'. $value['level'] .'</td><td>'. $value['vocation'] .'</td><td>'. $value['town_id'] .'</td><td>'. $value['lastlogin'] .'</td><td>'. $value['online'] .'</td><td>'. hide_char_to_name(user_character_hide($value['name'])) .'</td><td>'.'<form action="" method="post"><input type="submit" value="SELL"></form>'.'</td>';
+					echo '<td><a href="characterprofile.php?name='. $value['name'] .'">'. $value['name'] .'</a></td><td>'. $value['level'] .'</td><td>'. $value['vocation'] .'</td><td>'. $value['town_id'] .'</td><td>'. $value['lastlogin'] .'</td><td>'. $value['online'] .'</td><td>'. hide_char_to_name(user_character_hide($value['name'])) .'</td><td>'.'<form action="sellcharacter.php" method="post"><input type="submit" value="SELL"></form>'.'</td>';
 					echo '</tr>';
 					$characters[] = $value['name'];
-				}
-				if (isset($_POST)) {
-					echo  '<script>
-  $(function() {
-    $( "#dialog" ).dialog();
-  });
-  </script>
-  
-  <div id="dialog" title="Confirmation and price">
-  <p>Enter char id: </p>
-<form type="submit" action="sellchar.php" method="get">
-ID: <input type="text" name="id">
-<input type="submit" value="Auction">
-</form>
-</div> ';
 				}
 			?>
 			</table>
