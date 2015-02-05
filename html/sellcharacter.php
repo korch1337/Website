@@ -10,10 +10,9 @@ ID: <input type="text" name="id">
 <?php
 
 function sell(){
- // $aucPlayers = $db->query("SELECT name from players WHERE id=1"); 
-  // $rows = $aucPlayers->fetch_assoc();
-  // echo '<pre>', print_r($rows), '</pre>';
-  echo 'Patrik luktar fisk!';
+  $aucPlayers = $db->query("SELECT name from players WHERE id=1"); 
+  $rows = $aucPlayers->fetch_object();
+  echo '<pre>', $rows->name, '</pre>';
 }
 
 if(isset($_POST['submit']))
