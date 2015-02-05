@@ -12,7 +12,7 @@ ID: <input type="text" name="id">
 // function sell(){
   $aucPlayers = $db->query("SELECT name, id from players WHERE id=1"); 
    while($row = $aucPlayers->fetch_object()){
-			echo $row->id;
+			echo $row->name;
 	       }
 		   $aucPlayers->free();
 //}
