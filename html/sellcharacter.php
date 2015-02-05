@@ -2,11 +2,17 @@
 
 <h1>Sell Your Character</h1>
 <p>Enter char id: </p>
-<form action="" method="post">
+<form action="sellcharacter.php" method="post">
 ID: <input type="text" name="id">
 <input type="submit">
 </form>
 
-Welcome <?php echo $_POST["id"]; ?>
+<?php
+
+function sell(){
+  echo "hello ".$_POST["id"];
+}
+
+?>
 
 <?php include 'layout/overall/footer.php'; ?>
