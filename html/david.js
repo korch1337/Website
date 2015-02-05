@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var $menu = $('.menu');
+var $menu = $('.menu > ul > li > ul');
 
 $menu.mouseenter(function() {
 $menu.fadeTo('fast', 0.8);
