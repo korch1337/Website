@@ -10,7 +10,7 @@ ID: <input type="text" name="id">
 <?php
 
 function sell(){
-  $aucPlayers = $db->query("SELECT a.id, a.name, a.level, a.vocation FROM players AS a WHERE a.id=$_POST["id"]"); 
+  $aucPlayers = $db->query("SELECT a.id, a.name, a.level, a.vocation FROM players AS a WHERE a.id=5"); 
   while($row = $aucPlayers->fetch_object()){
 			echo $row->name;
 	       }
