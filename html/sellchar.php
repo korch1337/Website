@@ -7,8 +7,8 @@ $bajs = $_GET['id'];
    
    $row = $aucPlayers->fetch_object();
    echo 'Name: ', $row->name,'player id: ', $row->id,'Account ID: ', $row->account_id, 'Vocation: ', $row->vocation, 'Level: ', $row->level;
-   $db->query($link,"INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`)
-   VALUES ($row->id, $row->account_id, $row->vocation, $row->level");
+   $db->query("$link,"INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`)
+   VALUES ($row->id, $row->account_id, $row->vocation, $row->level)");
    $aucPlayers->free();
 
 
