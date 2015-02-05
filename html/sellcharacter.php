@@ -13,11 +13,7 @@ $characters = $getCharacters->fetch_object();
 				
 				Choose Character:<br>
 				<?php 
-				while($row = $characters->fetch_object()){
-					echo $row->name;
-					
-				}
-				$aucPlayers->free();
+				echo $characters->name;
 				?>
 				
 				</li>
