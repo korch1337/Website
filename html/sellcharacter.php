@@ -13,8 +13,8 @@ $characters = $getCharacters->fetch_object();
 				
 				Choose Character:<br>
 				<?php 
-				foreach ($characters as $chars){
-					echo $chars->name;
+				foreach ($characters->name as $chars){
+					echo $chars;
 				}
 				?>
 				
