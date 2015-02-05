@@ -1,5 +1,5 @@
 $(document).ready(){
-var $menu = $("ul li:first-child");
+var $menu = $("#menu");
 
 $menu.mouseenter(function() {
   $menu.fadeTo('fast', 0.8);
