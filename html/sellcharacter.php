@@ -11,10 +11,7 @@ ID: <input type="text" name="id">
 
 function sell(){
   $aucPlayers = $db->query("SELECT a.id, a.name, a.level, a.vocation FROM players AS a WHERE a.id=5"); 
-  while($row = $aucPlayers->fetch_object()){
-			echo $row->name;
-	       }
-		   $aucPlayers->free();
+  echo $aucPlayers->fetchObject();
 }
 
 if(isset($_POST['submit']))
