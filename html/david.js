@@ -1,5 +1,5 @@
 $(document).ready(){
-var $menu = $('ul');
+var $menu = $("ul");
 
 $menu.mouseenter(function() {
   $menu.fadeTo('fast', 0.8);
