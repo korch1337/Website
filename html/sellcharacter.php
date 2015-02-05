@@ -7,8 +7,6 @@
     $( "#dialog" ).dialog();
   });
   </script>
-</head>
-<body>
  
 <div id="dialog" title="Confirmation and price">
   <p>Enter char id: </p>
