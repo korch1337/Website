@@ -7,7 +7,7 @@ ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
 </form>
 
-Welcome <?php echo $_POST["name"]; ?>
+Welcome <?php echo $_POST["id"]; ?>
 
 <?php /*
 
