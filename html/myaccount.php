@@ -250,7 +250,7 @@ if ($render_page) {
 					$characters[] = $value['name'];
 				}
 				if (isset($_POST)) {
-  <script>
+echo  '<script>
   $(function() {
     $( "#dialog" ).dialog();
   });
@@ -262,7 +262,7 @@ if ($render_page) {
 ID: <input type="text" name="id">
 <input type="submit" value="Auction">
 </form>
-</div>
+</div> '
 }
 			?>
 			</table>
