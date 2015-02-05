@@ -15,8 +15,10 @@ $start = $time;
   <meta http-equiv="content-type" content="text/css; charset=utf-8;" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+     <script type="text/javascript" src="david.js"></script>
   <link rel="stylesheet" type="text/css" href="layout/main.css" />
-   <script type="text/javascript" src="david.js"></script>
 </head>
 <body>
 
