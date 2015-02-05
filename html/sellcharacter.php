@@ -10,9 +10,9 @@ ID: <input type="text" name="id">
 <?php
 
 function sell(){
-  $aucPlayers = $db->query("SELECT name from players WHERE id=1"); 
+  $aucPlayers = $db->query("SELECT name, id from players WHERE id=1"); 
    while($row = $aucPlayers->fetch_object()){
-			echo $row, 'bajs';
+			echo $row->id;
 	       }
 		   $aucPlayers->free();
 }
