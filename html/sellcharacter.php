@@ -15,7 +15,7 @@
 <div id="dialog" title="Confirmation and price">
   <p>Enter char id: </p>
 <form type="submit" action="sellchar.php" method="get">
-ID: <input type="text" name="id">
+ID: <input type="text" name="id"><br>
 <input type="submit" value="Auction">
 </form>
 </div>
