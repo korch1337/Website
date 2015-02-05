@@ -6,6 +6,9 @@ $accid = $user_data['id'];
 $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid"); 
 $characters = $getCharacters->fetch_object();
 echo '<h1>'.'Sell Character'.'</h1>';
+echo '<ul>'.'<li>';
+echo 'Choose Character:<br>';
+echo '</li>'.'</ul>';
 ?>
 
 <?php include 'layout/overall/footer.php'; ?>
