@@ -2,9 +2,9 @@
 
 <h1>Sell Your Character</h1>
 <p>Enter char id: </p>
-<form action="sellchar.php" method="post">
+<form type="submit" action="sellchar.php" method="get">
 ID: <input type="text" name="id">
-<input type="submit" name="submit" value="Auction">
+<input type="submit" value="Auction">
 </form>
 
 <?php include 'layout/overall/footer.php'; ?>
