@@ -1,5 +1,5 @@
 $(document).ready(){
-var $menu = $('li :nth-child(2)');
+var $menu = $('li');
 
 $menu.mouseenter(function() {
   $menu.fadeTo('fast', 0.8);
