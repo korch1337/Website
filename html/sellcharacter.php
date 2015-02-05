@@ -12,5 +12,6 @@
 				</select>
 			</li>
 			</ul>
+		<?php echo $user_znote_data['points']; ?>
 
 <?php include 'layout/overall/footer.php'; ?>
