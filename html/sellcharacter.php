@@ -6,7 +6,7 @@
 ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
 </form> -->
-
+<script>
 <?php
 
 // function sell(){
@@ -23,5 +23,5 @@ ID: <input type="text" name="id">
 //} 
 
 ?>
-
+</script>
 <?php include 'layout/overall/footer.php'; ?>
