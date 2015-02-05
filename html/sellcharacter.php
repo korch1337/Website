@@ -13,6 +13,11 @@ function sell(){
   echo "hello ".$_POST["id"];
 }
 
+if(isset($_POST['submit']))
+{
+   sell();
+} 
+
 ?>
 
 <?php include 'layout/overall/footer.php'; ?>
