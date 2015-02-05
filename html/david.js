@@ -1,13 +1,12 @@
 $(document).ready(function(){
 
+var $menu = $('.menu');
 
-
-$('#menu>li').mouseenter(function() {
-$('#menu>li').fadeTo('fast', 0.8);
+$menu.mouseenter(function() {
+$menu.fadeTo('fast', 0.8);
 });
-
-$('#menu>li').mouseleave(function() {
-$('#menu>li').fadeTo('fast', 1);
+$menu.mouseleave(function() {
+$menu.fadeTo('fast', 1);
   
 
 });
