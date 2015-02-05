@@ -6,9 +6,7 @@
 ID: <input type="text" name="id">
 <input type="submit">
 </form>
-<?php
 
-Welcome <?php echo $_POST["id"]; ?><br>
+Welcome <?php echo $_POST["id"]; ?>
 
-?>
 <?php include 'layout/overall/footer.php'; ?>
