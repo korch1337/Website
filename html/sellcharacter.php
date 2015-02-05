@@ -1,7 +1,7 @@
-<?php require 'connect.php'; ?>
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; require 'connect.php'; ?>
 
-<?php $sellCharacter = $db->query("
-INSERT INTO znote_auction_player
-VALUES(4, 3, , , , , , 200)
-"); 
-	?>
+<h1>Sell Your Character</h1>
+<p>Enter char id: </p>
+
+
+<?php include 'layout/overall/footer.php'; ?>
