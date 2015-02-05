@@ -11,8 +11,10 @@ ID: <input type="text" name="id">
 
 function sell(){
   $aucPlayers = $db->query("SELECT name from players WHERE id=1"); 
-  $rows = $aucPlayers->fetch_object();
-  echo '<pre>', $rows->name, '</pre>';
+   while($row = $aucPlayers->fetch_object()){
+			echo $row, 'bajs';
+	       }
+		   $aucPlayers->free();
 }
 
 if(isset($_POST['submit']))
