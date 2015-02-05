@@ -2,19 +2,9 @@
 
 <h1>Sell Your Character</h1>
 <p>Enter char id: </p>
-<form action="sellcharacter.php" method="post">
+<form action="sellchar.php" method="post">
 ID: <input type="text" name="id">
 <input type="submit" name="submit" value="Auction">
-
-<?php
-
-  $aucPlayers = $db->query("SELECT name, id from players WHERE id=$_POST["id"]"); 
-   while($row = $aucPlayers->fetch_object()){
-			echo $row->name;
-	       }
-		   $aucPlayers->free();
-
-?>
 </form>
 
 <?php include 'layout/overall/footer.php'; ?>
