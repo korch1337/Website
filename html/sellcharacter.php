@@ -8,7 +8,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 
 				<h1>Sell Character</h1>
 				
-				<form action="sellchar.php" method="post">
+				<form action="sellchar.php" method="get">
 				<ul>
 				<li>
 				
