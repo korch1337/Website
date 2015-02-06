@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <?php require_once 'engine/init.php';
 protect_page();
 include 'layout/overall/header.php'; 
