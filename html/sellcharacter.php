@@ -12,12 +12,13 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				
 				Choose Character:<br>
 				
-				<?php while($row = $getCharacters->fetch_object()){
-					echo $row->name.'<br>';
-				}
+				<select name="selected_character">
+				<?php while($row = $getCharacters->fetch_object()){ ?>
+					<option value="<?php echo '1'; ?>"><?php echo $row->name ?></option>
+				<?php }
 				$aucPlayers->free();
 				?>
-				
+				</select>
 				</li>
 				</ul>
 
