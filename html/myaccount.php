@@ -238,7 +238,7 @@ if ($render_page) {
 			?>
 			<table id="myaccountTable" class="table table-striped table-hover">
 				<tr class="yellow">
-					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th><th>SELL</th>
+					<th>NAME</th><th>LEVEL</th><th>VOCATION</th><th>TOWN</th><th>LAST LOGIN</th><th>STATUS</th><th>HIDE</th>
 				</tr>
 				<?php
 				$characters = array();
