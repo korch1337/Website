@@ -2,13 +2,14 @@
 
 <?php require 'connect.php';
 
-$bajs = $_GET['id'];
- $aucPlayers = $db->query("SELECT a.name, a.id, a.account_id, a.vocation, a.level FROM players AS a WHERE a.id=$bajs"); 
+$price = $_POST['price'];
+$name = $_POST['selected_character'];
+ $aucPlayers = $db->query("SELECT a.name, a.id, a.account_id, a.vocation, a.level FROM players AS a WHERE a.name=$name"); 
    
    $row = $aucPlayers->fetch_object();
-   echo 'Name: ', $row->name,'player id: ', $row->id,'Account ID: ', $row->account_id, 'Vocation: ', $row->vocation, 'Level: ', $row->level;
-   $db->query("INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`)
-   VALUES ($row->id, $row->account_id, $row->vocation, $row->level)");
+   echo 'YOUR CHARACTER HAS BEEN PUT ON THE MARKET.';
+   $db->query("INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`, `price`)
+   VALUES ($row->id, $row->account_id, $row->vocation, $row->level, $price)");
    $aucPlayers->free();
 
 
