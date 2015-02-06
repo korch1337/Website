@@ -23,7 +23,7 @@ if ($auction['characterAuction']) {
 		<td>Price/Buy</td>
 	</tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', $row->vocation, '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>', '</tr>';
+			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>', '</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
