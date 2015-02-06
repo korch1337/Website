@@ -8,7 +8,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 
 				<h1>Sell Character</h1>
 				
-				<form action="" method="post">
+				<form action="sellchar.php" method="post">
 				<ul>
 				<li>
 				
@@ -27,9 +27,5 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				<input type="submit" value="Sell Character">
 				</form>
 				
-				<?php
-				echo $_POST['selected_character'];
-				echo $_POST['price'];
-				?>
 
 <?php include 'layout/overall/footer.php'; ?>
