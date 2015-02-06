@@ -16,7 +16,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				
 				<select name="selected_character">
 				<?php while($row = $getCharacters->fetch_object()){ ?>
-					<option value="<?php echo '1'; ?>"><?php echo $row->name ?></option>
+					<option value="<?php echo $row->name; ?>"><?php echo $row->name ?></option>
 				<?php }
 				$getCharacters->free();
 				?>
