@@ -6,7 +6,7 @@ $menu.mouseenter(function() {
 $(this).fadeTo('fast', 0.2);
 });
 $menu.mouseleave(function() {
-$(this).fadeTo('fast', 1);
+$(this).fadeTo('slow', 1);
   
 
 });
