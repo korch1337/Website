@@ -23,6 +23,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				</select>
 				</li>
 				</ul>
+				<input type="text" name="price" value="Enter you price">
 				<input type="submit" value="Sell Character">
 				</form>
 				
