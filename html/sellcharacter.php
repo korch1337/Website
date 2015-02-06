@@ -11,13 +11,13 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				<li>
 				
 				Choose Character:<br>
-				<form action="" method="post">
-				<select name="selected_character">
-				<?php foreach ($getCharacters->fetch_object() as $chars) { ?>
-				<option value="<?php echo '1'; ?>"><?php echo $chars->name; ?></option>
-				<?php } ?>
-				</select>
-				</form>
+				
+				<?php  
+				foreach($getCharacters->fetchObject() as $chars){
+					echo $chars;
+				}
+				?>
+				
 				</li>
 				</ul>
 
