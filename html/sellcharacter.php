@@ -29,6 +29,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				
 				<?php
 				echo $_POST['selected_character'];
+				echo $_POST['price'];
 				?>
 
 <?php include 'layout/overall/footer.php'; ?>
