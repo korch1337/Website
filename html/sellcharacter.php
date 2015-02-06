@@ -7,6 +7,8 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 ?>
 
 				<h1>Sell Character</h1>
+				
+				<form action="" method="post">
 				<ul>
 				<li>
 				
@@ -16,11 +18,16 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				<?php while($row = $getCharacters->fetch_object()){ ?>
 					<option value="<?php echo '1'; ?>"><?php echo $row->name ?></option>
 				<?php }
-				$aucPlayers->free();
+				$getCharacters->free();
 				?>
 				</select>
 				</li>
 				</ul>
-
+				<input type="submit" value="Sell Character">
+				</form>
+				
+				<?php
+				
+				?>
 
 <?php include 'layout/overall/footer.php'; ?>
