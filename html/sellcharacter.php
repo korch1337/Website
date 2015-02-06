@@ -14,8 +14,8 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				
 				<?php 
 				$characters = $getCharacters->fetch_object();
-				foreach($characters->name as $chars){
-					echo $chars;
+				foreach($characters as $chars){
+					echo $chars->name;
 				}
 				?>
 				
