@@ -13,7 +13,7 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				Choose Character:<br>
 				
 				<?php while($row = $getCharacters->fetch_object()){
-					echo $row->name;
+					echo $row->name.'<br>';
 				}
 				$aucPlayers->free();
 				?>
