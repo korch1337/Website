@@ -228,7 +228,7 @@ if ($render_page) {
 			You have <?php echo $user_data['premdays']; ?> days remaining premium account.</p>
 		<h2>Character List: <?php echo $char_count; ?> characters.</h2>
 		<div id="sell">
-		<a class="pure-button" href="sellcharacter.php">Sell a Character!</a>
+		<button class="pure-button">Sell A Character!</button>
 		</div>
 		<?php
 		// Echo character list!
