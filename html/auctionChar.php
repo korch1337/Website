@@ -16,13 +16,6 @@ if ($auction['characterAuction']) {
 
 	?>
 	
-	<?php require 'connect.php';
-	
-	function myFunction($id){ 
-        $addaccount = $db->query("UPDATE players SET account_id=$user_data['id']; WHERE id=$id");
-	}
-        
-        ?>
 	
 	<tr class="yellow">
 		<td>Name</td>
