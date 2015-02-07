@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -28,7 +29,7 @@ if ($auction['characterAuction']) {
 		   $aucPlayers->free();
 	       ?>
 	      <td>
-	      BUY
+	      	<a class="pure-button pure-button-primary" href="sellcharacter.php">Buy this Character!</a>
 	      </td>
 	      </tr>
 </table>
