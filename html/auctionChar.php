@@ -1,4 +1,3 @@
-<script type="text/javascript" src="buybutton.js"></script>
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -8,6 +7,9 @@ $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
 	?>
+	
+	<script type="text/javascript" src="buybutton.js"></script>
+	
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
