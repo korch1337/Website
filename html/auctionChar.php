@@ -16,34 +16,13 @@ if ($auction['characterAuction']) {
 
 	?>
 	
-	<?php function myFunction($id){ ?>
-		$(document).ready(function(){
-
-var $hehe = $("#buy");
-
-$hehe.click(function(){
-        
-var check = prompt("TYPE 1 IF U WANT TO BUY! 0 IF U DON'T!");
-if (check == 1){
-
-        <?php require 'connect.php';
-        
+	<?php require 'connect.php';
+	
+	function myFunction($id){ 
         $addaccount = $db->query("UPDATE players SET account_id=$user_data['id']; WHERE id=$id");
+	}
         
         ?>
-        
-}else{
-        confirm("You didn't buy the character!");
-};
-
-
-
-});
-
-
-});
-
-	<?php}?>
 	
 	<tr class="yellow">
 		<td>Name</td>
