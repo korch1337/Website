@@ -35,7 +35,7 @@ if ($auction['characterAuction']) {
 	       
 	       while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<input type="submit" class="button" name='$row->id' value="Buy this character" />','</td>','</tr>';
+			echo '<td>','<input type="submit" class="button" name="'$row->id'" value="Buy this character" />','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
