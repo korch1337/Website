@@ -5,7 +5,7 @@ var $hehe = $("#buy");
 $hehe.click(function(){
         
 var check = prompt("TYPE 1 IF U WANT TO BUY! 0 IF U DON'T!");
-if (check === "buy"){
+if (check >= 1){
 
         <?php 
         echo 'hello';
