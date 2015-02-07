@@ -1,3 +1,4 @@
+
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -24,16 +25,17 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price</td>
 	</tr>
+	
 	       <?php require 'connect.php';
 	       
-	       function myFunction($id){ 
+	       function asd($id){ 
 	       $db->query("UPDATE players SET account_id=1 WHERE id=$id");
 	       	
-	       };
+	       }
 	       
 	       while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
+			echo '<td>','<button onclick="asd('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
