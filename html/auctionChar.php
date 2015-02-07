@@ -20,14 +20,17 @@ if ($auction['characterAuction']) {
 		<td>Level</td>
 		<td>Vocation</td>
 		<td>Image</td>
-		<td>Price/Buy</td>
+		<td>Price</td>
 	</tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
-			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>', '</tr>';
+			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
 	       }
 		   $aucPlayers->free();
 	       ?>
-	      
+	      <td>
+	      BUY
+	      </td>
+	      </tr>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
