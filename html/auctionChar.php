@@ -16,7 +16,7 @@ if ($auction['characterAuction']) {
 
 	?>
 	
-	<?php myFunction($id){ ?>
+	<?php function myFunction($id){ ?>
 		$(document).ready(function(){
 
 var $hehe = $("#buy");
