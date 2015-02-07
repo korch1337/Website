@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var $hehe = $("#buy");
+var $hehe = $(".pure-button pure-button-primary");
 
 $hehe.click(function(){
 $hehe.confirm();
