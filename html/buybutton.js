@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-var $hehe = $('#buy');
+var $hehe = $("#buy");
 
 $hehe.click(function(){
-$(this).confirm();
+$hehe.confirm();
 
 
 
