@@ -5,8 +5,7 @@ var $hehe = $("#buy");
 $hehe.click(function(){
         
 var check = confirm("Are you sure?");
-check();
-if (check){
+if (check === true){
         <?php 
         echo 'hello';
         ?>
