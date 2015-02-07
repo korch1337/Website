@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <script type="text/javascript" src="buybutton.js"></script>
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
@@ -8,7 +9,7 @@ $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
 	?>
-	
+<script>	
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
@@ -25,11 +26,12 @@ if ($auction['characterAuction']) {
 	</tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>', '<a href="" id="buy">','Buy this Character!', '</a>','</td>','</tr>';
+			echo '<td>', '<a class="pure-button pure-button-primary">','Buy this Character!', '</a>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
 </table>
+</script>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
