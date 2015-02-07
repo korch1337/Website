@@ -9,7 +9,6 @@ $auction = $config['shop_auction'];
 
 if ($auction['characterAuction']) {
 	?>
-<script>	
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
@@ -31,7 +30,6 @@ if ($auction['characterAuction']) {
 		   $aucPlayers->free();
 	       ?>
 </table>
-</script>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
