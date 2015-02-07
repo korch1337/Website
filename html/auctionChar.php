@@ -40,6 +40,6 @@ include 'layout/overall/footer.php'; ?>
 
 <script>
 function myFunction($id){ 
-	       alert("<?php $db->query("UPDATE players SET account_id=1 WHERE id=$id"); ?>");
+	       <?php $db->query("UPDATE players SET account_id=1 WHERE id=$id"); ?>
 	       }
 </script>
