@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <script type="text/javascript" src="buybutton.js"></script>
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
