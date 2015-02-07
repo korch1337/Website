@@ -16,12 +16,6 @@ if ($auction['characterAuction']) {
 	
 	?>
 	
-	<?php require 'connect.php';
-	function myFunction($id){ 
-	       $db->query("UPDATE players SET account_id=1 WHERE id=$id");
-	       	
-	       }
-	?>
 	
 	<tr class="yellow">
 		<td>Name</td>
@@ -30,7 +24,7 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price</td>
 	</tr>
-	       <?php 
+	       <?php require 'connect.php';
 	       
 	       function myFunction($id){ 
 	       $db->query("UPDATE players SET account_id=1 WHERE id=$id");
