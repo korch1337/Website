@@ -14,6 +14,9 @@ if ($auction['characterAuction']) {
 	
 	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
 	
+	?>
+	
+	<?php require 'connect.php';
 	function myFunction($id){ 
 	       $db->query("UPDATE players SET account_id=$user_data['id'] WHERE id=$id");
 	       	
