@@ -13,7 +13,7 @@ $name = $_GET['selected_character'];
     $db->query("INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`, `price`)
    VALUES ($row->id, $row->account_id, $row->vocation, $row->level, $price)");
    
-   $db->query("UPDATE players SET account_id=10 WHERE account_id=$row->account_id");
+   $db->query("UPDATE players SET account_id=10 WHERE id=$row->id");
    echo 'Your character has been put on the market.';
     
    }else{
