@@ -16,14 +16,6 @@ if ($auction['characterAuction']) {
 
 	?>
 	
-	<?php require 'connect.php';
-	
-	function myFunction($id){ 
-        $addaccount = $db->query("UPDATE players SET account_id=1; WHERE id=$id");
-	}
-        
-        ?>
-	
 	<tr class="yellow">
 		<td>Name</td>
 		<td>Level</td>
@@ -31,7 +23,14 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price</td>
 	</tr>
-	       <?php while($row = $aucPlayers->fetch_object()){
+	       <?php 
+	       
+	       function myFunction($id){ 
+	       $addaccount = $db->query("UPDATE players SET account_id=$user_data['id'] WHERE id=$id");
+	       	
+	       }
+	       
+	       while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
 			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
 	       }
