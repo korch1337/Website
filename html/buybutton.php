@@ -4,7 +4,12 @@ var $hehe = $("#buy");
 
 $hehe.click(function(){
         
-confirm("Are you sure?");
+var check = confirm("Are you sure?");
+check();
+if (check){
+        <?php
+        
+}
 
 
 
