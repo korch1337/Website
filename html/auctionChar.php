@@ -12,11 +12,38 @@ if ($auction['characterAuction']) {
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
-	<?php $aucPlayers = $db->query("SELECT a.name, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
+	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
 
 	?>
 	
-	
+	<?php myFunction($id){ ?>
+		$(document).ready(function(){
+
+var $hehe = $("#buy");
+
+$hehe.click(function(){
+        
+var check = prompt("TYPE 1 IF U WANT TO BUY! 0 IF U DON'T!");
+if (check == 1){
+
+        <?php require 'connect.php';
+        
+        $addaccount = $db->query("UPDATE players SET account_id=$user_data['id']; WHERE id=$id");
+        
+        ?>
+        
+}else{
+        confirm("You didn't buy the character!");
+};
+
+
+
+});
+
+
+});
+
+	<?php}?>
 	
 	<tr class="yellow">
 		<td>Name</td>
@@ -27,7 +54,7 @@ if ($auction['characterAuction']) {
 	</tr>
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<button onclick="myFunction()">','Click me','</button>','</td>','</tr>';
+			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
