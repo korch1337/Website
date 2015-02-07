@@ -29,11 +29,11 @@ if ($auction['characterAuction']) {
 	       function myFunction($id){ 
 	       $db->query("UPDATE players SET account_id=1 WHERE id=$id");
 	       	
-	       }
+	       };
 	       
 	       while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<button onclick="myFunction('$row->id')">','Buy this character','</button>','</td>','</tr>';
+			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 	       ?>
