@@ -29,10 +29,6 @@ if ($auction['characterAuction']) {
 	       }
 		   $aucPlayers->free();
 	       ?>
-	      <td>
-	      	<a class="pure-button pure-button-primary" href="sellcharacter.php">Buy this Character!</a>
-	      </td>
-	      </tr>
 </table>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
