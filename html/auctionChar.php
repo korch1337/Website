@@ -13,7 +13,11 @@ if ($auction['characterAuction']) {
 <table class="auction_char">
 	
 	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
-
+	
+	function myFunction($id){ 
+	       $db->query("UPDATE players SET account_id=$user_data['id'] WHERE id=$id");
+	       	
+	       }
 	?>
 	
 	<tr class="yellow">
@@ -23,14 +27,7 @@ if ($auction['characterAuction']) {
 		<td>Image</td>
 		<td>Price</td>
 	</tr>
-	       <?php require 'connect.php'; 
-	       
-	       function myFunction($id){ 
-	       $addaccount = $db->query("UPDATE players SET account_id=$user_data['id'] WHERE id=$id");
-	       	
-	       }
-	       
-	       while($row = $aucPlayers->fetch_object()){
+	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
 			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy this character','</button>','</td>','</tr>';
 	       }
