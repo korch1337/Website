@@ -16,6 +16,13 @@ if ($auction['characterAuction']) {
 
 	?>
 	
+	<?php require 'connect.php';
+	
+	function myFunction($id){ 
+        
+	}
+        
+        ?>
 	
 	<tr class="yellow">
 		<td>Name</td>
