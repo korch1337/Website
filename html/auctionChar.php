@@ -33,10 +33,8 @@ if ($auction['characterAuction']) {
 			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 	       }
-		   foreach($aucPlayers->fetch_object() as $row) {
 		   	if(isset($_POST[$row->id])) {
 		   	echo $row->name;
-		   }
 		   }
 		   
 		   $aucPlayers->free();
