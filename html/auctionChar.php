@@ -44,7 +44,7 @@ include 'layout/overall/footer.php'; ?>
 <script type="text/javascript">
 function myFunction($id){
 	var id = $id;
-	
+	$.post('buycharacter.php', {variable: id});
 }
 
 </script>
