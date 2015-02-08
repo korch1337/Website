@@ -30,10 +30,6 @@ if ($auction['characterAuction']) {
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
 			echo '<td>','<form method="POST" action="">','<input type="SUBMIT" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
-			if (isset($_POST['$row->id'])) { 
-		   	echo "button ".$row->id."has been pressed"; 
-		   	
-		   }  
 	       }
 		   $aucPlayers->free();
 		   
