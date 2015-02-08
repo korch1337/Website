@@ -2,7 +2,7 @@
 <?php
 $data = array(
     "foo" => "bar",
-    "bar" => "foo",
+    "bar" => "foo"
     );
 
 
