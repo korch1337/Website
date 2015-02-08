@@ -48,6 +48,7 @@ if ($auction['characterAuction']) {
 				}else{
 					echo '<script type="text/javascript">';
 					echo 'alert("You need more points. Visit the shop!")';
+					echo 'window.location.href = 'buypoints.php';'
 					echo '</script>';
 				}
 		   	}
