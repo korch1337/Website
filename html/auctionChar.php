@@ -47,7 +47,7 @@ if ($auction['characterAuction']) {
 				
 				}else{
 					echo '<script type="text/javascript">';
-					echo 'alert("You need more points. Visit the shop!");';
+					echo 'alert("You need more points. Visit the shop!")';
 					echo '</script>';
 				}
 		   	}
