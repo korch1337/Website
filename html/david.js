@@ -3,7 +3,7 @@ $(document).ready(function(){
 var $bountyh = $('#test');
 $.ajax
     ({
-        type: "GET",
+        type: 'GET',
         url: 'general.json',
         success: function (bounties) {
             $.each(bounties, function(i, bounties){
