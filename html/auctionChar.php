@@ -34,7 +34,6 @@ if ($auction['characterAuction']) {
 	       }
 		   $aucPlayers->free();
 		   
-		   $variable = $_POST['test'];	
 	       ?>
 </table>
 	<?php
@@ -44,7 +43,8 @@ include 'layout/overall/footer.php'; ?>
 
 <script type="text/javascript">
 function myFunction($id){
-	confirm($id);
+	var id = $id;
+	
 }
 
 </script>
