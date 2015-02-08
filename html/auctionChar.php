@@ -31,7 +31,7 @@ if ($auction['characterAuction']) {
 			echo '<td>','<form method="POST" action="">','<input type="SUBMIT" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if (isset($_POST['$row->id'])) { 
-		   	echo "button 1 has been pressed"; 
+		   	echo "button ".$row->id."has been pressed"; 
 		   	
 		   }  
 	       }
