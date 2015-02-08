@@ -4,7 +4,7 @@
 
 $price = $_GET['price'];
 $name = $_GET['selected_character'];
- $aucPlayers = $db->query("SELECT a.name, a.id, a.account_id, a.vocation, a.level FROM players AS a WHERE a.name=$name"); 
+ $aucPlayers = $db->query("SELECT a.name, a.id, a.account_id, a.vocation, a.level FROM players AS a WHERE a.name='$name'"); 
    
    $row = $aucPlayers->fetch_object();
    
