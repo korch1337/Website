@@ -1,13 +1,23 @@
 $(document).ready(function(){
 
+setInterval(function() {
+            $("#latestData").load("getLatestData.php");
+        }, 10000);
+
+var $bountyh = $('#test');
 $.ajax
     ({
         type: "GET",
         dataType : 'json',
-        async: false,
-        url: 'david.php',
-        data: { data: JSON.stringify(eventsholded) },
-        success: function () {alert("Thanks!"); },
+        url: 'general.json',
+        success: function (bounties) {
+            $.each(bounties, function(i, bounty){
+                $bountyh.append('<li> Name: ' + bounty.name + 'Bounty: ' + bounty.bounty +'</li>');
+            });
+        },
+        complete: function() {
+        setTimeout(repeatAjax,2000); //After completion of request, time to redo it after a second
+             }
         failure: function() {alert("Error!");}
     });
 
