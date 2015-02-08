@@ -1,8 +1,9 @@
 <div id="latestData">
 <?php
 $data = array(
-    "foo" => "bar",
-    "bar" => "foo"
+    [0] => 1
+    [1] => 2
+    [2] => 3
     );
 
 
