@@ -8,6 +8,6 @@ $bounty[3] = array('name' => 'Foo', 'price' => 'Bar');
 
 // Writing modified data:
 $fp = fopen('general.json', 'w');
-fwrite($fp, json_encode($bounties));
+fwrite($fp, json_encode($bounty));
 fclose($fp);
 ?>
