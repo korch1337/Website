@@ -2,10 +2,6 @@
 <?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
 include 'layout/overall/header.php';
-<script type="text/javascript">
-var testadetta = '<?php xxxxx  ?>'
-
-</script>
 
 
 
@@ -34,12 +30,8 @@ if ($auction['characterAuction']) {
 	
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<form method="POST" action="">','<input type="SUBMIT" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
+			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy ',$row->name,'</button>','</td>','</tr>';
 			
-			if (isset($_POST['$row->id'])) { 
-		   	echo "button ".$row->id."has been pressed"; 
-		   	
-		   }  
 	       }
 		   $aucPlayers->free();
 		   
@@ -50,3 +42,10 @@ if ($auction['characterAuction']) {
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
 include 'layout/overall/footer.php'; ?>
+
+<script type="text/javascript">
+function myFunction($id){
+	alert($id);
+}
+
+</script>
