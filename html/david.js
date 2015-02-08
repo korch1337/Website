@@ -1,4 +1,17 @@
-//$(document).ready(function(){
+$(document).ready(function(){
+
+$.ajax
+    ({
+        type: "GET",
+        dataType : 'json',
+        async: true,
+        url: 'david.php',
+        data: { data: JSON.stringify(eventsholded) },
+        success: function () {alert("Thanks!"); },
+        failure: function() {alert("Error!");}
+    });
+
+
 
 //var $menu = $('ul > li > ul > li');
 
