@@ -17,6 +17,7 @@ if ($auction['characterAuction']) {
 	
 	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
 	$acc_id = $user_data['id'];
+	$player_points = (int)$user_znote_data['points'];
 	?>
 	
 	
@@ -33,9 +34,11 @@ if ($auction['characterAuction']) {
 			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if(isset($_POST[$row->id])) {
+				
+				echo '<script type="text/javascript">';
+				echo 'alert("Are you sure you want to buy " + $row->name?);'
 				$db->query("UPDATE players SET account_id=$acc_id WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
-				echo '<script type="text/javascript">';
 				echo 'window.location.reload()';
 				echo '</script>';
 		   	}
