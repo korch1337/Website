@@ -4,7 +4,7 @@ $.ajax
     ({
         type: "GET",
         dataType : 'json',
-        async: true,
+        async: false,
         url: 'david.php',
         data: { data: JSON.stringify(eventsholded) },
         success: function () {alert("Thanks!"); },
