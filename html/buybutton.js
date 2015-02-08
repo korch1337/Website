@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-var test = 
+var test = ' <?php $db->query("UPDATE players SET account_id=1 WHERE id=$id"); ?>';
+$.post('auctionChar.php', {variable: test});
 
 
 
