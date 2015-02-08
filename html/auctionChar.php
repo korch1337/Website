@@ -31,15 +31,15 @@ if ($auction['characterAuction']) {
 	
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<form method="POST" onSubmit="myFunction()" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
+			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if(isset($_POST[$row->id])) {
 				
 				if($player_points >= $row->price){
 				$db->query("UPDATE players SET account_id=$acc_id WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
-				$db->query("UPDATE znote_accounts SET points=50 WHERE account_id=$acc_id");
-				$db->query("UPDATE znote_accounts SET points=50 WHERE account_id=$row->account_id");
+				$db->query("UPDATE znote_accounts SET points=points-$row->price WHERE account_id=$acc_id");
+				$db->query("UPDATE znote_accounts SET points=points+$row->price WHERE account_id=$row->account_id");
 				
 				echo '<script type="text/javascript">';
 				echo 'window.location.reload()';
@@ -61,14 +61,3 @@ if ($auction['characterAuction']) {
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
 include 'layout/overall/footer.php'; ?>
-
-<script type="text/javascript">
-function myFunction(){
-	var a = prompt("Are you sure?");
-	if (a == 1) {
-		alert("You bought the character");
-	}else{
-		 window.location.reload();
-	}
-}
-</script>
