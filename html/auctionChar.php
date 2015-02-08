@@ -30,7 +30,7 @@ if ($auction['characterAuction']) {
 	
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<button onclick="myFunction('.$row->id.')">','Buy ',$row->name,'</button>','</td>','</tr>';
+			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="update">','</form>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 		   
@@ -40,12 +40,3 @@ if ($auction['characterAuction']) {
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
 include 'layout/overall/footer.php'; ?>
-
-<script type="text/javascript">
-function myFunction($id){
-	var id = $id;
-	alert("Do you really want to buy " + id + "?");
-	<?php echo id; ?>
-}
-
-</script>
