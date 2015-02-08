@@ -30,10 +30,13 @@ if ($auction['characterAuction']) {
 	
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="update">','</form>','</td>','</tr>';
+			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 	       }
 		   $aucPlayers->free();
 		   
+		   if(isset($_POST['4'])) {
+		   	echo 'hej';
+		   }
 	       ?>
 </table>
 	<?php
