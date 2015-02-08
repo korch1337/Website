@@ -5,8 +5,8 @@ $.ajax
     ({
         type: 'GET',
         url: 'general.json',
-        success: function (data) {
-            $.each(data, function(i, bounties){
+        success: function (bounty) {
+            $.each(bounty, function(i, bounties){
                 $bountyh.append('<li> Name: ' + bounties.name + 'Bounty: ' + bounties.price +'</li>');
             });
         },
