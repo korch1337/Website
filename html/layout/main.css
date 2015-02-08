@@ -165,7 +165,7 @@ ol li
   width:100%;
   border-radius: 5px;
   border: 2px solid #000000;
-  background: -webkit-linear-gradient(top, #4088cc 0%,#2b6aa1 24%,#114573 50%,#275e8f 79%,#2e71ac 100%);
+  background: #240000;
   box-shadow: 8px 8px 5px rgba(0,0,0,0.7);
   
 }
@@ -176,11 +176,6 @@ ol li
   list-style: none;
   margin: 0px 0 0 0;
   background: transparent;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
   }
 
 #menu ul li a
