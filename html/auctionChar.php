@@ -33,6 +33,7 @@ if ($auction['characterAuction']) {
 			echo '<td>','<form method="POST" action="auctionChar.php">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if(isset($_POST[$row->id])) {
+				echo 'hej';
 				$db->query("UPDATE players SET account_id=1 WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
 		   	}
