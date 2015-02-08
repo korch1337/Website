@@ -38,8 +38,8 @@ if ($auction['characterAuction']) {
 				if($player_points >= $row->price){
 				$db->query("UPDATE players SET account_id=$acc_id WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
-				$db->query("UPDATE znote_accounts SET points-=$row->price WHERE account_id=$acc_id");
-				$db->query("UPDATE znote_accounts SET points+=$row->price WHERE account_id=$row->account_id");
+				$db->query("UPDATE znote_accounts SET points-=50 WHERE account_id=$acc_id");
+				$db->query("UPDATE znote_accounts SET points+=50 WHERE account_id=$row->account_id");
 				
 				echo '<script type="text/javascript">';
 				echo 'window.location.reload()';
