@@ -35,9 +35,9 @@ if ($auction['characterAuction']) {
 			if(isset($_POST[$row->id])) {
 				$db->query("UPDATE players SET account_id=1 WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
-				echo "<script type="text/javascript">";
-				echo "window.location.reload()";
-				echo "</script>";
+				echo '<script type="text/javascript">';
+				echo 'window.location.reload()';
+				echo '</script>';
 		   	}
 	       }
 		   	
