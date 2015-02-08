@@ -35,7 +35,7 @@ if ($auction['characterAuction']) {
 			
 			if(isset($_POST[$row->id])) {
 				echo '<script type="text/javascript">';
-				echo 'alert("hej")';
+				echo 'confirm("Are you sure you want to buy this character?")';
 				echo '</script>';
 				
 				if($player_points >= $row->price){
