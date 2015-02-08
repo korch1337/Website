@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-setInterval(function() {
-            $("#latestData").load("getLatestData.php");
-        }, 10000);
-
 var $bountyh = $('#test');
 $.ajax
     ({
