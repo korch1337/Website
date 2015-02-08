@@ -1,18 +1,7 @@
 <div id="latestData">
-<?php require 'connect.php';
-$result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id");
-$bounties = array();
+<?php 
 
-
-while($row = $result->fetch_object()){
-    
-    $data = array(
-        'name' => $row->name,
-        'bounty' => $row->prize
-    );
-    
-}
-$result->free();
+$bounties[3] = array('Name' => 'Foo', 'Surname' => 'Bar');
 
 $json_data = json_encode($bounties);
 file_put_contents('general.json', $json_data);
