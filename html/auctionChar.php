@@ -45,6 +45,7 @@ include 'layout/overall/footer.php'; ?>
 function myFunction($id){
 	var id = $id;
 	alert("Do you really want to buy " + id + "?");
+	<?php echo id; ?>
 }
 
 </script>
