@@ -59,3 +59,9 @@ if ($auction['characterAuction']) {
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
 include 'layout/overall/footer.php'; ?>
+
+<script type="text/javascript">
+function myFunction(){
+	confirm("OK?");
+}
+</script>
