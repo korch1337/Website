@@ -15,7 +15,7 @@ if ($auction['characterAuction']) {
 <h1>Character auctioning</h1>
 <table class="auction_char">
 	
-	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
+	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price,b.account_id FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
 	$acc_id = $user_data['id'];
 	$player_points = (int)$user_znote_data['points'];
 	?>
@@ -38,6 +38,8 @@ if ($auction['characterAuction']) {
 				if($player_points >= $row->price){
 				$db->query("UPDATE players SET account_id=$acc_id WHERE id=$row->id");
 				$db->query("DELETE FROM znote_auction_player WHERE player_id = $row->id");
+				$db->query("UPDATE znote_accounts SET points-=$row->price WHERE account_id=$acc_id");
+				$db->query("UPDATE znote_accounts SET points+=$row->price WHERE account_id=$row->account_id");
 				
 				echo '<script type="text/javascript">';
 				echo 'window.location.reload()';
@@ -62,6 +64,11 @@ include 'layout/overall/footer.php'; ?>
 
 <script type="text/javascript">
 function myFunction(){
-	confirm("OK?");
+	var a = prompt("Are you sure?");
+	if (a == 1) {
+		alert("You bought the character");
+	}else{
+		 window.location.reload();
+	}
 }
 </script>
