@@ -15,6 +15,7 @@ $.ajax
              }
         failure: function() {alert("Error!");}
     });
+};
 
 
 
