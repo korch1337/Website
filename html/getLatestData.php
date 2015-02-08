@@ -7,8 +7,8 @@ $data = array();
 while($row = $result->fetch_object()){
     
     $data = array(
-        'name' => $row->name;
-        'bounty' => $row->prize;
+        'name' => $row->name,
+        'bounty' => $row->prize
     );
     
 }
