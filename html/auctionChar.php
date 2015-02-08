@@ -44,7 +44,7 @@ include 'layout/overall/footer.php'; ?>
 
 <script type="text/javascript">
 function myFunction($id){
-	console.log('<?php echo $id; ?>');
+	confirm("<?php echo $id; ?>");
 }
 
 </script>
