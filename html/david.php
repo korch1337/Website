@@ -3,7 +3,8 @@
 
 
 <h1>Blank</h1>
-<p id="test">This is a blank sample page.</p>
+<p >This is a blank sample page.</p>
+<ul id="test"></ul>
 
 
 
