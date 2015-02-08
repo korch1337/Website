@@ -1,7 +1,7 @@
 <?php 
 
 $json = file_get_contents("general.json");
-$bounties = json_decode($json, true);
+$bounty = json_decode($json, true);
 
 // Adding new data:
 $bounty[3] = array('name' => 'Foo', 'price' => 'Bar');
