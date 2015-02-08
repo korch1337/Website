@@ -1,14 +1,18 @@
 <div id="latestData">
-<?php
-$result = mysql_query(your sql here);    
+<?php require 'connect.php';
+$result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id");
 $data = array();
-while ($row = mysql_fetch_assoc($result)) {
-    // Generate the output in desired format
+
+
+while($row = $result->fetch_object()){
+    
     $data = array(
-        'name' => ....
-        'bounty' => ....
+        'name' => $row->name;
+        'bounty' => $row->prize;
     );
+    
 }
+$result->free();
 
 $json_data = json_encode($data);
 file_put_contents('general.json', $json_data);
