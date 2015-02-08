@@ -8,7 +8,7 @@ $.ajax
         url: 'general.json',
         success: function (bounties) {
             $.each(bounties, function(i, bounty){
-                $bountyh.append('<li> Name: ' + bounty.name + 'Bounty: ' + bounty.bounty +'</li>');
+                $bountyh.append('<li> Name: ' + bounty.name + 'Bounty: ' + bounty.price +'</li>');
             });
         },
         complete: function() {
