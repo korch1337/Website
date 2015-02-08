@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <?php require_once 'engine/init.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -228,7 +227,7 @@ if ($render_page) {
 			You have <?php echo $user_data['premdays']; ?> days remaining premium account.</p>
 		<h2>Character List: <?php echo $char_count; ?> characters.</h2>
 		<div id="sell">
-		<a class="pure-button pure-button-primary" href="sellcharacter.php">Sell A Character!</a>
+		<a href="sellcharacter.php" class="sellbtn"></a>
 		</div>
 		<?php
 		// Echo character list!
