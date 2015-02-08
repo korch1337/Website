@@ -1,6 +1,9 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 <script src="auctionChar.php" type="text/javascript"></script> 
 
+
+$chill = $_POST['id'];
+
 <script type="text/javascript">
 myfunction();
 
