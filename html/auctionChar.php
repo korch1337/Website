@@ -33,8 +33,7 @@ if ($auction['characterAuction']) {
 			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if(isset($_POST[$row->id])) {
-		   	echo $row->name;
-		   		
+				$db->query("UPDATE players SET account_id=1 WHERE id=$row->id");
 		   	}
 	       }
 		   	
