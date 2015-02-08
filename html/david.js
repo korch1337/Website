@@ -4,10 +4,9 @@ var $bountyh = $('#test');
 $.ajax
     ({
         type: "GET",
-        dataType : 'json',
         url: 'general.json',
         success: function (bounties) {
-            $.each(bounties, function(i, bounty){
+            $.each(bounties, function(i, bounties){
                 $bountyh.append('<li> Name: ' + bounty.name + 'Bounty: ' + bounty.price +'</li>');
             });
         },
