@@ -78,7 +78,7 @@ h6
 a, a:hover
 { outline: none;
   text-decoration: none;
-  color: #1aa807;}
+  color: #003399;}
 
 a:hover
 { text-decoration: underline;}
@@ -409,7 +409,7 @@ table {
 	margin: 2% 0px 0px 5%;
 	width: 90%;
 	border-spacing: 1px;
-	font-size:17px;
+	font-size:16px;
 	border-radius:5px;
 }
 table tr th, table tr td { 
