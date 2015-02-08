@@ -31,12 +31,9 @@ if ($auction['characterAuction']) {
 	
 	       <?php while($row = $aucPlayers->fetch_object()){
 			echo '<tr>', '<td>', '<a href="characterprofile.php?name='.$row->name.'">' ,$row->name, '</a>', '</td>', '<td>', $row->level, '</td>', '<td>', vocation_id_to_name($row->vocation), '</td>', '<td>','Image?', '</td>', '<td>', '<a href="buypoints.php">' ,$row->price, '</a>', '</td>';
-			echo '<td>','<form method="POST" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
+			echo '<td>','<form method="POST" onSubmit="return confirm('are you sure?')" action="'.$_SERVER['PHP_SELF'].'">','<input type="submit" name="'.$row->id.'" value="Buy '.$row->name.'">','</form>','</td>','</tr>';
 			
 			if(isset($_POST[$row->id])) {
-				echo '<script type="text/javascript">';
-				echo 'confirm("Are you sure you want to buy this character?")';
-				echo '</script>';
 				
 				if($player_points >= $row->price){
 				$db->query("UPDATE players SET account_id=$acc_id WHERE id=$row->id");
