@@ -14,9 +14,6 @@ $.ajax({
                 $bountyh.append('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
             });
         },
-        complete: function() {
-        setTimeout(repeatAjax,2000); //After completion of request, time to redo it after a second
-             }
     });
     
     
