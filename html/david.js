@@ -10,7 +10,7 @@ $.ajax({
         dataType: 'json',
         success: function (bounty) {
             $.each(bounty, function(i, bounty){
-                $('ul.inner').replaceWith('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
+                $("div.inner").replaceWith('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
             });
         },
     });
