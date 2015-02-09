@@ -9,8 +9,8 @@ $bounties = array();
 
 while($row = $result->fetch_object()){
     
-     $bounties[] = $row->name;
-     $bounties[] = $row->prize;
+     $bounties['name'] = $row->name;
+     $bounties['price'] = $row->prize;
     
 }
 $result->free();
