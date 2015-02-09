@@ -15,7 +15,6 @@ $.ajax
         complete: function() {
         setTimeout(repeatAjax,2000); //After completion of request, time to redo it after a second
              }
-        failure: function() {alert("Error!");}
     });
 });
 
