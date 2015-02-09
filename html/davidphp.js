@@ -1,5 +1,5 @@
 $(document).ready(function(){
 setInterval(function(){
-    $('#refresh').load('getLatestData.php');
+    $('div').load('getLatestData.php');
 }, 1000);
 });
