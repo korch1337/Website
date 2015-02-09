@@ -1,4 +1,4 @@
-<?php require_once 'engine/init.php'?>
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php' ?>
 <script src="david.js"></script>
 <script src="davidphp.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -15,3 +15,4 @@
 
 </ul>
 
+<?php include 'layout/overall/footer.php'?>
