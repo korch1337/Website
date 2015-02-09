@@ -10,12 +10,11 @@ $.ajax({
         dataType: 'json',
         success: function (bounty) {
             $.each(bounty, function(i, bounties){
-                   $.each(bounty[i], function(i2, bounties2){
                                 $('#remove').remove();
-                                $('#test').append('<li id="remove"> Name: ' + bounty[i].name[i2] + ', Bounty: ' + bounty['price'] + '</li>');
+                                $('#test').append('<li id="remove"> Name: ' + bounty[i].name[i] + ', Bounty: ' + bounty['price'] + '</li>');
                   
                            
-                   });
+                   
             });
         }
     });
