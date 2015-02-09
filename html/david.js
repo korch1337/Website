@@ -1,9 +1,8 @@
 $(document).ready(function(){
-setTimeout("ajaxd()",1000);
+setTimeout("ajaxd()",3000);
 });
 
 function ajaxd(){
-var $bountyh = $('ul.inner');
 $.ajax({
         type: 'GET',
         url: 'general.json',
