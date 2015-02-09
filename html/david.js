@@ -10,7 +10,7 @@ $.ajax({
         dataType: 'json',
         success: function (bounty) {
            
-                           for (var i = 0; i < bounty.length; i++){
+                           for (var i = 0; i <= bounty.length; i++){
                                    
                                     $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>');
                                         
