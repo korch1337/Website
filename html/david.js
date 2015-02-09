@@ -3,7 +3,7 @@ setInterval(ajaxd,1000);
 });
 
 function ajaxd(){
-        var testing = array();
+        var testing = ();
 $.ajax({
         type: 'GET',
         url: 'general.json',
