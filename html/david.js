@@ -3,6 +3,7 @@ setInterval(ajaxd,1000);
 });
 
 function ajaxd(){
+        var testing = array();
 $.ajax({
         type: 'GET',
         url: 'general.json',
@@ -10,13 +11,12 @@ $.ajax({
         async: true,
         success: function (bounty) {
                 if (testing.length != bounty.length){
+                        testing = bounty;
                         $('#test').empty();
         for (i=0; i <= bounty.length - 1; i++){
                 $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
         };
                 }
-                
-        var testing = bounty;
         }
         
 });
