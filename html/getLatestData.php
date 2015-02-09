@@ -9,8 +9,6 @@ $bounties = array();
 
 for($i = 0; $bounties[$i] = $result->fetch_assoc(); $i++) ;
 
-array_pop($bounties);
-
 $result->free();
 
 $fp = fopen('general.json', 'w');
