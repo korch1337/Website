@@ -8,9 +8,9 @@ $.ajax({
         url: 'general.json',
         dataType: 'json',
         success: function (bounty) {
-        for (i=0; i <= 2; i++){
+        for (i=0; i <= 2;){
                 $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
-                
+                i++;
         };
         }
         
