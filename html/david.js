@@ -3,14 +3,14 @@ setInterval("ajaxd()",10000);
 });
 
 function ajaxd(){
-var $bountyh = $('#test');
+var $bountyh = $('ul.inner');
 $.ajax({
         type: 'GET',
         url: 'general.json',
         dataType: 'json',
         success: function (bounty) {
             $.each(bounty, function(i, bounty){
-                $bountyh.replace('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
+                $bountyh.replaceWith('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
             });
         },
     });
