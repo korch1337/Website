@@ -26,10 +26,6 @@ $start = $time;
 
   <div id="main">
     <div id="header">
-      <div id="logo">
-        <h1>Zerexxa<a href="#"> OT</a></h1>
-        <div class="slogan">Welcome to the best open tibia server ever!</div>
-      </div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
