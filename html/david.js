@@ -1,9 +1,9 @@
 $(document).ready(function(){
 setInterval(ajaxd,1000);
 });
-
+var testing= [];
 function ajaxd(){
-        var testing= [];
+        
 $.ajax({
         type: 'GET',
         url: 'general.json',
@@ -11,7 +11,7 @@ $.ajax({
         async: true,
         success: function (bounty) {
                 if (testing.length != bounty.length){
-                        testing = bounty;
+                        var testing = bounty;
                         $('#test').empty();
         for (i=0; i <= bounty.length - 1; i++){
                 $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
