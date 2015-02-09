@@ -1,8 +1,10 @@
 $(document).ready(function(){
+setInterval("ajaxd()",10000);
+});
 
+function ajaxd(){
 var $bountyh = $('#test');
-$.ajax
-    ({
+$.ajax({
         type: 'GET',
         url: 'general.json',
         dataType: 'json',
@@ -16,20 +18,7 @@ $.ajax
         setTimeout(repeatAjax,2000); //After completion of request, time to redo it after a second
              }
     });
-});
-
-
-
-//var $menu = $('ul > li > ul > li');
-
-//$menu.mouseenter(function() {
-//$(this).fadeTo('fast', 0.2);
-//});
-//$menu.mouseleave(function() {
-//$(this).fadeTo('slow', 1);
-  
-
-//});
-//});//
-
-
+    
+    
+    
+};
