@@ -6,7 +6,6 @@ function phpfilen(){
 $.ajax({
     type: 'GET',
     url: 'getLatestData.php',
-    dataType: 'php',
     async: true,
     success: function(data){
     $('p').load('getLatestData.php');
