@@ -1,5 +1,6 @@
 $(document).ready(function(){
 setInterval("ajaxd()",1000);
+setInterval("ajaxd2()",1000);
 });
 
 function ajaxd(){
@@ -21,4 +22,8 @@ $.ajax({
                      }
             });
         };
-
+function ajaxd2(){
+         $('#remove').remove();
+        
+        
+};
