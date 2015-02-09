@@ -8,6 +8,7 @@ $result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS
 $bounties = array();
 
 for($i = 0; $bounties[$i] = $result->fetch_assoc(); $i++) ;
+array_pop($bounties);
 
 $result->free();
 
