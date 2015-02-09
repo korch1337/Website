@@ -11,7 +11,7 @@
 
 <h1>Blank</h1>
 <p >This is a blank sample page.</p>
-<ul id="test">
+<div>
 <li>hello</li>
 <li>hello</li>
 <li>hello</li>
@@ -19,7 +19,7 @@
 <li>hello</li>
 <li>hello</li>
 <li>hello</li>
-
+</div>
 
 </ul>
 
