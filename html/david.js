@@ -5,7 +5,7 @@ setInterval(ajaxd,1000);
 function ajaxd(){
 $.ajax({
         type: 'GET',
-        url: 'http://176.9.35.68/getLatestData.php',
+        url: 'getLatestData.php',
         dataType: 'json',
         async: true,
         success: function (bounty) {
