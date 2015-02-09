@@ -12,7 +12,7 @@ $.ajax({
             $.each(bounty, function(i, bounties){
                    $.each(bounty, function(i2, bounties){
                                 $('#remove').remove();
-                                $('#test').append('<li id="remove"> Name: ' + bounty['i']['name'] + ', Bounty: ' + bounty['i']['price'] + '</li>');
+                                $('#test').append('<li id="remove"> Name: ' + bounty['name'] + ', Bounty: ' + bounty['price'] + '</li>');
                   
                            
                    });
