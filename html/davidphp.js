@@ -1,5 +1,15 @@
 $(document).ready(function(){
-setInterval(function(){
-    $('p').load('getLatestData.php');
-}, 1000);
+setInterval(phpfilen(), 1000);
 });
+
+function phpfilen(){
+$.ajax({
+    type: 'GET',
+    url: 'getLatestData.php',
+        dataType: 'php',
+        async: true,
+        success: success
+    
+});
+
+};
