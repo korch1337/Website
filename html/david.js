@@ -15,7 +15,7 @@ $.ajax({
                //  });
 
 // });
-        for (i=0; i < (bounty.length / 2); i++){
+        for (i=0; i < bounty.length; i++){
                 $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
                 
         };
