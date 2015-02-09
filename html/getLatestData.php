@@ -1,4 +1,4 @@
-
+<script src="davidphp.js"></script>
 // $json = file_get_contents("general.json");
 // $bounties = json_decode($json, true);
 <div id="refresh">
