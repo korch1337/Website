@@ -9,11 +9,14 @@ $.ajax({
         url: 'general.json',
         dataType: 'json',
         success: function (bounty) {
-            $.each(bounty, function(i, bounties){
-                     $.each(bounty, function(i, bounties){
-                                $('#remove').remove();
-                                $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>');
+           
+                           for (var i = 0; i < bounty.length; i++){
+                                    $('#remove').remove();
+                                    $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>');
                   
+                                   
+                                   
+                           };    
                            
                      });
             });
