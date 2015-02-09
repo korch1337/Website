@@ -1,6 +1,6 @@
 $(document).ready(function(){
 setInterval(function(){
-    $('#refresh').load('theContent.php');
+    $('#refresh').load('getLatestData.php');
 }, 1000);
 
 });
