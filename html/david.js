@@ -10,9 +10,10 @@ $.ajax({
         dataType: 'json',
         success: function (bounty) {
  $.each(bounty, function(i, bounties){
+         $.each(bounty, function(i2, bounties){
   $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>');  
                                    
-                           }   
+                           }  } 
                            
                 
             );
