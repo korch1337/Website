@@ -7,10 +7,9 @@ $result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS
 
 $bounties = array();
 
-while($row = $result->fetch_object()){
+while($row = mysql_fetch_assoc($result)){
     
-     $bounties['name'] = $row->name;
-     $bounties['price'] = $row->prize;
+     $bounties[] = $row;
     
 }
 $result->free();
