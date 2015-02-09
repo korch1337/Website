@@ -10,7 +10,7 @@ $.ajax({
         async: true,
         success: function (bounty) {
         for (i=0; i <= bounty.length - 1; i++){
-                $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
+                $('#test').empty().append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
         };
         }
         
