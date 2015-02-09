@@ -1,8 +1,5 @@
 $(document).ready(function(){
 setInterval(ajaxd,1000);
-setInterval(function(){
-    $('#refresh').load('getLatestData.php');
-}, 1000);
 });
 
 function ajaxd(){
