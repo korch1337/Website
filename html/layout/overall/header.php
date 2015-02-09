@@ -26,6 +26,7 @@ $start = $time;
 
   <div id="main">
     <div id="header">
+    <div id="logo"></div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
