@@ -1,6 +1,6 @@
-$(document).ready(function(){
-setTimeout("ajaxd()",1000);
-});
+//$(document).ready(function(){
+//setTimeout("ajaxd()",1000);
+//});
 
 function ajaxd(){
 var $bountyh = $('ul.inner');
