@@ -32,26 +32,53 @@ $start = $time;
     
     <div id='cssmenu'>
 <ul>
-   <li><a href='#'>Home</a></li>
-   <li class='active'><a href='#'>Products</a>
-      <ul>
-         <li><a href='#'>Product 1</a>
-            <ul>
-               <li><a href='#'>Sub Product</a></li>
-               <li><a href='#'>Sub Product</a></li>
-            </ul>
-         </li>
-         <li><a href='#'>Product 2</a>
-            <ul>
-               <li><a href='#'>Sub Product</a></li>
-               <li><a href='#'>Sub Product</a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li><a href='#'>About</a></li>
-   <li><a href='#'>Contact</a></li>
-</ul>
+		  <li><a href="index.php">Home</a>
+		  </li>
+		  
+		   <?php
+						if (user_logged_in() === true) {
+							include 'layout/widgets/loggedin.php'; 
+						} else {
+							include 'layout/widgets/login.php'; 
+						}
+						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
+					?>
+		  
+          <li><a href="#">Community</a>
+		  <ul>
+		  <li><a href="forum.php">Forum</a></li>
+		  <li><a href="deaths.php">Deaths</a></li>
+		  <li><a href="killers.php">Killers</a></li>
+		  <li><a href="whoisonline.php">Players Online</a></li>
+		  <li><a href="highscores.php">Highscores</a></li>
+		  </ul>
+		  </li>
+		  
+		  <li><a href="#">Library</a>
+		  <ul>
+		  <li><a href="downloads.php">Downloads</a></li>
+		  <li><a href="market.php">Item Market</a></li>
+		  <li><a href="gallery.php">Gallery</a></li>
+		  <li><a href="houses.php">Houses</a></li>
+		  <li><a href="guilds.php">Guilds</a></li>
+		  <li><a href="guildwar.php">Guild Wars</a></li>
+		  </ul>
+		  </li>
+		  
+          <li><a href="#">Information</a>
+		  <ul>
+		  <li><a href="serverinfo.php">Server Info</a></li>
+		  <li><a href="#">Staff</a></li>
+		  </ul>
+		  </li>
+          <li><a href="#">Shop</a>
+		  <ul>
+		  <li><a href="buypoints.php">Buy Points</a></li>
+		  <li><a href="shop.php">Shop Offers</a></li>
+		  </ul>
+		  </li>
+		 
+		 </ul>
 </div>
       
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
