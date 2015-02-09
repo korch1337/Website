@@ -14,7 +14,7 @@ $.ajax({
                 $('#test').append('<li id="remove"> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
                 
             });
-        };
+        }
     });
     
     
