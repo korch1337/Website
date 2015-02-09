@@ -8,10 +8,10 @@ $.ajax({
         type: 'GET',
         url: 'general.json',
         dataType: 'json',
-        success: function (bounties) {
-            $.each(bounties, function(i, bounties){
+        success: function (bounty) {
+            $.each(bounty, function(i, bounties){
                     $('#remove').remove();
-                $('#test').append('<li id="remove"> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
+                $('#test').append('<li id="remove"> Name: ' + bounty['name'] + ', Bounty: ' + bounty['price'] + '</li>');
                 
             });
         }
