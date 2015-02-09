@@ -8,7 +8,7 @@ $result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS
 
 while($row = $result->fetch_object()){
     
-    $bounties = array(
+    $bounties = array_push(
         'name' => $row->name,
         'bounty' => $row->prize
     );
