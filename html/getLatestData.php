@@ -1,7 +1,7 @@
 <script src="davidphp.js"></script>
 
 <?php require 'connect.php';
-$result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id");
+$result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id ORDER BY b.prize DESC LIMIT 1");
 
 $bounties = array();
 
