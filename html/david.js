@@ -11,7 +11,7 @@ $.ajax({
         success: function (bounty) {
            
                            for (var i = 0; i < bounty.length; i++){
-                                    $('#remove').remove();
+                                   
                                     $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>');
                   
                                    
