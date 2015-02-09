@@ -5,6 +5,7 @@ $.ajax
     ({
         type: 'GET',
         url: 'general.json',
+        dataType: 'json',
         success: function (bounty) {
             $.each(bounty, function(i, bounty){
                 $bountyh.append('<li> Name: ' + bounty.name + ', Bounty: ' + bounty.price + '</li>');
