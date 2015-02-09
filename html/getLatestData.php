@@ -1,12 +1,18 @@
-<?php 
+<?php require 'connect.php';
+$result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id");
+$bounties = array();
 
-$json = file_get_contents("general.json");
-$bounties = json_decode($json, true);
 
-// Adding new data:
-$bounties[3] = array('name' => 'Foo', 'price' => 'Bar');
+while($row = $result->fetch_object()){
+    
+    $bounties = array(
+        'name' => $row->name,
+        'bounty' => $row->prize
+    );
+    
+}
+$result->free();
 
-// Writing modified data:
 $fp = fopen('general.json', 'w');
 fwrite($fp, json_encode($bounties));
 fclose($fp);
