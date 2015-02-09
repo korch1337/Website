@@ -1,7 +1,5 @@
 <script src="davidphp.js"></script>
-// $json = file_get_contents("general.json");
-// $bounties = json_decode($json, true);
-<div id="refresh">
+
 <?php require 'connect.php';
 $result = $db->query("SELECT a.name,b.prize FROM players AS a, bounty_hunters AS b WHERE a.id=b.fp_id");
 
@@ -16,4 +14,4 @@ $fp = fopen('general.json', 'w');
 fwrite($fp, json_encode($bounties));
 fclose($fp);
 ?>
-</div>
+
