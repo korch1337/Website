@@ -9,7 +9,7 @@ $.ajax({
         dataType: 'json',
         async: true,
         success: function (bounty) {
-                if (testing !== bounty){
+                if (testing.length != bounty.length){
                         $('#test').empty();
         for (i=0; i <= bounty.length - 1; i++){
                 $('#test').append('<li id="remove"> Name: ' + bounty[i].name + ', Bounty: ' + bounty[i].prize + '</li>')
