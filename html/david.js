@@ -1,5 +1,5 @@
 $(document).ready(function(){
-setTimeout(ajaxd,1000);
+setInterval(ajaxd,1000);
 });
 
 function ajaxd(){
