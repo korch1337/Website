@@ -1,7 +1,7 @@
 $(document).ready(function(){
-        var testing= [];
 setInterval(ajaxd,1000);
 });
+var testing= [];
 function ajaxd(){
         
 $.ajax({
