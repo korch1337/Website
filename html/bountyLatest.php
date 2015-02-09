@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
-<div></div>
 
-<h1>Blank</h1>
-<p >This is a blank sample page.</p>
+<p ></p>
 <ul id="test">
 
 
