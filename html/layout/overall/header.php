@@ -49,22 +49,40 @@
     <div id="menu_wrapper">
       <div id="menu_left"></div>
       <ul id="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./banner2.html">Second banner</a></li>
-        <li><a>Dropdown</a>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="">Account</a></li>
+        <li><a>Community</a>
         	<ul>
-                <li><a href="#">Submenu example 1</a></li>
-                <li><a href="#">Submenu example 2</a></li>
-                <li><a href="#">Submenu example 3</a></li>
-                <li class="drop_last"><a href="#" >Submenu example 4</a></li>
+                <li><a href="forum.php">Forum</a></li>
+		  <li><a href="deaths.php">Deaths</a></li>
+		  <li><a href="killers.php">Killers</a></li>
+		  <li><a href="whoisonline.php">Players Online</a></li>
+                <li class="drop_last"><a href="highscores.php" >Highscores</a></li>
             </ul>
         </li>
-        <li><a href="./post_list.html">post list</a></li>
-        <li><a href="./post.html">Post</a></li>
-        <li><a href="./post_game.html">Post with game</a></li>
-        <li><a href="./full_page.html">Full page</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a>Library</a>
+        	<ul>
+                <li><a href="downloads.php">Downloads</a></li>
+		  <li><a href="market.php">Item Market</a></li>
+		  <li><a href="houses.php">Houses</a></li>
+		  <li><a href="guilds.php">Guilds</a></li>
+                <li class="drop_last"><a href="guildwar.php" >Guild Wards</a></li>
+            </ul>
+        </li>
+        <li><a>Information</a>
+        	<ul>
+                <li><a href="serverinfo.php">Server Info</a></li>
+                <li class="drop_last"><a href="#" >Staff</a></li>
+            </ul>
+        </li>
+        <li><a>Shop</a>
+        	<ul>
+                <li><a href="buypoints.php">Buy Points</a></li>
+                <li class="drop_last"><a href="shop.php" >Shop Offers</a></li>
+            </ul>
+        </li>
+        <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
         <a href="#" id="pull">Menu</a>
       <div id="menu_right"></div>
