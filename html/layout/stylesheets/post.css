@@ -50,7 +50,7 @@
 
 #post_wrapper{
 	width:600px;
-	background:#fff;
+	background:url(../images/wrapper_loop.jpg) repeat top left;
 	border:3px solid #461C0E;
 	border-radius: 10px;
 	margin:10px 0px 30px 10px;
