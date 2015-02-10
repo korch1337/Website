@@ -63,12 +63,12 @@
 (function($){
 $(document).ready(function(){
   
-  $('ul ul li').mouseenter(function(){
-    $(this).fadeTo('fast', 0.8);
-  });
-    $('ul ul li').mouseleave(function(){
-    $(this).fadeTo('slow', 1);
-  });
+ // $('ul ul li').mouseenter(function(){
+   // $(this).fadeTo('fast', 0.8);
+ // });
+  //  $('ul ul li').mouseleave(function(){
+  //  $(this).fadeTo('slow', 1);
+//  });
 
 $("#cssmenu").menumaker({
    title: "Menu",
