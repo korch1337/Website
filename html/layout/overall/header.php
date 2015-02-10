@@ -51,7 +51,7 @@
       <ul id="menu">
         <li><a href="index.php">Home</a></li>
         <li><a href="">Account</a></li>
-        <li><a>Community</a>
+        <li><a href="#">Community</a>
         	<ul>
                 <li><a href="forum.php">Forum</a></li>
 		  <li><a href="deaths.php">Deaths</a></li>
@@ -60,7 +60,7 @@
                 <li class="drop_last"><a href="highscores.php" >Highscores</a></li>
             </ul>
         </li>
-        <li><a>Library</a>
+        <li><a href="#">Library</a>
         	<ul>
                 <li><a href="downloads.php">Downloads</a></li>
 		  <li><a href="market.php">Item Market</a></li>
@@ -69,13 +69,13 @@
                 <li class="drop_last"><a href="guildwar.php" >Guild Wards</a></li>
             </ul>
         </li>
-        <li><a>Information</a>
+        <li><a href="#">Information</a>
         	<ul>
                 <li><a href="serverinfo.php">Server Info</a></li>
                 <li class="drop_last"><a href="#" >Staff</a></li>
             </ul>
         </li>
-        <li><a>Shop</a>
+        <li><a href="#">Shop</a>
         	<ul>
                 <li><a href="buypoints.php">Buy Points</a></li>
                 <li class="drop_last"><a href="shop.php" >Shop Offers</a></li>
