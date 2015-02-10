@@ -63,10 +63,10 @@
 (function($){
 $(document).ready(function(){
   
-  $('ul ul li a').mouseenter(function(){
+  $('ul li').mouseenter(function(){
     $(this).fadeIn('slow', 0.5);
   });
-    $('ul ul li a').mouseleave(function(){
+    $('ul li').mouseleave(function(){
     $(this).fadeIn('slow', 1);
   });
 
