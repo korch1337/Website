@@ -8,7 +8,7 @@ $name = $_GET['selected_character'];
    
    $row = $aucPlayers->fetch_object();
    
-   if($row->level > 149 && $price < 1000 && is_string($price) == false){
+   if($row->level > 149 && $price < 1000 && is_numeric($price){
     
     $db->query("INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`, `price`)
    VALUES ($row->id, $row->account_id, $row->vocation, $row->level, $price)");
