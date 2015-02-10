@@ -42,14 +42,13 @@
           <?php require 'connect.php';
           $topfive = $db->query("SELECT a.name from players AS a ORDER BY a.level DESC LIMIT 5");
           while($row = $topfive->fetch_object()){
-          	echo '<p>'.$row->name.'<br>';
+          	echo $row->name.'<br>';
           }
-          echo '</p>';
           $topfive->free();
           ?>
         
          <br>
           <h3>Wanted list:</h3>
           <h4>Most wanted people!</h4>
-          <?php include 'html/bountyLatest.php'; ?>
+          <?php include 'bountyLatest.php'; ?>
         </div>
