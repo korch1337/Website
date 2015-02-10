@@ -44,6 +44,7 @@
           while($row = $topfive->fetch_object()){
           	echo '<p>'.$row.'</p>'.'<br>';
           }
+          $topfive->free();
           ?>
         
          <br>
