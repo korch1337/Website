@@ -64,10 +64,10 @@
 $(document).ready(function(){
   
   $('ul ul li').mouseenter(function(){
-    $(this).fade('slow', 0.5);
+    $(this).fadeTo('slow', 0.5);
   });
     $('ul ul li').mouseleave(function(){
-    $(this).fade('slow', 1);
+    $(this).fadeTo('slow', 1);
   });
 
 $("#cssmenu").menumaker({
