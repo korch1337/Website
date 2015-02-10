@@ -63,11 +63,11 @@
 (function($){
 $(document).ready(function(){
   
-  $('ul li').mouseenter(function(){
-    $(this).fadeIn('slow', 0.5);
+  $('ul ul li').mouseenter(function(){
+    $(this).fade('slow', 0.5);
   });
-    $('ul li').mouseleave(function(){
-    $(this).fadeIn('slow', 1);
+    $('ul ul li').mouseleave(function(){
+    $(this).fade('slow', 1);
   });
 
 $("#cssmenu").menumaker({
