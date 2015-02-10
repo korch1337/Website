@@ -42,8 +42,9 @@
           <?php require 'connect.php';
           $topfive = $db->query("SELECT a.name from players AS a ORDER BY a.level DESC LIMIT 5");
           while($row = $topfive->fetch_object()){
-          	echo '<p>'.$row->name.'</p>'.'<br>';
+          	echo '<p>'.$row->name.'<br>';
           }
+          echo '</p>';
           $topfive->free();
           ?>
         
