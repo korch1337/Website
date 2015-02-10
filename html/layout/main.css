@@ -166,9 +166,16 @@ box-shadow: 1px 1px 20px 3px rgba(0,0,0,0.75);
   width: 0px;
   margin: 250px -100px 0 auto;
   }
+  #sidebar_container_left
+{ 
+  float:left;
+  width: 0px;
+  margin: 250px -100px 0 auto;
+  }
 
 .sidebar
 { width: 200px;
+  height:600px;
   margin: 0 24px 28px 0;
   background-image: url("./images/sidebar.jpg");
   box-shadow: 2px 0px 10px #6B645D;
