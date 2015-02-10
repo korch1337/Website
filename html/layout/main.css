@@ -238,7 +238,7 @@ li > a:only-child:after { content: ''; }
 #site_content
 { width: 950px;
   overflow: hidden;
-  margin: 230px auto 0 auto;
+  margin: 250px auto 0 auto;
   padding: 10px;
   background: #e5e5e5;
   border: 1px solid #000;
