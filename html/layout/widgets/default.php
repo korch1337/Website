@@ -61,5 +61,5 @@
          <br>
           <h3>Wanted list:</h3>
           <h4>Most wanted people!</h4>
-          <ul id="test"></ul>
+          
         </div>
