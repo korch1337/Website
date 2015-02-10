@@ -50,5 +50,5 @@
          <br>
           <h3>Wanted list:</h3>
           <h4>Most wanted people!</h4>
-          <?php include 'bountyLatest.php'; ?>
+          <div id="wanted"></div>
         </div>
