@@ -49,6 +49,13 @@ h1, h2, h3, h4, h5, h6
   margin: 0 0 15px 30px;
   padding: 5px 0 5px 0;}
 
+.sidebar h2 {
+	color: #A4A49D;
+}
+.sidebar p{
+	color: #A4A49D;
+}
+
 h2
 { font: normal 170% 'Yanone Kaffeesatz', arial, sans-serif;
   color: #000;  
