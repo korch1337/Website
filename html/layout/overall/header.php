@@ -24,7 +24,7 @@
 <div id="main_wrapper">
 
     <!--********************************************* Logo Start *********************************************-->
-    <div id="logo"> <a href="#"><img alt="alt_example" src="./images/logo.png"  /></a>
+    <div id="logo"> <a href="#"><img alt="alt_example" src="layout/images/logo.png"  /></a>
       <div id="social_ctn"> 
       
       <a class="social_t"><img alt="alt_example" src="./images/social_tleft.png" /></a> 
