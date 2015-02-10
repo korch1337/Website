@@ -50,6 +50,14 @@
       <div id="menu_left"></div>
       <ul id="menu">
         <li><a href="index.php">Home</a></li>
+	<?php
+						if (user_logged_in() === true) {
+							include 'layout/widgets/loggedin.php'; 
+						} else {
+							include 'layout/widgets/login.php'; 
+						}
+						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
+					?>
         <li><a href="">Account</a></li>
         <li><a href="#">Community</a>
         	<ul>
@@ -99,7 +107,7 @@
             <div id="full_page_wrapper">
                     	
                 <div class="header">
-                	<h2><span>Zerexxa //</span> full page</h2>
+                	<h2><span>Zerexxa</span></h2>
                 </div>
                  
                 <div id="post_wrapper">
