@@ -11,6 +11,7 @@
 			<li><input type="submit" value="Search">
 		</form>
 		<br>
+		<br>
         <h2>Server Status: </h2>
         <div class="m_online" align="center">
 					<b>Status:  
