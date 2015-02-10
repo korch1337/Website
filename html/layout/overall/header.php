@@ -89,6 +89,9 @@ $start = $time;
       
     </div>
     
+    <div id="rightside">
+     include 'layout/rightwidgets.php';
+    </div>
     <div id="site_content">
       
       <div class="content">
