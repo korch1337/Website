@@ -40,7 +40,7 @@
           <br>
           <h3>Top 5 players</h3>
           <?php require 'connect.php';
-          $topfive = $db->query("SELECT a.name from players AS a ORDER BY level DESC LIMIT 5");
+          $topfive = $db->query("SELECT a.name from players AS a ORDER BY a.level DESC LIMIT 5");
           while($row = $topfive->fetch_object()){
           	echo '<p>'.$row.'</p>'.'<br>';
           }
