@@ -63,7 +63,7 @@
 (function($){
 $(document).ready(function(){
   
-  $('ul ul li a').mouseover(function(){
+  $('ul ul li a').mouseenter(function(){
     $(this).fadeIn('slow', 0.5);
   });
     $('ul ul li a').mouseleave(function(){
