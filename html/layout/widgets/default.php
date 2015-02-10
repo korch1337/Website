@@ -1,3 +1,4 @@
+     <div class="darkarea">
      <div class="sidebar">
         <!-- insert your sidebar items here -->
         <h3>Character Search</h3>
@@ -44,4 +45,5 @@
           <h3>Wanted list:</h3>
           <h4>Find and kill these people!</h4>
           <p>1. David<br /><a href="#">List of all</a></p>
+        </div>
         </div>
