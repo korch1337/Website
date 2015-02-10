@@ -1,6 +1,5 @@
      <div class="sidebar">
         <!-- insert your sidebar items here -->
-        <div class="darkarea">
         <h3>Character Search</h3>
 		<h2>Character Name: </h2>
 		<form type="submit" action="characterprofile.php" method="get">
@@ -11,9 +10,7 @@
 			?>
 			<li><input type="submit" value="Search">
 		</form>
-		</div>
 		<br>
-		<div class="darkarea">
         <h2>Server Status: </h2>
         <div class="m_online" align="center">
 					<b>Status:  
@@ -39,9 +36,7 @@
 						?></b>
 					<br>
 				</div>
-				</div>
           <br>
-          <div class="darkarea">
           <h3>Top 5 players</h3>
           <p>1. asdads<br>2. asdsad</p>
         
@@ -49,5 +44,4 @@
           <h3>Wanted list:</h3>
           <h4>Find and kill these people!</h4>
           <p>1. David<br /><a href="#">List of all</a></p>
-          </div>
         </div>
