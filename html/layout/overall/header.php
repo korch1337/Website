@@ -92,6 +92,9 @@ $start = $time;
     <div id="sidebar_container">
     <?php include 'layout/rightwidgets.php'; ?>
     </div>
+    <div id="sidebar_container_left">
+    <?php include 'layout/leftwidgets.php'; ?>
+    </div>
     <div id="site_content">
       
       <div class="content">
