@@ -28,8 +28,9 @@
   display: none;
 }
 #cssmenu {
+  width:1490px;
   font-family: Montserrat, sans-serif;
-  margin:50px -20px 0 0;
+  margin:50px -20px 0 -260px;
   border-radius:10px;
   background: -webkit-linear-gradient(top, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%);
 }
