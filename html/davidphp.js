@@ -1,5 +1,5 @@
 $(document).ready(function(){
-setInterval(phpfilen(), 1000);
+setInterval(phpfilen(), 10000);
 });
 
 function phpfilen(){
