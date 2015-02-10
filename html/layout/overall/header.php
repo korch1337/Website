@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Orizon - The Gaming template</title>
+<title>Zerexxa - The Gaming template</title>
 
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css" />
 <!-- Included CSS Files -->
@@ -99,7 +99,7 @@
             <div id="full_page_wrapper">
                     	
                 <div class="header">
-                	<h2><span>ORIZON //</span> full page</h2>
+                	<h2><span>Zerexxa //</span> full page</h2>
                 </div>
                  
                 <div id="post_wrapper">

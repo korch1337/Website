@@ -11,21 +11,18 @@
 	<!--********************************************* Main end *********************************************-->
     
     <!--********************************************* Main advert start *********************************************-->
-    <div class="main_advert">
-      <a href="http://themeforest.net/user/Skywarrior" target="_blank"><img alt="alt_example" src="layout/images/main_ad.png" border="0" /></a>
-      
-    </div>
+
     <!--********************************************* Main advert end *********************************************--> 
 
     <!--********************************************* Footer start *********************************************-->
     <div id="footer">
     <div class="row">
       <div class="footer_widget">
-        <div class="header"><a href="#">About ORIZON</a></div>
+        <div class="header"><a href="#">About Zerexxa</a></div>
         <div class="body">
           <p><img alt="alt_example" src="layout/images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <p>Praesent aliquet justo quis lacus mollis molestie pellentesque habitant morbi tristique senectus et e. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pulvinar urna eget ante pharetra vitae fermentum dui sagittis. Vivamus non ipsum elit, et tincidunt quam.</p>
-          <img alt="alt_example" src="layout/images/orizon_about.png" style="margin:11px 0px 0px 55px;"/></div>
+          <img alt="alt_example" src="layout/images/Zerexxa_about.png" style="margin:11px 0px 0px 55px;"/></div>
       </div>
       <div class="divider_footer"></div>
       <div id="latest_media">
