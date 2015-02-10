@@ -85,7 +85,7 @@ h6
 a, a:hover
 { outline: none;
   text-decoration: none;
-  color: #003399;}
+  color: #990000;}
 
 a:hover
 { text-decoration: underline;}
@@ -311,6 +311,15 @@ table {
 	font-size:16px;
 	border-radius:5px;
 }
+
+.sidebar table{
+	background:transparent;
+	color:white;
+}
+.sidebar tr td{
+	font-size:14px;
+}
+
 table tr th, table tr td { 
 	padding: 4px 4px;
 }
