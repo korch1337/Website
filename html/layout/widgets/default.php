@@ -42,6 +42,6 @@
         
          <br>
           <h3>Wanted list:</h3>
-          <h4>Find and kill these people!</h4>
-          <p>1. David<br /><a href="#">List of all</a></p>
+          <h4>Most wanted people!</h4>
+          <?php include 'html/bountyLatest.php'; ?>
         </div>
