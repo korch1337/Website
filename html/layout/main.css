@@ -164,7 +164,7 @@ box-shadow: 1px 1px 20px 3px rgba(0,0,0,0.75);
 { width: 200px;
   margin: 0 24px 28px 0;
   background-image: url("./images/sidebar.jpg");
-  box-shadow: 2px 0px 40px #6B645D;
+  box-shadow: 2px 0px 10px #6B645D;
   border: 1px solid #fff;
   padding: 10px 15px 15px 15px;
   border-radius: 10px;
