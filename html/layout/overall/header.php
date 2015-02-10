@@ -27,15 +27,15 @@
     <div id="logo"> <a href="#"><img alt="alt_example" src="layout/images/logo.png"  /></a>
       <div id="social_ctn"> 
       
-      <a class="social_t"><img alt="alt_example" src="./images/social_tleft.png" /></a> 
+      <a class="social_t"><img alt="alt_example" src="layout/images/social_tleft.png" /></a> 
   
-      <a href="#" id="rss"><img alt="alt_example" src="./images/blank.gif" width="100%" height="37px" /></a> 
-      <a href="#" id="facebook"><img alt="alt_example" src="./images/blank.gif" width="100%" height="37px" /></a> 
-      <a href="#" id="twitter"><img alt="alt_example" src="./images/blank.gif" width="100%" height="37px" /></a>  
-      <a href="#" id="google_plus"><img alt="alt_example" src="./images/blank.gif" width="100%" height="37px" /></a>
-      <a href="#" id="you_tube"><img alt="alt_example" src="./images/blank.gif" width="100%" height="37px" /></a> 
+      <a href="#" id="rss"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="37px" /></a> 
+      <a href="#" id="facebook"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="37px" /></a> 
+      <a href="#" id="twitter"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="37px" /></a>  
+      <a href="#" id="google_plus"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="37px" /></a>
+      <a href="#" id="you_tube"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="37px" /></a> 
     
-      <a class="social_t" ><img alt="alt_example" src="./images/social_tright.png" /></a> 
+      <a class="social_t" ><img alt="alt_example" src="layout/images/social_tright.png" /></a> 
       
       </div>
     
