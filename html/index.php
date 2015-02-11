@@ -339,36 +339,7 @@
     <!--********************************************* Main advert end *********************************************--> 
     
     <!--********************************************* Footer start *********************************************-->
-    <div id="footer">
-    <div class="row">
-      <div class="footer_widget">
-        <div class="header"><a href="#">About Zerexxa</a></div>
-        <div class="body">
-          <p><img alt="alt_example" src="layout/images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <p>Praesent aliquet justo quis lacus mollis molestie pellentesque habitant morbi tristique senectus et e. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pulvinar urna eget ante pharetra vitae fermentum dui sagittis. Vivamus non ipsum elit, et tincidunt quam.</p>
-          <img alt="alt_example" src="layout/images/orizon_about.png" style="margin:11px 0px 0px 55px;"/></div>
-      </div>
-      <div class="divider_footer"></div>
-      <div id="latest_media">
-        <div class="header"><a href="#">latest media</a></div>
-        <div class="body">
-          <ul id="l_media_list">
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    </div>
+    <?php include 'layout/overall/footer.php'; ?>
     <!--********************************************* Footer end *********************************************--> 
     <div class="clear"></div>
     <!--********************************************* Twitter feed start *********************************************-->
