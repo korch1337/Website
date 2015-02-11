@@ -47,6 +47,7 @@ ul, li {
 border-collapse: collapse; 
 border-spacing: 0;
 font-size:15px;
+width:900px;
 }
 #profile td, th{
 	border:1px solid #000000;
@@ -61,6 +62,7 @@ font-size:15px;
 #profile tr:nth-child(odd) td { background: #7094B8; }
 
 #deaths{
+width:900px;
 border-collapse: collapse; 
 border-spacing: 0;
 font-size:15px;
