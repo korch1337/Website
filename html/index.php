@@ -304,8 +304,8 @@
           
           
           
-          <div class="Useful Links">
-            <div class="header"><a href="#">Categories</a></div>
+          <div class="categories">
+            <div class="header"><a href="#">Useful Links</a></div>
             <ul>
               <li> <a href="auctionChar.php">Character Auctions</a> </li>
               <li> <a href="./post_list.html"></a> </li>
