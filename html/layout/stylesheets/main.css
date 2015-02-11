@@ -39,6 +39,9 @@ ul, li {
 .table td{
 	padding:10px;
 }
+tr td{
+	padding:7px;
+}
 
 #charsearch{
 	margin:0 0 40px 50px;
