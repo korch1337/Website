@@ -73,7 +73,7 @@
 		  <li><a href="market.php">Item Market</a></li>
 		  <li><a href="houses.php">Houses</a></li>
 		  <li><a href="guilds.php">Guilds</a></li>
-                <li class="drop_last"><a href="guildwar.php" >Guild Wards</a></li>
+                <li class="drop_last"><a href="guildwar.php" >Guild Wars</a></li>
             </ul>
         </li>
         <li><a href="#">Information</a>
@@ -270,7 +270,6 @@
         <!-- Right wrapper Start -->
         <div id="right_wrapper">
           <div id="search">
-            <input type="text" onblur="if(this.value =='') this.value='search'" onfocus="if (this.value == 'search') this.value=''" value="search" name="s" class="required" id="s" />
             <input type="button" />
           </div>
           <div class="review">
@@ -304,20 +303,16 @@
           </div>
           
           
-          <div class="advert">
-            <a href="http://themeforest.net/user/Skywarrior" target="_blank"><img alt="alt_example" src="layout/images/advert_r.jpg" border="0" /></a>
-          </div>
           
-          
-          <div class="categories">
+          <div class="Useful Links">
             <div class="header"><a href="#">Categories</a></div>
             <ul>
-              <li> <a href="./post_list.html">Action</a> </li>
-              <li> <a href="./post_list.html">Adventure</a> </li>
-              <li> <a href="./post_list.html">Strategy</a> </li>
-              <li> <a href="./post_list.html">RPG</a> </li>
-              <li> <a href="./post_list.html">Indie</a> </li>
-              <li> <a href="./post_list.html">Massive Multiplayer</a> </li>
+              <li> <a href="auctionChar.php">Character Auctions</a> </li>
+              <li> <a href="./post_list.html"></a> </li>
+              <li> <a href="./post_list.html"></a> </li>
+              <li> <a href="./post_list.html"></a> </li>
+              <li> <a href="./post_list.html"></a> </li>
+              <li> <a href="./post_list.html">r</a> </li>
             </ul>
           </div>
                  
@@ -344,7 +339,7 @@
         <div class="body">
           <p><img alt="alt_example" src="layout/images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <p>Praesent aliquet justo quis lacus mollis molestie pellentesque habitant morbi tristique senectus et e. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pulvinar urna eget ante pharetra vitae fermentum dui sagittis. Vivamus non ipsum elit, et tincidunt quam.</p>
-          <img alt="alt_example" src="layout/images/orizon_about.png" style="margin:11px 0px 0px 55px;"/></div>
+          <img alt="alt_example" src="layout/images/logo.png" style="margin:11px 0px 0px 55px;"/></div>
       </div>
       <div class="divider_footer"></div>
       <div id="latest_media">
