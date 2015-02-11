@@ -18,27 +18,27 @@
     <div id="footer">
     <div class="row">
       <div class="footer_widget">
-        <div class="header"><a href="#">About ORIZON</a></div>
+        <div class="header"><a href="#">About Zerexxa</a></div>
         <div class="body">
-          <p><img alt="alt_example" src="./images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p><img alt="alt_example" src="layout/images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <p>Praesent aliquet justo quis lacus mollis molestie pellentesque habitant morbi tristique senectus et e. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pulvinar urna eget ante pharetra vitae fermentum dui sagittis. Vivamus non ipsum elit, et tincidunt quam.</p>
-          <img alt="alt_example" src="./images/orizon_about.png" style="margin:11px 0px 0px 55px;"/></div>
+          <img alt="alt_example" src="layout/images/Zerexxa_about.png" style="margin:11px 0px 0px 55px;"/></div>
       </div>
       <div class="divider_footer"></div>
       <div id="latest_media">
         <div class="header"><a href="#">latest media</a></div>
         <div class="body">
           <ul id="l_media_list">
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
           </ul>
         </div>
       </div>
@@ -48,67 +48,28 @@
     <!--********************************************* Footer end *********************************************--> 
     <div class="clear"></div>
     <!--********************************************* Twitter feed start *********************************************-->
-    <div id="twitter_last"> <a id="tr_left" href="#"><img alt="alt_example" src="./images/blank.gif" width="100%" height="30px" border="0" /></a>
+    <div id="twitter_last"> <a id="tr_left" href="#"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="30px" border="0" /></a>
       <div id="tr_right">
         <ul id="tw">
         </ul>
       </div>
     </div>
     <!--********************************************* Twitter feed end *********************************************--> 
-  
-  </div>
-  <!--********************************************* Main_in end *********************************************--> 
-  
-  <a id="cop_text" href="http://themeforest.net/user/Skywarrior"> Made by Skywarrior Themes</a> 
-  </div>
+
+     </div>
+<!--********************************************* Main_in Start *********************************************--> 
+     
+     <a id="cop_text" href="http://themeforest.net/user/Skywarrior"> Made by Skywarrior Themes</a>
+     
+	</div>
 </div>
 <!--********************************************* Main wrapper end *********************************************--> 
 
-<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script> 
-<script src="./javascript/jquery.carouFredSel-6.1.0.js" type="text/javascript"></script> 
-<script src="./javascript/jquery.cslider.js" type="text/javascript" ></script> 
-<script src="./javascript/modernizr.custom.28468.js" type="text/javascript"></script> 
-<script src="./javascript/getTweet.js" type="text/javascript" ></script> 
-<script src="./javascript/jquery.fancybox.js?v=2.1.3" type="text/javascript" ></script> 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="layout/javascript/getTweet.js" type="text/javascript" ></script>
+<script src="layout/javascript/jquery.fancybox.js?v=2.1.3" type="text/javascript" ></script>
 
-<!--******* Javascript Code for the Hot news carousel *******--> 
-<script type="text/javascript">
-	$(document).ready(function() {
-	
-		// Using default configuration
-		$("#sd").carouFredSel();
-		
-		// Using custom configuration
-		$("#hot_news_box").carouFredSel({
-			items				: 1,
-			direction			: "right",
-			prev: '#prev',
-			next: '#next',
-			scroll : {
-				items			: 1,
-				height			: 250,
-				easing			: "quadratic",
-				duration		: 2000,							
-				pauseOnHover	: true
-			}	
-		});	
-	})
-</script> 
-
-
-<!--******* Javascript Code for the Main banner *******--> 
-<script type="text/javascript">
-	$(function() {
-	
-		$('#da-slider').cslider({
-			autoplay	: true,
-			bgincrement	: 450
-		});
-	
-	});
-</script> 
-
-<!--******* Javascript Code for the image shadowbox *******--> 
+<!--******* Javascript Code for the image shadowbox *******-->
 <script type="text/javascript">
 $(document).ready(function() {
 	/*
@@ -165,5 +126,4 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
-
 
