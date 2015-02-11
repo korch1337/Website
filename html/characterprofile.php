@@ -214,7 +214,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
     </tr>
 </table>
 <!-- PLAYER INFO TABLE -->
-<table id="profile" cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
+<table id="profile">
     <tr>
         <td bgcolor="#F1E0C6" align="left" width="20%">
             <b>Player HP:</b>
