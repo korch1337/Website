@@ -221,9 +221,6 @@ if ($render_page) {
 	}
 
 	?>
-	<div id="sell">
-	<a href="sellcharacter.php" class="sellbtn">Sell Character</a>
-	</div>
 	
 	<div id="myaccount">
 		<h1>My account</h1>
@@ -376,6 +373,10 @@ if ($render_page) {
 	}
 
 ?>
+
+<div id="sell">
+	<a href="sellcharacter.php" class="sellbtn">Sell Character</a>
+	</div>
 
 <h1>Referral system</h1>
 <hr>
