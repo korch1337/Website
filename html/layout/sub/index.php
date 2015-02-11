@@ -1,4 +1,3 @@
-<table>
 
 <?php
 $cache = new Cache('engine/cache/news');
@@ -82,4 +81,3 @@ if (!empty($guilds) || !$guilds) {
 	echo '</div>';
 }
 ?>
-</table>
