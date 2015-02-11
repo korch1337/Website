@@ -50,6 +50,7 @@
       <div id="menu_left"></div>
       <ul id="menu">
         <li><a href="index.php">Home</a></li>
+        <li><a href="./banner2.html">Second banner</a></li>
 	<?php
 						if (user_logged_in() === true) {
 							include 'layout/widgets/loggedin.php'; 
