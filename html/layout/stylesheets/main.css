@@ -55,11 +55,24 @@ font-size:15px;
 #profile tr{
 	font-weight:bold;
 }
-#profile tr:nth-child(even) td { background:#A48A8A; }   
+#profile tr:nth-child(even) td { background:#5A7693; }   
 
 /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
-#profile tr:nth-child(odd) td { background: #947C7C; }
-#profile tr td:hover { background: #666; color: #FFF; } 
+#profile tr:nth-child(odd) td { background: #7094B8; }
+
+#deaths{
+border-collapse: collapse; 
+border-spacing: 0;
+font-size:15px;
+background:#7094B8
+}
+#deaths td, th{
+	border:1px solid #000000;
+	padding:4px;
+}
+#deaths tr{
+	font-weight:bold;
+}
 
 #charsearch{
 	margin:0 0 40px 50px;
