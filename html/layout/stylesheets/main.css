@@ -182,7 +182,7 @@ ul, li {
 textarea, input {
 	color: #666;
 	padding: 8px;
-	border: solid 1px #E5E5E5;
+	border: solid 1px #000000;
 	background: url(../images/textfield.png) 0 0 repeat-x white;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
