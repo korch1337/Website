@@ -265,7 +265,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 					if ($config['TFSVersion'] == 'TFS_02') {
 						$array = user_fetch_deathlist($user_id);
 						if ($array) { ?>
-							<table>
+							<table id="deaths">
 								<tr><td colspan="2">Character Deaths</td></tr><?php											
 							//data_dump($array, false, "Data:");
 								// Design and present the list
@@ -292,7 +292,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 							if (!$deaths) echo '';
 							else {
 							?>
-							<table>
+							<table id="deaths">
 								<tr><td colspan="2">Character Deaths</td></tr><?php		
 								foreach ($deaths as $d) {
 										echo "<tr><td width='20%'>".getClock($d['time'], true, true)."</td>";
@@ -316,7 +316,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 							//mysql_select_single("SELECT * FROM players WHERE name='TEST DEBUG';");
 							$array = user_fetch_deathlist03($user_id);
 							if ($array) {							?>
-							<table>
+							<table id="deaths">
 								<tr><td colspan="2">Character Deaths</td></tr><?php		
 								// Design and present the list
 								foreach ($array as $value) {
