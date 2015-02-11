@@ -729,8 +729,8 @@ if ($PEQD !== false) {
 <tr><td>Search Character</td></tr>
 <tr class="darkborder"><td>
 	<form type="submit" action="characterprofile.php" method="get">
-		Name: <input type="text" size="25" name="name" class="search">
-		      <input type="submit" name="submitName" value="Submit">
+	<p>	Name: <input type="text" size="25" name="name" class="search">
+		      <input type="submit" name="submitName" value="Submit"> </p>
 	</form>
 </td></tr>
 </table>
