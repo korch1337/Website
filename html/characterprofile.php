@@ -430,7 +430,7 @@ if ($PEQD !== false) {
         background-repeat:no-repeat;
         position:relative;
         float: right;
-        margin:10px;
+        margin: -375px 50px 0 0px;
         padding:10px;
         height:153px;
         width:118px;
