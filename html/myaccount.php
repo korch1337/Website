@@ -1,6 +1,3 @@
-<div id="sell">
-	<a href="sellcharacter.php" class="sellbtn">Sell Character</a>
-	</div>
 <?php require_once 'engine/init.php';
 protect_page();
 include 'layout/overall/header.php'; 
@@ -224,6 +221,8 @@ if ($render_page) {
 	}
 
 	?>
+	
+	<a href="sellcharacter.php" class="sellbtn">Sell Character</a>
 	
 	<div id="myaccount">
 		<h1>My account</h1>
