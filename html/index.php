@@ -198,12 +198,7 @@
     <!--********************************************* Main start *********************************************-->
     <div id="main_news_wrapper">
  
-       <div id="row"> 
-        <!-- Left wrapper Start -->
-        <div id="left_wrapper">
-        <div class="header">
-            
-          </div>
+       
         <!-- Left wrapper end --> 
         
         <!-- Right wrapper Start -->
