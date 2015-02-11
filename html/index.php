@@ -196,65 +196,7 @@
     <!--********************************************* Hot news end *********************************************--> 
     
     <!--********************************************* Main start *********************************************-->
-    <div id="main_news_wrapper">
- 
-       
-        <!-- Left wrapper end --> 
-        
-        <!-- Right wrapper Start -->
-        <div id="right_wrapper">
-          <div class="review">
-            <div class="header"><a href="#">Top games</a></div>
-            <ul>
-              <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
-                <div class="info"> <a href="./post_game.html">Dead space 3</a><br/>
-                  <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
-              </li>
-              <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
-                <div class="info"> <a href="./post_game.html">Battlefield 3</a><br/>
-                  <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
-              </li>
-              <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
-                <div class="info"> <a href="./post_game.html">DayZ - Arma 2 mod</a><br/>
-                  <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
-              </li>
-              <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
-                <div class="info"> <a href="./post_game.html">League of legends</a><br/>
-                  <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
-              </li>
-            </ul>
-          </div>
-          
-          
-          
-          <div class="categories">
-            <div class="header"><a href="#">Useful Links</a></div>
-            <ul>
-              <li> <a href="auctionChar.php">Character Auctions</a> </li>
-              <li> <a href="./post_list.html"></a> </li>
-              <li> <a href="./post_list.html"></a> </li>
-              <li> <a href="./post_list.html"></a> </li>
-              <li> <a href="./post_list.html"></a> </li>
-              <li> <a href="./post_list.html">r</a> </li>
-            </ul>
-          </div>
-                 
-      
-      <!-- Right wrapper end -->
-      
-        </div>
-      	<div class="clear"></div>
-        
-        </div>
-      </div>
+   
     
     <div class="bottom_shadow"></div>
   
