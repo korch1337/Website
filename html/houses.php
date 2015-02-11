@@ -176,8 +176,9 @@ if (empty($_POST) === false && $config['TFSVersion'] === 'TFS_03') {
 				echo '<option value="' . $t . '"' . ($t != $type ?: ' selected') . '>' . ($t == 'desc' ? 'Descending' : 'Ascending') .'</option>';
 			?>
 			</select>
-			<input type="submit" value="Fetch houses" style="margin-left: 8px;"/><br>
+			<input type="submit" value="Fetch houses" style="margin-left: 8px;"/>
 		</form>
+		<br>
 		<?php
 		if(!in_array($order, $order_allowed))
 			$order = 'id';
