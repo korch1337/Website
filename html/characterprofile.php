@@ -431,7 +431,7 @@ if ($PEQD !== false) {
 				<?php
 				if (user_character_hide($profile_data['name']) != 1) {
 				?>
-					<table>
+					<table id ="deaths">
 					<tr><td colspan="4">Characters</td></tr>
 						<?php
 						$characters = user_character_list(user_character_account_id($profile_data['name']));
