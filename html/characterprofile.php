@@ -440,8 +440,8 @@ if ($PEQD !== false) {
         position: absolute;
         top: 56px;
         left: 6px;
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
     }
     .signBgrnd .wep img {
         background-image:url('eq/bg.png');
