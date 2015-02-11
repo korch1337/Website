@@ -58,7 +58,6 @@
 						}
 						if (user_logged_in() && is_admin($user_data)) include 'layout/widgets/Wadmin.php'; 
 					?>
-        <li><a href="">Account</a></li>
         <li><a href="#">Community</a>
         	<ul>
                 <li><a href="forum.php">Forum</a></li>
