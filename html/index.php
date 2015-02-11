@@ -50,7 +50,6 @@
       <div id="menu_left"></div>
       <ul id="menu">
         <li><a href="index.php">Home</a></li>
-        <li><a href="./banner2.html">Second banner</a></li>
 	<?php require_once 'engine/init.php';
 						if (user_logged_in() === true) {
 							include 'layout/widgets/loggedin.php'; 
@@ -129,15 +128,15 @@
     <!--********************************************* Hot news start *********************************************-->
     <div id="hot_news">
       <div class="header">
-        <h1><span>ORIZON //</span> HOT NEWS</h1>
+        <h1><span>Zerexxa //</span> HOT NEWS</h1>
       </div>
       
       <!-- Previous and next selector --> 
-      <a id="prev" class="prev" href="#"><img alt="alt_example" src="layout/images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="./images/blank.gif" width="21" height="33" border="0" /></a>
+      <a id="prev" class="prev" href="#"><img alt="alt_example" src="layout/images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="layout/images/blank.gif" width="21" height="33" border="0" /></a>
       <ul id="hot_news_box">
         <li>
           <h2><a href="./post.html">Battlefield 3 expansion!</a></h2>
-          <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg"/></a></div>
+          <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg"/></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -146,7 +145,7 @@
         </li>
         <li>
           <h2><a href="./post.html">Dead space looking good</a></h2>
-          <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+          <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -155,7 +154,7 @@
         </li>
         <li>
           <h2><a href="./post.html">Dead space new footage</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+          <div class="image"><a href="#"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -164,7 +163,7 @@
         </li>
         <li>
           <h2><a href="./post.html">Owning at DayZ</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+          <div class="image"><a href="#"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -173,7 +172,7 @@
         </li>
         <li>
           <h2><a href="./post.html">LoL tournament </a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+          <div class="image"><a href="#"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -182,7 +181,7 @@
         </li>
         <li>
           <h2><a href="./post.html">MOHW not as good as planned</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+          <div class="image"><a href="#"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
           <div class="content">
             <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
               eistoteles anarequi et son amorites etimo nurli.</p>
@@ -200,7 +199,7 @@
         <!-- Left wrapper Start -->
         <div id="left_wrapper">
         <div class="header">
-            <h2><span>ORIZON //</span> GENERAL NEWS</h2>
+            <h2><span>Zerexxa //</span> GENERAL NEWS</h2>
           </div>
           <ul id="general_news">
             <li>
@@ -222,11 +221,11 @@
               </div>
             </li>
             <li>
-              <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+              <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
               <ul class="social_share">
-                <li><a href="#"><img alt="alt_example" src="./images/fbk.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="./images/twitter.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="./images/more.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/fbk.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/twitter.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/more.png" border="0" /></a></li>
               </ul>
               <div class="info">
                 <div class="comments"> 18 </div>
@@ -237,11 +236,11 @@
                 <div class="clear"></div>
             </li>
             <li>
-              <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
+              <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
               <ul class="social_share">
-                <li><a href="#"><img alt="alt_example" src="./images/fbk.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="./images/twitter.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="./images/more.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/fbk.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/twitter.png" border="0" /></a></li>
+                <li><a href="#"><img alt="alt_example" src="layout/images/more.png" border="0" /></a></li>
               </ul>
               <div class="info">
                 <div class="comments"> 18 </div>
@@ -275,28 +274,28 @@
             <div class="header"><a href="#">Top games</a></div>
             <ul>
               <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></div>
+                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
                 <div class="info"> <a href="./post_game.html">Dead space 3</a><br/>
                   <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="./images/stars.png" /> </div>
+                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
               </li>
               <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></div>
+                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
                 <div class="info"> <a href="./post_game.html">Battlefield 3</a><br/>
                   <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="./images/stars.png" /> </div>
+                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
               </li>
               <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></div>
+                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
                 <div class="info"> <a href="./post_game.html">DayZ - Arma 2 mod</a><br/>
                   <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="./images/stars.png" /> </div>
+                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
               </li>
               <li>
-                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></div>
+                <div class="img"><a href="./post_game.html"><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></div>
                 <div class="info"> <a href="./post_game.html">League of legends</a><br/>
                   <small>05 December 2011, 2 Comments</small><br/>
-                  <img alt="alt_example" src="./images/stars.png" /> </div>
+                  <img alt="alt_example" src="layout/images/stars.png" /> </div>
               </li>
             </ul>
           </div>
@@ -343,7 +342,7 @@
     <div id="footer">
     <div class="row">
       <div class="footer_widget">
-        <div class="header"><a href="#">About ORIZON</a></div>
+        <div class="header"><a href="#">About Zerexxa</a></div>
         <div class="body">
           <p><img alt="alt_example" src="layout/images/about_img.png" align="left" style="margin:0px 15px 5px 0px;"  />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <p>Praesent aliquet justo quis lacus mollis molestie pellentesque habitant morbi tristique senectus et e. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pulvinar urna eget ante pharetra vitae fermentum dui sagittis. Vivamus non ipsum elit, et tincidunt quam.</p>
@@ -354,16 +353,16 @@
         <div class="header"><a href="#">latest media</a></div>
         <div class="body">
           <ul id="l_media_list">
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
-            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="./images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
+            <li><a class="shadowbox" href="./images/media/full/1.jpg" rel="gallery" ><img alt="alt_example" src="layout/images/media/thumb/1.jpg" /></a></li>
           </ul>
         </div>
       </div>
@@ -373,7 +372,7 @@
     <!--********************************************* Footer end *********************************************--> 
     <div class="clear"></div>
     <!--********************************************* Twitter feed start *********************************************-->
-    <div id="twitter_last"> <a id="tr_left" href="#"><img alt="alt_example" src="./images/blank.gif" width="100%" height="30px" border="0" /></a>
+    <div id="twitter_last"> <a id="tr_left" href="#"><img alt="alt_example" src="layout/images/blank.gif" width="100%" height="30px" border="0" /></a>
       <div id="tr_right">
         <ul id="tw">
         </ul>
