@@ -51,7 +51,7 @@
       <ul id="menu">
         <li><a href="index.php">Home</a></li>
         <li><a href="./banner2.html">Second banner</a></li>
-	<?php
+	<?php require_once 'engine/init.php';
 						if (user_logged_in() === true) {
 							include 'layout/widgets/loggedin.php'; 
 						} else {
