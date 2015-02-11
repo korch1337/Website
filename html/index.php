@@ -202,68 +202,7 @@
         <!-- Left wrapper Start -->
         <div id="left_wrapper">
         <div class="header">
-            <h2><span>Zerexxa //</span> GENERAL NEWS</h2>
-          </div>
-          <ul id="general_news">
-            <li>
-              <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
-              <ul class="social_share">
-                <li><a href="#"><img alt="alt_example" src="layout/images/fbk.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/twitter.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/more.png" border="0" /></a></li>
-              </ul>
-              <div class="info">
-                <div class="comments"> 18 </div>
-                <h2><a href="./post.html">Blade and Soul - Open beta announced!</a></h2>
-                <div class="date_n_author">12 July 2012, by Admin</div>
-                
-               
-                
-                <a href="./post.html" class="read_more2">read more</a> </div>
-                <div class="clear">
-              </div>
-            </li>
-            <li>
-              <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
-              <ul class="social_share">
-                <li><a href="#"><img alt="alt_example" src="layout/images/fbk.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/twitter.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/more.png" border="0" /></a></li>
-              </ul>
-              <div class="info">
-                <div class="comments"> 18 </div>
-                <h2><a href="./post.html">Raiderz item giveaway!</a></h2>
-                <div class="date_n_author">12 July 2012, by Admin</div>
-                <p>Integer tincidunt tellus ut metus viverra ac sodales odio vulputate. Ut id erat neque, sit amet tristique erat. Vivamus in turpis orci, et volutpat purus. Vestibulum lacinia, arcu id varius eleifend, eros lorem iaculis massa, vitae consequat enim diam eget massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ultrices viverra consectetur. Sed eget massa augue. Suspendisse urna lectus.</p>
-                <a href="./post.html" class="read_more2">read more</a> </div>
-                <div class="clear"></div>
-            </li>
-            <li>
-              <div class="image"><a href="./post.html"><img alt="alt_example" src="layout/images/media/full/1.jpg" /></a></div>
-              <ul class="social_share">
-                <li><a href="#"><img alt="alt_example" src="layout/images/fbk.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/twitter.png" border="0" /></a></li>
-                <li><a href="#"><img alt="alt_example" src="layout/images/more.png" border="0" /></a></li>
-              </ul>
-              <div class="info">
-                <div class="comments"> 18 </div>
-                <h2><a href="./post.html">Dead Space 3 gameplay</a></h2>
-                <div class="date_n_author">12 July 2012, by Admin</div>
-                <p>Integer tincidunt tellus ut metus viverra ac sodales odio vulputate. Ut id erat neque, sit amet tristique erat. Vivamus in turpis orci, et volutpat purus. Vestibulum lacinia, arcu id varius eleifend, eros lorem iaculis massa, vitae consequat enim diam eget massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ultrices viverra consectetur. Sed eget massa augue. Suspendisse urna lectus.</p>
-                <a href="./post.html" class="read_more2">read more</a> </div>
-                <div class="clear"></div>
-            </li>
-          </ul>
-          <ul id="pager">
-            <li><a href="#" ><img alt="alt_example" src="layout/images/left_pager.jpg" border="0"/></a></li>
-            <li><a href="#" >1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#" class="active">3</a></li>
-            <li><a href="#"><img alt="alt_example" src="layout/images/right_pager.jpg" border="0"/></a></li>
-          </ul>
-          
-          
-          <div class="clear"></div>
+            
           </div>
         <!-- Left wrapper end --> 
         
