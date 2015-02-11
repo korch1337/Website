@@ -192,6 +192,30 @@ $(document).ready(function() {
         $('#pull').width(menu - 20);
     });
 </script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		// Using default configuration
+		$("#sd").carouFredSel();
+		
+		// Using custom configuration
+		$("#hot_news_box").carouFredSel({
+			items				: 1,
+			direction			: "right",
+			prev: '#prev',
+			next: '#next',
+			scroll : {
+				items			: 1,
+				height			: 250,
+				easing			: "quadratic",
+				duration		: 2000,							
+				pauseOnHover	: true
+			}	
+		});	
+	})
+</script> 
+
 </body>
 </html>
 
