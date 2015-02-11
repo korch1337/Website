@@ -6,73 +6,6 @@
                             
             </div>
            
-    
-    <!--********************************************* Hot news start *********************************************-->
-    <div id="hot_news">
-      <div class="header">
-        <h1><span>ORIZON //</span> HOT NEWS</h1>
-      </div>
-      
-      <!-- Previous and next selector --> 
-      <a id="prev" class="prev" href="#"><img alt="alt_example" src="./images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="./images/blank.gif" width="21" height="33" border="0" /></a>
-      <ul id="hot_news_box">
-        <li>
-          <h2><a href="./post.html">Battlefield 3 expansion!</a></h2>
-          <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg"/></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-        <li>
-          <h2><a href="./post.html">Dead space looking good</a></h2>
-          <div class="image"><a href="./post.html"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-        <li>
-          <h2><a href="./post.html">Dead space new footage</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-        <li>
-          <h2><a href="./post.html">Owning at DayZ</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-        <li>
-          <h2><a href="./post.html">LoL tournament </a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-        <li>
-          <h2><a href="./post.html">MOHW not as good as planned</a></h2>
-          <div class="image"><a href="#"><img alt="alt_example" src="./images/media/full/1.jpg" /></a></div>
-          <div class="content">
-            <p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
-              eistoteles anarequi et son amorites etimo nurli.</p>
-            <div class="info"> <a href="./post.html" class="comments">18 Comments</a> <a href="./post.html" class="read_more">read more</a> </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-
 
 
         <div class="bottom_shadow"></div>	
@@ -192,29 +125,6 @@ $(document).ready(function() {
         $('#pull').width(menu - 20);
     });
 </script>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-	
-		// Using default configuration
-		$("#sd").carouFredSel();
-		
-		// Using custom configuration
-		$("#hot_news_box").carouFredSel({
-			items				: 1,
-			direction			: "right",
-			prev: '#prev',
-			next: '#next',
-			scroll : {
-				items			: 1,
-				height			: 250,
-				easing			: "quadratic",
-				duration		: 2000,							
-				pauseOnHover	: true
-			}	
-		});	
-	})
-</script> 
 
 </body>
 </html>
