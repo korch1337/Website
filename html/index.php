@@ -99,6 +99,9 @@
     <!--********************************************* Mainmenu end *********************************************--> 
     <div id ="charsearch">
     <?php include 'charactersearch.php'; ?>
+    <div id="search">
+            <input type="button" />
+          </div>
     </div>
     
     <!--********************************************* Banner start *********************************************-->
@@ -269,9 +272,6 @@
         
         <!-- Right wrapper Start -->
         <div id="right_wrapper">
-          <div id="search">
-            <input type="button" />
-          </div>
           <div class="review">
             <div class="header"><a href="#">Top games</a></div>
             <ul>
