@@ -176,7 +176,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 ?>
 <!-- PLAYER SKILLS TABLE -->
 <table id="profile" cellspacing="1" cellpadding="4" style="width: <?php echo $tableWidth; ?>px;">
-    <tr class="yellow">
+    <tr>
         <th>Fist</th>
         <th>Club</th>
         <th>Sword</th>
