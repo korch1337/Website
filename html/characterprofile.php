@@ -24,7 +24,7 @@ if (isset($_GET['name']) === true && empty($_GET['name']) === false) {
 		
 		<!-- PROFILE MARKUP HERE-->
 			<!-- CHARACTER INFORMAION -->
-			<table>
+			<table id = "profile">
 			<tr><td colspan="2">Character Information</td></tr>
 			<tr><td width="20%">Name:</td>
 			<td><?php echo $profile_data['name']; ?></td></tr>
