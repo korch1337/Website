@@ -4,6 +4,21 @@
   Headers
 ----------------------------------------- */
 
+.sellbtn{
+	background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	float:right;
+	margin: 120px 160px 0 0px;
+	width:100px;
+	height:30px;
+	border:1px solid black;
+	border-radius:15px;
+	line-height:30px;
+	text-align:center;
+}
+.sellbtn:hover{
+	background:black;
+}
+
 #post_wrapper h1, #post_wrapper h2, #post_wrapper h3, #post_wrapper h4, #post_wrapper h5, #post_wrapper h6{
 	text-shadow: none;
 	font-family: 'Oswald', Helvetica, Arial, sans-serif;
