@@ -35,6 +35,11 @@ small {
 ul, li {
 	list-style:none;
 }
+
+#charsearch{
+	margin:0 0 40px 50px;
+}
+
 #main_wrapper {
 	margin:0 auto;
 	width:960px;
