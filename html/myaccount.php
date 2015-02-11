@@ -222,7 +222,7 @@ if ($render_page) {
 
 	?>
 	
-	<a href="sellcharacter.php" class="sellbtn">Sell Character</a>
+	<p href="sellcharacter.php" class="sellbtn">Sell Character</p>
 	
 	<div id="myaccount">
 		<h1>My account</h1>
