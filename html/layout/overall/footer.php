@@ -5,6 +5,8 @@
                </div>
                             
             </div>
+            <link rel="stylesheet" href="stylesheets/paralax_slider.css" />
+            <link rel="stylesheet" href="stylesheets/jquery.fancybox.css?v=2.1.2" type="text/css"  media="screen" />
             <!-- Full page wrapper end -->
 	    <div id="da-slider" class="da-slider">
       <div class="da-slide">
