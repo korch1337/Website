@@ -1,5 +1,5 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
-<img src="layout/images/titles/t_characters.png"/><p>
+<p>
 <?php
 if ($config['log_ip']) {
 	znote_visitor_insert_detailed_data(4);
