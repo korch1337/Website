@@ -37,15 +37,15 @@ ul, li {
 }
 
 #selechar select{
-margin:0 0px -10px 0;
+margin:0 0px -18px 0;
 color:green;
 background-color:#ddd;
 font-size:15px;
 width:auto;
-height:auto;
+height:50px;
 }
 #selechar2 select{
-color:green;
+color:black;
 background-color:#ddd;
 font-size:15px;
 width:auto;
@@ -53,8 +53,11 @@ height:auto;
 }
 #selechar{
 	float:right;
-	margin:-50px -200px 0 0;
+	margin:-140px -400px 0 0;
 	padding:5px 0 5px 0;
+}
+#selechar input{
+	line-height:32px
 }
 #selechar2{
 	
