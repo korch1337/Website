@@ -265,7 +265,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 					if ($config['TFSVersion'] == 'TFS_02') {
 						$array = user_fetch_deathlist($user_id);
 						if ($array) { ?>
-							<table id="deaths">
+							<table id="profile">
 								<tr><td colspan="2">Character Deaths</td></tr><?php											
 							//data_dump($array, false, "Data:");
 								// Design and present the list
