@@ -292,8 +292,8 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 							if (!$deaths) echo '';
 							else {
 							?>
-							<table id="deaths">
-								<tr><td colspan="2">Character Deaths</td></tr><?php		
+							<table id="profile">
+								<tr><th colspan="2">Character Deaths</th></tr><?php		
 								foreach ($deaths as $d) {
 										echo "<tr><td width='20%'>".getClock($d['time'], true, true)."</td>";
 										$lasthit = ($d['is_player']) ? "<a href='characterprofile.php?name=".$d['killed_by']."'>".$d['killed_by']."</a>" : $d['killed_by'];
