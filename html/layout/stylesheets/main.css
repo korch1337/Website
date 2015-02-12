@@ -57,7 +57,7 @@ width:900px;
 }
 #profile tr{
 	font-weight:bold;
-	background: -webkit-linear-gradient(top, rgba(101,51,54,1) 0%,rgba(85,43,46,1) 44%,rgba(64,32,34,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
 }
 #profile tr:nth-child(even) td { background:#C1AF9C; }   
 
