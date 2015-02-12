@@ -221,7 +221,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
         </td>
         <td bgcolor="#F1E0C6" align="left">
             <?php echo $playerData['health']['now'].'/'.$playerData['health']['max']; ?>
-            <div style="width: 100%; height: 3px; border: 1px solid #000;">
+            <div style="width: 100%; height: 8px; border: 1px solid #000;">
                 <div style="background: red; width: <?php echo $playerData['health']['percent']; ?>%; height: 8px;">
                 </div>
             </div>
@@ -233,7 +233,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
         </td>
         <td bgcolor="#D4C0A1" align="left">
             <?php echo $playerData['mana']['now'].'/'.$playerData['mana']['max']; ?>
-            <div style="width: 100%; height: 3px; border: 1px solid #000;">
+            <div style="width: 100%; height: 8px; border: 1px solid #000;">
                 <div style="background: blue; width: <?php echo $playerData['mana']['percent']; ?>%; height: 8px;">
                 </div>
             </div>
