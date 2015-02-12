@@ -266,7 +266,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 						$array = user_fetch_deathlist($user_id);
 						if ($array) { ?>
 							<table id="profile">
-								<tr><td colspan="2">Character Deaths</td></tr><?php											
+								<tr><th colspan="2">Character Deaths</th></tr><?php											
 							//data_dump($array, false, "Data:");
 								// Design and present the list
 								foreach ($array as $value) {
