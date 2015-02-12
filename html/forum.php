@@ -770,8 +770,8 @@ if (!empty($_GET)) {
 							}
 							?>
 						</select>
+						<th><input type="submit" value="Create new thread" class="btn btn-primary"></th>
 						</div>
-						<input type="submit" value="Create new thread" class="btn btn-primary">
 					</form>
 					<?php
 				} else echo '<p>This board is closed.</p>';
