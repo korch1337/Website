@@ -316,7 +316,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 							//mysql_select_single("SELECT * FROM players WHERE name='TEST DEBUG';");
 							$array = user_fetch_deathlist03($user_id);
 							if ($array) {							?>
-							<table id="deaths">
+							<table id="profile">
 								<tr><td colspan="2">Character Deaths</td></tr><?php		
 								// Design and present the list
 								foreach ($array as $value) {
@@ -431,8 +431,8 @@ if ($PEQD !== false) {
 				<?php
 				if (user_character_hide($profile_data['name']) != 1) {
 				?>
-					<table id ="deaths">
-					<tr><td colspan="4">Characters</td></tr>
+					<table id ="profile">
+					<tr><th colspan="4">Characters</th></tr>
 						<?php
 						$characters = user_character_list(user_character_account_id($profile_data['name']));
 						// characters: [0] = name, [1] = level, [2] = vocation, [3] = town_id, [4] = lastlogin, [5] = online
