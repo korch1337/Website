@@ -45,19 +45,14 @@ ul, li {
 
 
 #profile{
-border-collapse: collapse; 
-border-spacing: 0;
-font-size:15px;
-width:900px;
-}
-#profile{
+
 border-collapse: collapse; 
 border-spacing: 0;
 font-size:15px;
 width:900px;
 }
 #profile td, th{
-	border:1px solid #000000;
+	border:0px solid #000000;
 	padding:4px;
 }
 #profile tr{
@@ -77,7 +72,7 @@ font-size:15px;
 background:#A08A73;
 }
 #deaths td, th{
-	border:1px solid #000000;
+	
 	padding:4px;
 }
 #deaths tr{
