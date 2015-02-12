@@ -762,6 +762,7 @@ if (!empty($_GET)) {
 					?>
 					<form action="" method="post">
 						<input type="hidden" value="<?php echo $getCat; ?>" name="new_thread_category">
+						<div id="selechar">
 						<select name="new_thread_cid" multiple="multiple">
 							<?php
 							foreach($yourChars as $char) {
@@ -769,6 +770,7 @@ if (!empty($_GET)) {
 							}
 							?>
 						</select>
+						</div>
 						<input type="submit" value="Create new thread" class="btn btn-primary">
 					</form>
 					<?php
