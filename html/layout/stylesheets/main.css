@@ -43,9 +43,20 @@ font-size:15px;
 width:auto;
 height:auto;
 }
+#selechar2 select{
+color:green;
+background-color:#ddd;
+font-size:15px;
+width:auto;
+height:auto;
+}
 #selechar{
 	float:right;
 	margin:-50px 40px 0 0;
+	padding:5px 0 5px 0;
+}
+#selechar2{
+	
 	padding:5px 0 5px 0;
 }
 
