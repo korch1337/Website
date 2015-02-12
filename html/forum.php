@@ -616,7 +616,7 @@ if (!empty($_GET)) {
 <p style="font-size: 13px; padding-left: 10px; padding-top: 10px; height: 5px; width: 600px; border-top: 1px solid black;"><b>[b]Bold Text[/b]</b>, [img]<a href="http://www.imgland.net/">Direct Image Link</a>[/img], [center]Cented Text[/center],<br> [link]<a href="http://youtube.com/" target="_BLANK">http://youtube.com/</a>[/link], [color=<font color="green">GREEN</font>]<font color="green">Green Text!</font>[/color], [*] - Dotted [/*]</p><br>
 
 							<textarea class="forumReply" name="reply_text" style="width: 610px; height: 150px"></textarea><br>
-							<select name="reply_cid" multiple="multiple">
+							<select id="selechar" name="reply_cid" multiple="multiple">
 								<?php
 								foreach($yourChars as $char) {
 									echo "<option value='". $char['id'] ."'>". $char['name'] ."</option>";
