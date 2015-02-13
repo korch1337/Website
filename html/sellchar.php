@@ -8,7 +8,16 @@ $name = $_GET['selected_character'];
    
    $row = $aucPlayers->fetch_object();
    
+   function checkNum($number) {
+    if(!ctype_digit($price)) {
+    throw new Exception("Only numbers are allowed");
+     
+    }
+  return true;
+}
+   
    try {
+    checkNum($price);
     
     if($row->level > 149 && $price < 1000){
     
