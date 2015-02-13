@@ -9,7 +9,7 @@ $name = $_GET['selected_character'];
    $row = $aucPlayers->fetch_object();
    
    try {
-    $p = (int)$price;
+    $p = intval($price);
     
     if($row->level > 149 && $price < 1000){
     
