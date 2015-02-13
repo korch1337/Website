@@ -9,7 +9,7 @@ $name = $_GET['selected_character'];
    $row = $aucPlayers->fetch_object();
    
    function checkNum($number) {
-    if(!ctype_digit($price)) {
+    if(!ctype_digit($number)) {
     throw new Exception("Only numbers are allowed");
      
     }
