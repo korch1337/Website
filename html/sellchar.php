@@ -9,12 +9,11 @@ $name = $_GET['selected_character'];
    $row = $aucPlayers->fetch_object();
    
    try {
-    $p = intval($price);
     
     if($row->level > 149 && $price < 1000){
     
     $db->query("INSERT INTO znote_auction_player(`player_id`, `account_id`, `vocation`, `level`, `price`)
-   VALUES ($row->id, $row->account_id, $row->vocation, $row->level, $p)");
+   VALUES ($row->id, $row->account_id, $row->vocation, $row->level, $price)");
    
    $db->query("UPDATE players SET account_id=10 WHERE id=$row->id");
    echo 'Your character has been put on the market.';
