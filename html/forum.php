@@ -475,7 +475,9 @@ if (!empty($_GET)) {
 			if ($access) {
 				?>
 				<font>LinkMap: <a href="forum.php">Forum</a> - <a href="?cat=<?php echo $getCat; ?>"><?php echo $getForum; ?></a></font><br>
+				<br>
 				<font size="5" id="ThreadTitle">Viewing thread: <?php echo "<a href='?forum=". $getForum ."&cat=". $getCat ."&thread=". $threadData['id'] ."'>". $threadData['title'] ."</a>"; ?></font>
+				<br>
 				<table class="znoteTable ThreadTable table table-striped">
 					<tr class="yellow">
 						<th>
