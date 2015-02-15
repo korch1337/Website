@@ -26,6 +26,5 @@ $getCharacters = $db->query("SELECT name FROM players WHERE account_id=$accid");
 				<input type="text" name="price" placeholder="Enter your price here">
 				<input type="submit" value="Sell Character">
 				</form>
-				
-
+				<p>Your character needs to be level 150 or above\nMaximum price allowed:1000 bonus points.</p>
 <?php include 'layout/overall/footer.php'; ?>
