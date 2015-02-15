@@ -19,6 +19,10 @@
 	background:black;
 }
 
+.item td{
+	padding:11px;
+}
+
 #forumtbl{
 	text-align:left;
 	padding:0px 0 0 7px;
