@@ -3,7 +3,6 @@
 $records = mysql_select_single('SELECT `value` FROM `server_config` WHERE `config` = "players_record"');
 ?>
 
-<img src="layout/images/titles/t_plaonline.png"/><p>
 <table>
 <tr class="yellow"><th>Server Status</th></tr>
 <tr><td><b><?php echo $config['site_title'] ?></b> record of players online: <?php echo $records['value'] ?>.</td></tr>
