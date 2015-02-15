@@ -52,6 +52,7 @@ if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 				Email Adress:<br>
 				<input type="text" name="new_email" value="<?php echo $user_data['email']; ?>">
 			</li>
+			<br>
 			<?php
 				/* Form file */
 				Token::create();
