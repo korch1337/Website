@@ -26,7 +26,7 @@ if (empty($_POST) === false) {
 	}
 }
 ?>
-<h1>Settings</h1>
+<h1>Change your Email Adress</h1>
 
 <?php
 if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
@@ -49,7 +49,7 @@ if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 	<form action="" method="post">
 		<ul>
 			<li>
-				email:<br>
+				Email Adress:<br>
 				<input type="text" name="new_email" value="<?php echo $user_data['email']; ?>">
 			</li>
 			<?php
@@ -57,7 +57,7 @@ if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 				Token::create();
 			?>
 			<li>
-				<input type="submit" value="Update settings">
+				<input type="submit" value="Update Email">
 			</li>
 		</ul>
 	</form>
