@@ -27,6 +27,8 @@ $name = $_GET['selected_character'];
    $db->query("UPDATE players SET account_id=10 WHERE id=$row->id");
    echo 'Your character has been put on the market.';
     
+   }else{
+    echo 'Error, you did something wrong.';
    }
     
 } catch (Exception $e) {
