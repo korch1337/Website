@@ -73,7 +73,7 @@
 		  <li><a href="market.php">Item Market</a></li>
 		  <li><a href="houses.php">Houses</a></li>
 		  <li><a href="guilds.php">Guilds</a></li>
-                <li class="drop_last"><a href="guildwar.php" >Guild Wards</a></li>
+                <li class="drop_last"><a href="guildwar.php" >Guild Wars</a></li>
             </ul>
         </li>
         <li><a href="#">Information</a>
