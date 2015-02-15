@@ -137,6 +137,7 @@ if (isset($_GET['success']) && empty($_GET['success'])) {
 				<?php } ?>
 				</select>
 			</li>
+			<br>
 			<?php
 				/* Form file */
 				Token::create();
