@@ -85,7 +85,7 @@ if ($config['shop_auction']['characterAuction']) {
 }
 ?>
 <table>
-	<tr class="yellow">
+	<tr class="item">
 		<td>Description:</td>
 		<?php if ($config['shop']['showImage']) { ?><td>Image:</td><?php } ?>
 		<td>Count/duration:</td>
