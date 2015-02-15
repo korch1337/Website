@@ -19,6 +19,11 @@
 	background:black;
 }
 
+#forumtbl{
+	text-align:left;
+	padding:0px 0 0 7px;
+}
+
 #admintab input{
 	width:220px;
 }
