@@ -712,8 +712,8 @@ if (!empty($_GET)) {
 				?>
 				<table>
 					<tr>
-						<th width="80%">Title</th>
-						<th width="20%">By</th>
+						<th id="forumtbl" width="80%">Title</th>
+						<th id="forumtbl" width="20%">By</th>
 					</tr>
 					<?php
 					foreach($threads as $thread) {
