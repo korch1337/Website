@@ -710,7 +710,7 @@ if (!empty($_GET)) {
 			///// HTML \\\\\
 			if ($threads !== false) {
 				?>
-				<table class="znoteTable table table-bordered table-striped table-hover" id="forumThreadTable">
+				<table>
 					<tr>
 						<th width="80%">Title</th>
 						<th width="20%">By</th>
