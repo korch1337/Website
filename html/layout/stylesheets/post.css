@@ -19,6 +19,10 @@
 	background:black;
 }
 
+#admintab input{
+	width:220px;
+}
+
 #post_wrapper h1, #post_wrapper h2, #post_wrapper h3, #post_wrapper h4, #post_wrapper h5, #post_wrapper h6{
 	text-shadow: none;
 	font-family: 'Oswald', Helvetica, Arial, sans-serif;
