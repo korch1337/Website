@@ -502,7 +502,7 @@ if (!empty($_GET)) {
 					// PlayerHaveAccess($yourChars, $thread['player_name']) || 
 					// $yourChars
 					?>
-					<table class="adminTable table">
+					<table id="admintab">
 						<tr>
 							<td>
 								<form action="" method="post">
