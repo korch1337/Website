@@ -538,12 +538,12 @@
 	$config['mailserver'] = array(
 		'register' => true, // Send activation mail
 		'accountRecovery' => true, // Recover username or password through mail
-		'host' => "smtp.gmail.com", // Outgoing mail server host.
+		'host' => "mail.zerexxa.net", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
 		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
-		'username' => 'felixkorch1@gmail.com', // Likely the email address
-		'password' => 'ugykj2od', // The password.
-		'debug' => false, // Enable debugging if you have problems and are looking for errors.
+		'username' => 'admin@zerexxa.net', // Likely the email address
+		'password' => 'Ugykj2od!', // The password.
+		'debug' => true, // Enable debugging if you have problems and are looking for errors.
 		'fromName' => $config['site_title'],
 	);
 	// Use Znote's External Open Tibia Services Server
