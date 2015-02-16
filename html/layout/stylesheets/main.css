@@ -85,7 +85,7 @@ width:900px;
 }
 #profile tr{
 	font-weight:bold;
-	background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background:#564E45
 }
 #profile tr:nth-child(even) td { background:#C1AF9C; }   
 
