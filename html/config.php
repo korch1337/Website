@@ -737,7 +737,7 @@
 	$config['shop'] = array(
 		'enabled' => true,
 		'enableShopConfirmation' => true, // Verify that user wants to buy with popup
-		'useDB' => false, // Fetch offers from database, or the below config array
+		'useDB' => true, // Fetch offers from database, or the below config array
 		'showImage' => true,
 		'imageServer' => 'items.znote.eu',
 		'imageType' => 'gif',
