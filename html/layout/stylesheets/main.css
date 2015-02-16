@@ -36,6 +36,10 @@ ul, li {
 	list-style:none;
 }
 
+.myaccount th{
+	padding:10px;
+}
+
 #launch{
 	float:left;
 }
