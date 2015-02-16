@@ -3,7 +3,7 @@ protect_page();
 include 'layout/overall/header.php'; 
 
 $shopItems = $db->query("SELECT * FROM znote_shop");
-$shopItems->free();
+
 
 // Import from config:
 $shop = $config['shop'];
