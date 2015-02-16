@@ -8,7 +8,6 @@ $shopItems = $db->query("SELECT * FROM znote_shop");
 // Import from config:
 $shop = $config['shop'];
 $shop_list = $shopItems;
-$shopItems->free();
 
 if (!empty($_POST['buy'])) {
 	$time = time();
