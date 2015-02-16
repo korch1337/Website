@@ -382,7 +382,7 @@
 	$config['available_vocations'] = array(1, 2, 3, 4);
 
 	// Available towns (specify town ids, etc: (0, 1, 2); to display 3 town options (town id 0, 1 and 2).
-	$config['available_towns'] = array(2);
+	$config['available_towns'] = array(5);
 
 	$config['level'] = 8;
 	$config['health'] = 185;
@@ -536,13 +536,13 @@
 		Rename the folder to "PHPMailer". Then configure this with your SMTP mail settings from your email provider.
 	*/
 	$config['mailserver'] = array(
-		'register' => false, // Send activation mail
+		'register' => true, // Send activation mail
 		'accountRecovery' => true, // Recover username or password through mail
-		'host' => "felixkorch2@gmail.com", // Outgoing mail server host.
+		'host' => "mail.zerexxa.net", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
 		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
-		'username' => '', // Likely the email address
-		'password' => '', // The password.
+		'username' => 'admin@zerexxa.net', // Likely the email address
+		'password' => 'Ugykj2od!', // The password.
 		'debug' => false, // Enable debugging if you have problems and are looking for errors.
 		'fromName' => $config['site_title'],
 	);
