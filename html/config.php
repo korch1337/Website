@@ -19,14 +19,6 @@
 	// MYSQL CONNECTION DETAILS \\
 	// ------------------------ \\
 
-	// phpmyadmin username for OT server: (DONT USE "root" if ur hosting to public.).
-	$config['sqlUser'] = 'tfs';
-
-	// phpmyadmin password for OT server:
-	$config['sqlPassword'] = 'WB8TA8TnQGG9Z36e';
-
-	// The database name to connect to. (This is usually same as username).
-	$config['sqlDatabase'] = 'tfs';
 
 	// Hostname is usually localhost or 127.0.0.1.
 	$config['sqlHost'] = 'localhost';
@@ -695,7 +687,7 @@
 		'enabled' => true,
 		'email' => 'mail.zerexxa.net', // Example: paypal@mail.com
 		'currency' => 'EUR',
-		'points_per_currency' => 100, // 1 currency = ? points? [ONLY used to calculate bonuses]
+		'points_per_currency' => 45, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
 		'failed' => "http://".$_SERVER['HTTP_HOST']."/failed.php",
 		'ipn' => "http://".$_SERVER['HTTP_HOST']."/ipn.php",
