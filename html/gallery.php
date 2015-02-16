@@ -61,8 +61,7 @@ if (empty($_POST)) {
 	<?php
 	}
 	
-	$cache = new Cache('engine/cache/gallery');
-	$images = $cache->load();
+	$images = fetchImages(2);
 	if ($images != false) {
 		foreach($images as $image) {
 			$pw = explode("!", $image['image']);
