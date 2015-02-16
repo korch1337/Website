@@ -101,6 +101,7 @@
     </div>
     
     <!--********************************************* Mainmenu end *********************************************--> 
+    <?php if (user_logged_in() === false) { ?>
     <div class ="charsearch">
     <h1>Login</h1>
     <form action="login.php" method="post">
@@ -115,6 +116,7 @@
 			?>
 		</form>
     </div>
+    <?php } ?>
     
     <!--********************************************* Banner start *********************************************-->
     <div id="da-slider" class="da-slider">
