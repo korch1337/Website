@@ -540,7 +540,7 @@
 		'accountRecovery' => true, // Recover username or password through mail
 		'host' => "mail.zerexxa.net", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
-		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
+		'port' => 587, // SMTP port number - likely to be 465(ssl) or 587(tls)
 		'username' => 'admin@zerexxa.net', // Likely the email address
 		'password' => 'Ugykj2od!', // The password.
 		'debug' => true, // Enable debugging if you have problems and are looking for errors.
