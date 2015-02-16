@@ -382,7 +382,7 @@
 	$config['available_vocations'] = array(1, 2, 3, 4);
 
 	// Available towns (specify town ids, etc: (0, 1, 2); to display 3 town options (town id 0, 1 and 2).
-	$config['available_towns'] = array(5);
+	$config['available_towns'] = array(2,3,4,5);
 
 	$config['level'] = 8;
 	$config['health'] = 185;
