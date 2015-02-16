@@ -97,10 +97,12 @@
     </div>
     
     <!--********************************************* Mainmenu end *********************************************--> 
-    <div id ="charsearch">
-    <th><?php include 'charactersearch.php'; ?></th>
+    <div class ="charsearch">
+    <?php include 'charactersearch.php'; ?>
+    </div>
     
-     <th><form action="login.php" method="post">
+    <div class ="charsearch">
+     <form action="login.php" method="post">
 				&nbsp;<i style="font-size:11px">Account number:</i> <br>
 			<input type="text" name="username"> <br>
 				&nbsp;<i style="font-size:11px">Password:</i> <br>
@@ -110,7 +112,7 @@
 				/* Form file */
 				Token::create();
 			?>
-		</form></th>
+		</form>
     </div>
     
     <!--********************************************* Banner start *********************************************-->
