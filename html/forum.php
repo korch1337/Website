@@ -909,7 +909,8 @@ if (!empty($_GET)) {
 				if ($access || $admin) {
 					$url = url("forum.php?cat=". $board['id']);
 					echo '<tr class="special">';
-					echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
+					// echo '<td onclick="javascript:window.location.href=\'' . $url . '\'">';
+					echo '<td> <a href="forum.php?cat='. $board['id'] .'" /a>';
 					if ($board['closed'] == 1) echo $config['forum']['closed'],' ';
 					if ($board['hidden'] == 1) echo $config['forum']['hidden'],' ';
 					if ($board['guild_id'] > 0) {
