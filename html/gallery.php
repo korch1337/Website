@@ -72,8 +72,7 @@ if (empty($_POST)) {
 				</tr>
 				<tr>
 					<td>
-<a href="<?php echo 'http://'. $pw[0] .'.ii.gl/'. $pw[1] .'.'. $pw[2]; ?>" target="_BLANK"><img class="galleryImage" src="<?php echo 'http://'. $pw[0] .'.ii.gl/'. $pw[1] .'.'. $pw[2]; ?>"/></a>
-					</td>
+<a href="<?php echo 'http://'. $pw[0] .'.ii.gl/'. $pw[1] .'.'. $pw[2]; ?>"><img src="<?php echo 'http://'. $pw[0] .'.ii.gl/'. $pw[1] .'.'. $pw[2]; ?>" width="650"/></a>					</td>
 				</tr>
 				<tr>
 					<td>
