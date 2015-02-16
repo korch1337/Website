@@ -98,10 +98,7 @@
     
     <!--********************************************* Mainmenu end *********************************************--> 
     <div class ="charsearch">
-    <?php include 'charactersearch.php'; ?>
-    </div>
-    
-    <div class ="charsearch">
+    <h1><font size="5">Login</font></h1>
      <form action="login.php" method="post">
 				&nbsp;<i style="font-size:11px">Account number:</i> <br>
 			<input type="text" name="username"> <br>
@@ -113,6 +110,10 @@
 				Token::create();
 			?>
 		</form>
+    </div>
+    
+    <div class ="charsearch">
+    <?php include 'charactersearch.php'; ?>
     </div>
     
     <!--********************************************* Banner start *********************************************-->
