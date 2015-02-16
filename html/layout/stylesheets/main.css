@@ -36,6 +36,10 @@ ul, li {
 	list-style:none;
 }
 
+#launch{
+	float:left;
+}
+
 #sellcharz td{
 	padding:18px;
 	font-weight:bold;
