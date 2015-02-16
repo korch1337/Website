@@ -225,7 +225,7 @@ if ($render_page) {
 	<div id="myaccount">
 		<h1>My account</h1>
 		<p>Welcome to your account page, <?php echo $user_data['name']; ?><br>
-			You have <?php echo $user_data['premdays']; ?> days remaining premium account.</p>
+			
 		<h2>Character List: <?php echo $char_count; ?> characters.</h2>
 		<?php
 		// Echo character list!
