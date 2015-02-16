@@ -102,6 +102,7 @@
     
     <!--********************************************* Mainmenu end *********************************************--> 
     <div class ="charsearch">
+    <h1>Login</h1>
     <form action="login.php" method="post">
 				&nbsp;<i style="font-size:11px">Account number:</i> <br>
 			<input type="text" name="username"> <br>
