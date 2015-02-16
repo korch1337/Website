@@ -695,7 +695,7 @@
 		'enabled' => true,
 		'email' => 'mail.zerexxa.net', // Example: paypal@mail.com
 		'currency' => 'EUR',
-		'points_per_currency' => 10, // 1 currency = ? points? [ONLY used to calculate bonuses]
+		'points_per_currency' => 100, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
 		'failed' => "http://".$_SERVER['HTTP_HOST']."/failed.php",
 		'ipn' => "http://".$_SERVER['HTTP_HOST']."/ipn.php",
