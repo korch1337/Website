@@ -456,10 +456,10 @@
 	$config['use_guild_logos'] = true;
 
 	// Level requirement to create guild? (Just set it to 1 to allow all levels).
-	$config['create_guild_level'] = 8;
+	$config['create_guild_level'] = 100;
 
 	// Change Gender can be purchased in shop, or perhaps you want to allow everyone to change gender for free?
-	$config['free_sex_change'] = false;
+	$config['free_sex_change'] = true;
 
 	// Do you need to have premium account to create a guild?
 	$config['guild_require_premium'] = false;
@@ -737,7 +737,7 @@
 	$config['shop'] = array(
 		'enabled' => true,
 		'enableShopConfirmation' => true, // Verify that user wants to buy with popup
-		'useDB' => true, // Fetch offers from database, or the below config array
+		'useDB' => false, // Fetch offers from database, or the below config array
 		'showImage' => true,
 		'imageServer' => 'items.znote.eu',
 		'imageType' => 'gif',
