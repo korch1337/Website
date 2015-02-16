@@ -93,8 +93,10 @@ width:900px;
 #profile tr:nth-child(odd) td { background: #D6C2AD; }
 
 
-#charsearch{
+.charsearch{
 	margin:0 0 40px 50px;
+	padding:0 100px 0px 60px;
+	float: left;
 }
 
 #main_wrapper {
