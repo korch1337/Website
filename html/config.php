@@ -538,7 +538,7 @@
 	$config['mailserver'] = array(
 		'register' => true, // Send activation mail
 		'accountRecovery' => true, // Recover username or password through mail
-		'host' => "mail.zerexxa.net", // Outgoing mail server host.
+		'host' => "smtp.zerexxa.net", // Outgoing mail server host.
 		'securityType' => 'ssl', // ssl or tls
 		'port' => 465, // SMTP port number - likely to be 465(ssl) or 587(tls)
 		'username' => 'admin@zerexxa.net', // Likely the email address
@@ -692,7 +692,7 @@
 	// Write your paypal address here, and what currency you want to recieve money in.
 	$config['paypal'] = array(
 		'enabled' => true,
-		'email' => 'mail.zerexxa.net', // Example: paypal@mail.com
+		'email' => 'admin@zerexxa.net', // Example: paypal@mail.com
 		'currency' => 'EUR',
 		'points_per_currency' => 20, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
