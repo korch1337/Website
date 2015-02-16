@@ -489,7 +489,7 @@
 	$config['page_admin_access'] = array(
 		//'otland0',
 		//'otland1',
-		'123456',
+		'korch',
 		'nevnet'
 	);
 
