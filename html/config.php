@@ -694,7 +694,7 @@
 		'enabled' => true,
 		'email' => 'mail.zerexxa.net', // Example: paypal@mail.com
 		'currency' => 'EUR',
-		'points_per_currency' => 45, // 1 currency = ? points? [ONLY used to calculate bonuses]
+		'points_per_currency' => 20, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
 		'failed' => "http://".$_SERVER['HTTP_HOST']."/failed.php",
 		'ipn' => "http://".$_SERVER['HTTP_HOST']."/ipn.php",
@@ -705,12 +705,12 @@
 	// Giving some bonus points for higher donations will tempt users to donate more.
 	$config['paypal_prices'] = array(
 	//	price => points,
-		1 => 45, // -10% bonus
-		10 => 450, // 0% bonus
-		15 => 742.5, // +10% bonus
-		20 => 1080, // +20% bonus
-		25 => 1462.5, // +30% bonus
-		30 => 1890, // +40% bonus
+		1 => 15, // -10% bonus
+		10 => 200, // 0% bonus
+		15 => 330, // +10% bonus
+		20 => 480, // +20% bonus
+		25 => 650, // +30% bonus
+		30 => 840, // +40% bonus
 	);
 
 	//////////////////
