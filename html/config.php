@@ -761,7 +761,7 @@
 		1 => array(
 			'type' => 1, // 1 = item id offers, 2 = premium days [itemid ignored], 3 = sex change[itemid & count ignored], 4+ = custom.
 			'itemid' => 2160, // item to get in-game
-			'count' => 5, //if type is 2, this represents premium days
+			'count' => 100, //if type is 2, this represents premium days
 			'description' => "Crystal coin.", // Description shown on website
 			'points' => 100, // How many points this offer costs
 		),
@@ -769,10 +769,10 @@
 		// offer 2
 		2 => array(
 			'type' => 1,
-			'itemid' => 2392,
+			'itemid' => 6132,
 			'count' => 1,
-			'description' => "Fire sword.",
-			'points' => 10,
+			'description' => "Soft Boots.",
+			'points' => 50,
 		),
 	);
 ?>
