@@ -201,7 +201,7 @@ if (isset($_GET['success']) && empty($_GET['success'])) {
 				  <option value="1">Yes.</option>
 				  <option value="2">No.</option>
 				</select>
-			</li>
+			</li><br>
 			<?php
 				/* Form file */
 				Token::create();
