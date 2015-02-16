@@ -102,8 +102,8 @@
     
     <!--********************************************* Mainmenu end *********************************************--> 
     
-    <?php require_once 'engine/init.php';
-						if (user_logged_in() === false) {
+    
+						
 						  <div class ="charsearch">
 							<h1><font size="5">Login</font></h1>
 							<form action="login.php" method="post">
@@ -117,9 +117,6 @@
 							Token::create();
 							</form>
 						  </div>
-							
-						}
-	?>
 
     
     <!--********************************************* Banner start *********************************************-->
