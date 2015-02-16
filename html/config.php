@@ -774,37 +774,5 @@
 			'description' => "Fire sword.",
 			'points' => 10,
 		),
-
-		// offer 3
-		3 => array(
-			'type' => 2,
-			'itemid' => 12466, // Item to display on page
-			'count' => 7,
-			'description' => "Premium membership.",
-			'points' => 25,
-		),
-
-		// offer 4
-		4 => array(
-			'type' => 3,
-			'itemid' => 12666,
-			'count' => 3,
-			'description' => "Change character gender.",
-			'points' => 10,
-		),
-		5 => array(
-			'type' => 3,
-			'itemid' => 12666,
-			'count' => 0,
-			'description' => "Change character gender.",
-			'points' => 20,
-		),
-		5 => array(
-			'type' => 4,
-			'itemid' => 12666,
-			'count' => 1,
-			'description' => "Change character name.",
-			'points' => 20,
-		),
 	);
 ?>
