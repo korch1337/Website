@@ -1,10 +1,13 @@
-<?php require_once 'engine/init.php';
+<?php require_once 'engine/init.php'; require 'connect.php';
 protect_page();
 include 'layout/overall/header.php'; 
 
+$shopItems = $db->query("SELECT * FROM znote_shop");
+$shopItems->free();
+
 // Import from config:
 $shop = $config['shop'];
-$shop_list = $config['shop_offers'];
+$shop_list = $shopItems;
 
 if (!empty($_POST['buy'])) {
 	$time = time();
