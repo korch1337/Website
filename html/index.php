@@ -115,10 +115,7 @@
 			?>
 		</form>
     </div>
-    
-    <div class ="charsearch">
-    <?php include 'charactersearch.php'; ?>
-    </div>
+
     
     <!--********************************************* Banner start *********************************************-->
     <div id="da-slider" class="da-slider">
