@@ -13,6 +13,7 @@ if ($auction['characterAuction']) {
 	
 	
 <h1>Character auctioning</h1>
+<div id="sellcharz">
 <table class="auction_char">
 	
 	<?php $aucPlayers = $db->query("SELECT a.name,a.id, a.level, a.vocation, b.price,b.account_id FROM players AS a, znote_auction_player as b WHERE a.id=b.player_id ORDER BY a.level DESC"); 
@@ -21,7 +22,7 @@ if ($auction['characterAuction']) {
 	?>
 	
 	
-	<tr class="buycharz">
+	<tr>
 		<td>Name</td>
 		<td>Level</td>
 		<td>Vocation</td>
@@ -57,6 +58,7 @@ if ($auction['characterAuction']) {
 		   $aucPlayers->free();
 	       ?>
 </table>
+</div>
 	<?php
 } else echo "<p>Character shop auctioning system is disabled.</p>";
 
