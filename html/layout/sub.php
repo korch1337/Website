@@ -48,6 +48,12 @@ $subpages = array(
 		// false means don't run this file instead of the regular file at website.com/blank.php
 		'override' => false
 		),
+	'gallery' => array(
+		// layout/sub/blank.php
+		'file' => 'gallery.php',
+		// false means don't run this file instead of the regular file at website.com/blank.php
+		'override' => false
+		),
 		
 );
 ?>
